@@ -1,0 +1,19 @@
+<card class="ui-container ui-size-fluid ui-unwrap card charts" data-index="1">
+    <div class="ui-element ui-size-fluid ui-relative ui-scroll-y presentation">
+        <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center ui-hide empty-info">
+            ${ui.general.empty.info}
+        </div>
+        <div class="ui-container ui-size-fluid infos">
+            <div class="ui-container ui-size-6">
+                <canvas class="super diagramme" style="width: 50vw"></canvas>
+            </div>
+            <div class="ui-container ui-size-fluid action state-box">
+                <label class="ui-container ui-size-fluid">${ui.academic.state}</label>
+                <div class="ui-element combined switch automatic state" value="F">
+                    <button class="ui-element red off" data-value="F" index="0">${ui.component.text.open}</button>
+                    <button class="ui-element green" data-value="O" index="1">${ui.component.text.closed}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</card>

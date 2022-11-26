@@ -1,0 +1,432 @@
+@import "compass/css3";
+@import "./_var.scss";
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme;
+  border-radius: 2px;
+}
+
+.logo{
+  width: 20vmin;
+  height: 20vmin;
+  background-color: white;
+  border-radius: 100%;
+  background-image: url("../assets/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  div{
+    //background-color: red;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 2px solid transparent;
+    border-top: 2px solid $theme;
+  }
+}
+header{
+  height: 50px;
+  width: 100vw!important;
+  left: 0;
+  background-color: white;
+  z-index: 4;
+  position: relative;
+  &.animated{
+    transition-duration: .3s;
+    @include transform(translate3d(0, -100%, 0));
+  }
+  &.upon{
+    position: fixed;
+    @include transform(translate3d(0, 0%, 0));
+    @include box-shadow(0 0 4px 1px #aaa);
+  }
+  &.shadowless{
+    @include box-shadow(unset);
+  }
+  &.colorless{
+    background-color: unset;
+    box-shadow: unset;
+  }
+  div{
+    padding: .4em;
+  }
+  .banner-sector{
+    padding-left: .8em;
+    font-size: 1.6em;
+    color: $theme;
+    font-family: Poppins-Bold;
+    .logo{
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      margin-right: .2em;
+    }
+  }
+  .link-sector{
+    padding-right: .5em;
+    a{
+      font-family: Lexend;
+      text-decoration: none;
+      color: mix(#eee, $theme);
+      padding: .4em 0;
+      margin: 0 .8em;
+      position: relative;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:hover{
+        color: $theme;
+      }
+      i{
+        padding: .3em .4em;
+      }
+      span{
+        display: block;
+        width: 106%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        border-radius: .2em .2em 0 0;
+        left: -3%;
+      }
+      &.active{
+        color: $theme;
+        font-family: Lexend-Bold;
+        span{
+          background-color: $theme;
+        }
+      }
+    }
+  }
+  .menu-action{
+    height: 100%;
+    //background-color: grey;
+    padding: 0 1em;
+    .line{
+      display: block;
+      position: relative;
+      height: 4px;
+      width: 100%;
+      border-radius: 1em;
+      background-color: $theme;
+      transition-duration: .2s;
+      &.top{
+        @include transform(rotate(0deg));
+        top: 33%;
+      }
+      &.middle{
+        @include transform(rotate(0deg));
+        top: 40%;
+      }
+      &.bottom{
+        @include transform(rotate(0deg));
+        top: 45%;
+      }
+    }
+    &.close .line{
+      width: 80%;
+      &.top{
+        opacity: 0;
+      }
+      &.top, &.middle{
+        @include transform(rotate(45deg));
+        left: 20%;
+        top: 35%;
+      }
+      &.bottom{
+        @include transform(rotate(-45deg));
+        left: 20%;
+        top: 30%;
+      }
+    }
+  }
+}
+menu{
+  position: fixed;
+  top: 49px;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  width: 100vw !important;
+  background-color: white;
+  z-index: 3;
+  height: 0;
+  overflow: hidden;
+  transition-duration: .1s;
+  &.open{
+    height: calc(50vh - 50px);
+    padding: .5em .2em 1em .2em;
+  }
+  a{
+    text-align: right;
+    display: block;
+    width: 100%;
+    padding: .6em .4em;
+    margin: .1em 0;
+    font-family: Lexend;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: mix(#ccc, $theme);
+    i{
+      display: inline-block;
+      padding: 0 .3em;
+      font-size: 1.2em;
+    }
+    &.active{
+      font-family: Lexend-Bold;
+      color: $theme;
+      font-size: 1.4em;
+    }
+  }
+}
+view{
+  height: calc(100vh - 50px);
+  //background-color: #ddd;
+  &.subscription{
+    padding-top: 2em;
+  }
+  .caroussel-simple{
+    height: 60vh;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    .main-img{
+      display: inline-block;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: contain;
+    }
+    .greetings{
+      font-size: 3.2em;
+      padding: 0 .4em;
+      color: $theme;
+      text-shadow: 0 0 1px #559;
+      font-family: Avenir-Black,Arial;
+    }
+  }
+  .global-presentation{
+    min-height: 60vh;
+    height: auto;
+    padding-bottom: .4em;
+    background-color: $theme;
+    position: relative;
+    top: -15%;
+    //padding-top: 9%;
+    @include background-image(linear-gradient($theme, #0e2a40));
+    .last-word{
+      min-height: 450px;
+      height: auto;
+      .academy-parallax{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .02;
+        //filter: blur(4px);
+      }
+      .greetings-word{
+        padding: 50px 1em .3em 1em;
+        .word{
+          font-family: Avenir-Book;
+          line-height: 1.2em;
+          padding: 0 2em;
+          font-size: 1.3em;
+          color: white;
+        }
+        .students{
+          padding: .4em;
+          .img{
+            height: 350px;
+            //border-radius: 0 0 100% 100%;
+            //background-color: red;
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 2;
+            position: relative;
+          }
+          .oval{
+            height: 300px;
+            bottom: 0;
+            width: 100%;
+            //border-radius: 100%;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    h2{
+      font-family: Poppins-Bold;
+      //text-align: left;
+      padding: .4em;
+      font-size: 2rem;
+      color: white;
+      position: relative;
+      margin-bottom: .4em;
+      &:before{
+        content: " ";
+        position: absolute;
+        width: 70px;
+        border-radius: .4em;
+        height: 4px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        bottom: 0px;
+        background-color: white;
+      }
+    }
+    .stats{
+      //background-color: rgba(0,0,0,0.4);
+      padding: .5em;
+      //margin: 0 .4em;
+      text-align: center;
+      .icon{
+        width: 70%;
+        height: 200px;
+        padding-right: .4em;
+        background-color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6em;
+      }
+      .amount{
+        padding: .4em;
+        color: #fff;
+        font-family: Lexend-Bold !important;
+        .number{
+          font-size: 3em;
+        }
+        label{
+          font-family: Lexend;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+//Inscription
+.subscription-wrapper{
+  padding: .4em;
+  background-color: white;
+  h2{
+    font-family: Lexend-Light;
+    padding: .4em 0;
+  }
+  .progress-line{
+    height: 5rem;
+    margin: .2em 0 2vmin 0;
+    //background-color: #eee;
+    .line-wrapper{
+      padding: 0 1em;
+    }
+    .line{
+      height: 2px;
+      position: relative;
+      //@include transform(translateY(-20px));
+      background-color: $theme;
+      @include border-radius(.3em);
+      &.path{
+        background-color: #eee;
+      }
+    }
+    .step{
+      padding: .3em;
+      text-align: center;
+      position: relative;
+      top: 6vmin;
+      color: #999;
+      .circle{
+        width: 6vmin;
+        height: 6vmin;
+        background-color: #fff;
+        border: 1px solid mix(#ccc,$theme);
+        @include border-radius(100%);
+        transition-duration: .3s;
+        will-change: background-color, color;
+      }
+      .text{
+        font-size: .8em;
+        padding: .3em 0;
+        height: 12vmin;
+        overflow: hidden;
+      }
+      &.active{
+        color: #000;
+        .circle{
+          border-color: $theme;
+          background-color: $theme;
+          color: white;
+        }
+        .text{
+          color: $theme;
+        }
+      }
+    }
+  }
+}
+
+.subscription-form{
+  position: relative;
+  padding: .4em;
+  .body{
+    @include box-shadow(0 1px 2px 0 #ccc);
+    .up-linked{
+      font-size: .8em;
+      top: 1em;
+      position: relative;
+      z-index: 2;
+    }
+    label i{
+      color: red;
+      font-weight: bold;
+      font-style: normal;
+      padding: 0 .2em;
+    }
+    .wrapper{
+      padding: .2em;
+      .linked{
+        font-size: .8em;
+        position: relative;
+        top: 1.8em;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px){
+  view{
+    .caroussel-simple{
+      .greetings{
+        font-size: 1.8em;
+        display: none;
+        //background-color: red;
+      }
+    }
+    .global-presentation{
+      padding-top: 0%;
+      h2{
+        font-size: 1.3rem;
+      }
+      .last-word{
+        position: relative;
+        .academy-parallax{
+          opacity: .06;
+        }
+        .greetings-word{
+          position: relative;
+          .word{
+            padding: 10% .5em 0 .5em;
+          }
+        }
+      }
+    }
+  }
+}

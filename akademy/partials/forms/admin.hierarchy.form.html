@@ -1,0 +1,24 @@
+<template id="poste">
+    <div class="super super-l12 person-form">
+        <div class="super-flex super-l12">
+            <div class="super super-l8 field">
+                <label>${ui.component.label.town}</label>
+                <kinput type="text" class="input super-l12" required name="poste_name" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+            <div class="super super-l4 field">
+                <label>${ui.component.label.country}</label>
+                <kinput type="number" class="input super-l12" required name="poste_capacity" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+        </div>
+        <div class="super-flex super-l12">
+            <div class="super super-l8 field">
+                <label>${ui.component.label.country}</label>
+                <kinput type="number" class="input super-l12" required name="poste_linked" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+            <div class="super super-l4 field">
+                <label>${ui.component.label.country}</label>
+                <kinput type="number" class="input super-l12" required name="poste_capacity" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+        </div>
+    </div>
+</template>

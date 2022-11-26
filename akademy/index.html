@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Akademy | Panel</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/line-awesome-1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/scheduleui.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/temp.css">
+</head>
+<body>
+    <div class="ui-container ui-vfluid ui-unwrap ui-absolute ui-all-close akademy template ui-no-scroll">
+        <sidemenu class="ui-container ui-column ui-unwrap minimal">
+            <div class="ui-container ui-vertical-center ui-unwrap ui-size-fluid company">
+                <div class="company-logo ui-element"></div>
+                <span class="name">${company.name}</span>
+            </div>
+            <div class="ui-element ui-scroll-y ui-size-fluid links">
+                ${sideMenu}
+            </div>
+        </sidemenu>
+        <view class="ui-container minimal ui-unwrap ui-column ui-no-scroll">
+            <appbar class="ui-container ui-unwrap ui-size-fluid ui-vertical-center">
+                <div class="ui-container ui-size-5 search-zone">
+                    <div class="ui-container ui-size-10 field static">
+                        <div class="combined ui-container ui-size-fluid ui-vertical-center ui-unwrap">
+                            <input type="search" class="input ui-container ui-size-10 search-bar" placeholder="${ui.component.search.text}">
+                            <icon class="ion-ios-search-strong"></icon>
+                        </div>
+                    </div>
+                </div><!--
+             --><div class="ui-container ui-unwrap ui-spaced ui-size-7 ui-vertical-center">
+                    <div class="action ui-container ui-size-6" style="opacity: 0">
+                        <button><icon class="ion-plus"></icon> ${ui.academic.new.year}</button>
+                    </div><!--
+                 --><div class="ui-container ui-unwrap ui-size-5 ui-vertical-center user-zone">
+                        <avatar class="ui-element">
+                        </avatar>
+                        <div class="ui-element ui-size-8 user-info">
+                            <span class="ui-element ui-size-fluid greeting"></span>
+                            <span class="ui-element ui-size-fluid name"></span>
+                        </div>
+                        <button class="ui-element ui-size-2 ion-chevron-down" id="user-panel-toggler"></button>
+                    </div>
+                </div>
+            </appbar>
+            <panel class="ui-container ui-size-fluid ui-relative ui-no-scroll">
+                <div class="ui-element ui-absolute ui-all-close waiter-load panel-loader">
+                    <div class="box ui-container ui-size-fluid ui-vertical-center">
+                        <div class="ui-element ui-size-fluid">
+                            <div class="ui-element ui-size-fluid ui-horizontal-center animation-view">
+                                <span class="bulbe"></span>
+                                <span class="bulbe"></span>
+                                <span class="bulbe"></span>
+                            </div>
+                            <span class="ui-element ui-size-fluid ui-horizontal-center text">${ui.component.text.loading}</span>
+                            <div class="ui-hide ui-size-fluid progression">
+                                <div class="ui-element indicator"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </panel>
+        </view>
+    </div>
+    @("./partials/widgets/printview")
+    <div class="ui-hide ui-size-3 user-panel user-zone">
+        <div class="ui-element ui-size-fluid ui-horizontal-center">
+            <avatar class="ui-element">
+            </avatar>
+        </div>
+        <div class="ui-element ui-size-fluid user-info">
+            <span class="ui-element ui-size-fluid greeting"></span>
+            <span class="ui-element ui-size-fluid name"></span>
+        </div>
+        <div class="ui-element ui-size-fluid action">
+            <icon id="logout" class="las la-sign-out-alt"></icon>
+            ${ui.component.text.disconnection}
+        </div>
+    </div>
+    @("./partials/widgets/formpopup")
+    @("./partials/widgets/layerform")
+    @("./partials/widgets/dialogbox")
+    @("./partials/others/search.empty")
+    <script src="js/zepto.js"></script>
+    <script src="js/localforage.min.js"></script>
+    <script src="js/ejs.min.js"></script>
+    <script src="js/thunderspeed.js"></script>
+    <script src="js/akauistrings.js"></script>
+    <script src="js/AkaDatetime.js"></script>
+    <script src="js/scheduleUI.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/kinput.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/pendraw.js"></script>
+    <script src="js/routeUI.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/komponent.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/akademy.js"></script>
+</body>
+</html>

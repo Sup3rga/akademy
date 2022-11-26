@@ -1,0 +1,91 @@
+<card class="ui-element ui-size-fluid ui-flex ui-column card active course-list" data-index="0">
+    <div class="ui-element ui-size-fluid scroll-view">
+        <%
+        var seance = 0,
+            hours = {},
+            total_h = 0,
+            total_i = 0,
+            k = 0,
+            teacher,niveau,session;
+        %>
+        <% for(var j in course){
+            k++;
+            teacher = utils.getTeacher(course[j].titulaire);
+            niveau = utils.getClass(course[j].niveau);
+            session = utils.getSession(course[j].session);
+        %>
+            <item class="ui-element ui-size-fluid ui-hide id-item list-item course-item" data-grade="<%= course[j].niveau %>" data-filter="<%= course[j].nom+' '+course[j].code %>" data-id="<%= course[j].id %>">
+                <div class="ui-element ui-size-fluid ui-flex ui-vertical-center summary">
+                    <div class="ui-element ui-size-8 data">
+                            <span class="ui-element ui-size-fluid name">
+                                <%= course[j].nom %>
+                            </span>
+                            <span class="ui-element ui-size-fluid suite super-flex-center">
+                                <%
+                                    seance = course[j].horaire.length;
+                                %>
+                            <span class="ui-element el"><%= seance %> ${ui.component.label.seance.per.week} <%= niveau.notation %></span>
+                            </span>
+                    </div>
+                    <div class="ui-element ui-size-4 action see">
+                        <button class="light"><icon class="ion-eye"></icon> <span>${ui.component.text.see.more}</span></button>
+                    </div>
+                </div>
+                <div class="ui-element ui-size-fluid metadata">
+                    <div class="ui-element ui-size-fluid ui-flex student-information">
+                        <div class="ui-element ui-size-fluid personals">
+                            <div class="ui-element ui-size-fluid ui-flex wrapper">
+                                <div class="ui-element ui-size-6 ui-flex row">
+                                    <div class="ui-element ui-size-6 label">${ui.component.label.principal.teacher}</div>
+                                    <div class="ui-element ui-size-6 content"><%= teacher.prenom + " " + teacher.nom.toUpperCase() %></div>
+                                </div>
+                                <div class="ui-element ui-size-6 ui-flex row">
+                                    <div class="ui-element ui-size-66 label">${ui.component.label.bareme}</div>
+                                    <div class="ui-element ui-size-6 content"><%= course[j].coefficient %></div>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-fluid ui-flex">
+                                <div class="ui-element ui-size-6 ui-flex row">
+                                    <div class="ui-element ui-size-6 label">${ui.component.label.class}</div>
+                                    <div class="ui-element ui-size-6 content"><%= niveau.notation %></div>
+                                </div>
+                                <div class="ui-element ui-size-6 ui-flex">
+                                    <div class="ui-element ui-size-6 label">${ui.academic.session.label}</div>
+                                    <div class="ui-element ui-size-6 content"><%= session.number %></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-flex actions">
+                        <div class="ui-element ui-size-6 ui-flex ui-vertical-center ui-horizontal-left action">
+                            <% if(allowModule(180) && utils.getPromotions(course[j].niveau).length){ %>
+                            <button class="light configure" href="/course/id:<%= course[j].id %>" data-id="<%= course[j].id %>">
+                                <icon class="las la-cog"></icon> ${ui.component.text.configure}
+                            </button>
+                            <% } %>
+                            <% if(allowModule(170)){ %>
+                            <button class="light clone" data-id="<%= course[j].id %>">
+                                <icon class="las la-link"></icon> ${ui.component.text.clone}
+                            </button>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+            </item>
+        <%
+            }
+        %>
+        <div class="ui-container ui-unwrap ui-all-center ui-size-fluid empty-info <%= k ? 'ui-hide' : '' %>">
+            ${ui.course.list.empty}
+        </div>
+    </div>
+    <div class="ui-element float-action">
+        <button class="ion-plus-round layer-form-on add-course"
+                data-layer-title="${ui.sidemenu.course}"
+                data-layer-name="course"
+                data-layer-size="5,7,9,10"
+        ></button>
+    </div>
+</card>
+@("../../partials/forms/course.form")
+@("../../partials/forms/course.scheduler.form")

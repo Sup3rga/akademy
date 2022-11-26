@@ -1,0 +1,336 @@
+$theme : #0e4357;
+$theme_pale : #09a3d0;
+$field_theme : #ebf1f3;
+$theme_gradient : linear-gradient(200deg, #4585a1, #002931);
+$cm_bg : #266b4b;
+$tp_bg : #a48611;
+$extra_bg : #3b4444;
+$menu_width : 380px; //300px
+$min_menu_width : 80px;//70px;
+$menu_padding:  0 4.5em .8em 1em;//0 1.5em .8em 1em;
+$min_menu_padding: 0 4.5em .8em .4em;//0 1.5em .8em .4em;
+$button_font : Lexend-Medium;
+$appbarHeight : 60px;
+$actionButtonBackground: rgba(230,230,250,0.5);
+$actionButtonBackground_solid: rgb(230,230,250);
+
+%user-info{
+  padding: .4em .1em .1em .4em;
+  padding: .4em .1em .1em .4em;
+  .greeting{
+    font-family: Lexend-Light;
+    font-size: .7em;
+  }
+  .name{
+    font-family: Poppins-SemiBold;
+    font-size: .9em;
+    position: relative;
+    top: -.4em;
+  }
+}
+
+%ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%head{
+  padding: .4em;
+  background-color: #d5e3e5;
+  .name{
+    font-family: Poppins-SemiBold;
+    font-size: 1.3em;
+    padding: .3em 0;
+  }
+  .year{
+    padding: .3em 0;
+    font-family: Lexend;
+    font-size: 1em;
+  }
+  .text{
+    font-family: Lexend-SemiBold;
+    font-size: 1.1em;
+    padding: .4em 0;
+  }
+  .extras{
+    padding: .3em 0;
+    div{
+      font-family: Rubik-Light;
+      font-size: .9em;
+      @extend %ellipsis;
+      &.fac{
+        font-size: 1em;
+        text-align: left;
+        padding-left: .4em;
+        font-family: Poppins-SemiBold;
+      }
+    }
+  }
+}
+%item-summary{
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  avatar {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    transition-duration: .2s;
+    transition-property: opacity;
+  }
+  .data {
+    font-size: .7em;
+    padding: .4em;
+
+    .name {
+      font-family: Poppins-SemiBold;
+      font-size: 1.3em;
+    }
+
+    .suite {
+      font-family: Lexend;
+      padding: .2em 0;
+      font-size: .9em;
+
+      .el {
+        padding: .2em;
+
+        &:first-child {
+          color: #555;
+
+          &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            @include border-radius(100%);
+          }
+        }
+      }
+    }
+  }
+}
+%item-meta{
+  overflow: hidden;
+  height: 80px;
+  font-size: 1.2em;
+  transition-duration: .3s;
+  transition-property: box-shadow,height !important;
+  .see{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .2s;
+    font-size: .8em;
+    icon{
+      padding: 0 .5em;
+    }
+  }
+  &:hover{
+    cursor: default !important;
+    color: #000 !important;
+    //padding-left: .5em !important;
+    @include box-shadow(0 1px 2px 0 #ccc);
+    .see{
+      opacity: 1;
+    }
+  }
+  .summary {
+    @extend %item-summary;
+  }
+  &.open{
+    height: 420px;
+    overflow: hidden;
+    margin-bottom: .5em;
+    @include box-shadow(0 1px 2px 0 mix(#ccc,$theme));
+    .see{
+      opacity: 1;
+    }
+    .summary{
+      background-color: #eee;
+      avatar{
+        opacity: 0;
+      }
+    }
+  }
+  .metadata{
+    padding: .2em;
+    font-size: .7em;
+    height: 300px;
+    .avatar-box{
+      width: 200px;
+      text-align: center;
+      avatar{
+        width: 160px;
+        height: 160px;
+        font-size: 4em;
+        font-family: OpenSans-Light;
+        line-height: 160px;
+        border: 2px solid $theme;
+        position: relative;
+        &:after{
+          content: " ";
+          width: 40px;
+          height: 40px;
+          display: block;
+          background-color: inherit;
+          position: absolute;
+          right: 5%;
+          top: 75%;
+          border-radius: 50%;
+        }
+      }
+      .code{
+        font-family: Lexend;
+        color: #444;
+        font-size: 1.2em;
+        padding: .5em 0;
+      }
+    }
+    .wrapper,grid{
+      .row,row{
+        height: inherit;
+        align-items: center;
+        padding: .3em;
+        .label{
+          font-family: Poppins-SemiBold;
+          @extend %ellipsis;
+        }
+        .content{
+          font-family: Lexend;
+          @extend %ellipsis;
+        }
+      }
+    }
+    .actions{
+      padding: .4em 0;
+      button{
+        padding: .8em .5em;
+        margin: 0 .1em;
+        font-family: $button_font;
+        color: $theme;
+        border: 0;
+        background-color: #f7f7f7;
+        border-radius: .4em;
+        cursor: pointer;
+        icon{
+          font-size: 1.2em;
+        }
+        &:hover,&:focus{
+          box-shadow: 0 0 1px 0 #aaa;
+        }
+      }
+    }
+  }
+}
+
+%avatar-box{
+  position: relative;
+  avatar {
+    width: 97px;
+    height: 97px;
+    line-height: 97px;
+    font-size: 3em;
+    color: #999;
+  }
+  .avatar-chooser {
+    width: 34px;
+    height: 34px;
+    @include border-radius(100%);
+    line-height: 34px;
+    text-align: center;
+    background-color: $theme;
+    color: white;
+    font-size: 1.1em;
+    position: absolute;
+    top: calc(97px - 30px);
+    left: calc(97px - 34px);
+  }
+}
+
+%item{
+  padding: .5em;
+  line-height: 1.2em;
+  margin-bottom: .5em;
+  background-color: #fff;
+  @include box-shadow(0 1px 2px 0 #ccc);
+  height: 50px;
+  @include border-radius(.4em);
+  cursor: pointer;
+  &.faculty{
+    font-family: Lexend;
+  }
+  .name{
+    font-family: Lexend;
+    font-size: 1em;
+    height: 100%;
+  }
+  .action{
+    padding: 0;
+    display: none;
+    height: 40px;
+    button{
+      height: inherit;
+      background-color: unset;
+      color: mix($theme, #333);
+      &:hover{
+        color: $theme;
+        background-color: rgba(200,200,200,0.4);
+      }
+    }
+  }
+  &.a{background-color: rgba(230, 239, 253, 0.4)
+  }
+  &.b{background-color: rgba(252, 247, 218, 0.4)
+  }
+  &.c{background-color: rgba(227, 253, 250, 0.4)
+  }
+  &.d{background-color: rgba(255, 241, 238, 0.4)
+  }
+  &.e{background-color: rgba(248, 255, 231, 0.4)
+  }
+  &.f{background-color: rgba(255, 240, 231, 0.4)
+  }
+  &:hover{
+    background-color: rgba(200,200,200,0.1);
+    .action{
+      display: inline-flex;
+    }
+  }
+}
+
+%actions-box{
+  padding: .3em .2em;
+  button{
+    border: 0;
+    background-color: $actionButtonBackground;
+    font-size: 1.3em;
+    border-radius: .5em;
+    cursor: pointer;
+    padding: .3em .5em;
+    margin: 0 .2em;
+    transition-duration: .2s;
+    position: relative;
+    text{
+      font-size: .7em;
+      font-family: Lexend;
+      position: relative;
+      top: -1px;
+    }
+    input{
+      font-size: .7em;
+      height: 100%;
+      font-family: Roboto;
+    }
+    &:hover{
+      background-color: rgba(200,200,200,0.2);
+      color: $theme;
+    }
+    &.active{
+      color: #fff;
+      background-color: $theme;
+    }
+  }
+}

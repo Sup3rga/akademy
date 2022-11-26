@@ -1,0 +1,2 @@
+<?php
+Watcher::essentials();

@@ -1,0 +1,90 @@
+/* line 1, ../sass/scheduleui.scss */
+:root {
+  --schedule-ui-background: #fff;
+  --schedule-ui-header-background: #6b7676;
+  --schedule-ui-days-color: #fff;
+  --schedule-ui-days-background: rgba(0, 0, 0, 0.2);
+  --schedule-ui-days-size: .9em;
+  --schedule-ui-font: Helvetica;
+  --schedule-ui-border-color: #eee;
+  --schedule-ui-content-row-padding: 0.1em;
+  --schedule-ui-item-content-padding: 0.2em .1em;
+  --schedule-ui-item-background: #efe;
+  --schedule-ui-item-size: .8em;
+  --schedule-ui-item-radius: .2em;
+}
+
+/* line 16, ../sass/scheduleui.scss */
+.schedule-ui {
+  position: absolute;
+  font-family: var(--schedule-ui-font);
+  background-color: var(--schedule-ui-background);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 26, ../sass/scheduleui.scss */
+.schedule-ui .schedule-header {
+  background-color: var(--schedule-ui-header-background);
+  display: flex;
+  align-items: flex-end;
+}
+/* line 31, ../sass/scheduleui.scss */
+.schedule-ui .schedule-header .schedule-days {
+  display: flex;
+  width: 100%;
+}
+/* line 34, ../sass/scheduleui.scss */
+.schedule-ui .schedule-header .schedule-days .schedule-day {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--schedule-ui-days-background);
+  color: var(--schedule-ui-days-color);
+  font-size: var(--schedule-ui-days-size);
+  width: 100%;
+}
+/* line 48, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body {
+  display: flex;
+}
+/* line 50, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body .schedule-column {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid var(--schedule-ui-border-color);
+  position: relative;
+}
+/* line 55, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body .schedule-column .schedule-item {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  font-size: var(--schedule-ui-item-size);
+  padding: var(--schedule-ui-item-content-padding);
+}
+/* line 61, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body .schedule-column .schedule-item .schedule-content {
+  background-color: var(--schedule-ui-item-background);
+  display: flex;
+  border-radius: var(--schedule-ui-item-radius);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 70, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body .schedule-column .schedule-item .schedule-content .schedule-content-row {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: var(--schedule-ui-content-row-padding);
+}
+/* line 75, ../sass/scheduleui.scss */
+.schedule-ui .schedule-body .schedule-column .schedule-item .schedule-content .schedule-content-row:first-child {
+  font-weight: bold;
+}

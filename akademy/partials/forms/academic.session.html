@@ -1,0 +1,33 @@
+<inline-form class="super-l12" id="academic-session">
+    <div class="super super-l12 hint-box alert-box">
+        <div class="super super-l12 wrapper super-flex-center">
+            <icon class="ion-information rounded"></icon>
+            <div class="super super-l10 text">
+                ${ui.academic.session.label.number.desc}
+            </div>
+        </div>
+    </div>
+    <div class="super super-l12 field">
+        <label>${ui.academic.session.label.number}</label>
+        <kinput type="number" name="sess_number" required class="super input super-l12"></kinput>
+    </div>
+    <br><br>
+    <div class="super super-l6 wrapper left">
+        <label>${ui.academic.session.label.date.begin}</label>
+        <div class="super super-l12 field static">
+            <div class="super super-l12 combined super-flex-center">
+                <icon class="super las la-calendar-day"></icon>
+                <kinput type="date" name="sess_begin" required class="super input super-l12"></kinput>
+            </div>
+        </div>
+    </div><!--
+ --><div class="super super-l6 wrapper right">
+        <label>${ui.academic.session.label.date.end}</label>
+        <div class="super super-l12 field static">
+            <div class="super super-l12 combined super-flex-center">
+                <icon class="super las la-calendar-day"></icon>
+                <kinput type="date" name="sess_end" required class="super input super-l12"></kinput>
+            </div>
+        </div>
+    </div>
+</inline-form>

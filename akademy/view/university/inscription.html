@@ -1,0 +1,359 @@
+<header class="super super-l12 super-flex-center">
+    <div class="super super-al-left super-l5 super-flex-center pmoy-super-l10 banner-sector">
+        <span class="logo super"></span> Akademy
+    </div>
+    <div class="super super-flex super-flex-align-end super-l7 link-sector pmoy-not-super">
+        <a href=".">
+            Accueil
+            <span></span>
+        </a>
+        <a href="./communauty">
+            Notre Organisation
+            <span></span>
+        </a>
+        <a href="./apply" class="active">
+            Inscription
+            <span></span>
+        </a>
+        <a href="./login">
+            <i class="ion-person"></i>Connexion
+            <span></span>
+        </a>
+    </div>
+    <div class="not-super pmoy-super super-l2 menu-action">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </div>
+</header>
+<menu class="super super-l12 not-super pmoy-super super-scrollable-y">
+    <a href=".">
+        Accueil
+    </a>
+    <a href="./communauty">
+        Notre Organisation
+    </a>
+    <a href="./apply" class="active">
+        Inscription
+    </a>
+    <a href="./login">
+        <i class="ion-person"></i>Connexion
+    </a>
+</menu>
+<view class="super super-l12 subscription super-al-center" style="background-image: url(~/assets/calc.png); background-size: 30%; background-color: #eee">
+    <div class="super super-l6 moy-super-l8 pmoy-super-l10 pet-super-l12 subscription-wrapper super-al-left">
+        <h2>Formulaire d'inscription</h2>
+        <div class="super super-l12 progress-line super-relative">
+            <div class="super super-all-absolute super-flex-center line-wrapper">
+                <span class="line super super-l12 path"></span>
+            </div>
+            <div class="super super-all-absolute super-flex-center line-wrapper">
+                <span class="line super steppable"></span>
+            </div>
+            <div class="super super-all-absolute super-flex-center">
+                <div class="super step active">
+                    <div class="super super-flex-center circle super-flex-align-center">
+                        1
+                    </div>
+                    <div class="super super-l12 text">
+                        Informations personnelles
+                    </div>
+                </div>
+                <div class="super step">
+                    <div class="super super-flex-center circle super-flex-align-center">
+                        2
+                    </div>
+                    <div class="super super-l12 text">
+                        Informations Académiques
+                    </div>
+                </div>
+                <div class="super step">
+                    <div class="super super-flex-center circle super-flex-align-center">
+                        3
+                    </div>
+                    <div class="super super-l12 text">
+                        Informations de Référence
+                    </div>
+                </div>
+                <div class="super step">
+                    <div class="super super-flex-center circle super-flex-align-center">
+                        4
+                    </div>
+                    <div class="super super-l12 text">
+                        Informations d'authentification
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="super super-l12 card-manager subscription-form super-relative" autoresize>
+            <div class="super super-l12 body">
+                <card class="super super-l12 card active" data-index="0">
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Nom<i>*</i></label>
+                                <kinput  class="input super-l12" required name="sub_lname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Prénom<i>*</i></label>
+                                <kinput  class="input super-l12" required name="sub_fname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Sexe<i>*</i></label>
+                                <kinput class="super super-l12 input" required type="select">
+                                    <option value=""></option>
+                                    <option value="F">Féminin</option>
+                                    <option value="M">Masculin</option>
+                                </kinput>
+                            </div>
+                        </div>
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <label class="linked">Numéro de téléphone<i>*</i></label>
+                            <div class="super super-l12 field">
+                                <div class="super super-l12 combined super-flex-end">
+                                    <div class="super super-l4" style="padding: .1em 0">+509</div>
+                                    <kinput class="input super-l8" placeholder="XXXX-XXXX" required name="sub_phone" mask="####-####" match="^[234][0-9]{3}-?[0-9]{4}$"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-l12 super-flex super-flex-column">
+                        <label class="up-linked">Lieu de naissance<i>*</i></label>
+                        <div class="super super-l12 super-flex">
+                            <div class="super super-l4 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Pays</label>
+                                    <kinput class="super super-l12 input" required ref="country" name="sub_birthplace_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l4 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Département</label>
+                                    <kinput class="super super-l12 input" required ref="department" name="sub_birthplace_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l4 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Ville</label>
+                                    <kinput class="super super-l12 input" required ref="town" name="sub_birthplace_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Adresse e-mail<i>*</i></label>
+                                <kinput class="input super-l12" required name="sub_mail" match="^[a-z]+[a-z0-9.]*@[a-z]+[a-z0-9.]*\\.[a-z]+[a-z0-9]*$"></kinput>
+                            </div>
+                        </div>
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>NIF<i>*</i></label>
+                                <kinput class="input super-l12" required name="sub_nif" mask="###-###-###-#" match="^([0-9]{3}-){3}[0-9]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-l12 super-flex super-flex-column">
+                        <label class="up-linked">Adresse de résidence permanente<i>*</i></label>
+                        <div class="super super-l12 super-flex">
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Pays</label>
+                                    <kinput class="super super-l12 input" required ref="country" name="sub_addr_perm_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Département</label>
+                                    <kinput class="super super-l12 input" required ref="department" name="sub_addr_perm_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Ville</label>
+                                    <kinput class="super super-l12 input" required ref="town" name="sub_addr_perm_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Rue</label>
+                                    <kinput class="super super-l12 input" required name="sub_addr_perm_street"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-l12 super-flex super-flex-column">
+                        <label class="up-linked">Adresse de résidence provisoire</label>
+                        <div class="super super-l12 super-flex">
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Pays</label>
+                                    <kinput class="super super-l12 input" ref="country" name="sub_addr_temp_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre" manual>Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Département</label>
+                                    <kinput class="super super-l12 input" manualtype="text" ref="department" name="sub_addr_temp_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Ville</label>
+                                    <kinput class="super super-l12 input" ref="town" name="sub_addr_temp_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l3 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Rue</label>
+                                    <kinput class="super super-l12 input" name="sub_addr_temp_street"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super super-l12 super-al-right action">
+                        <button class="disabled validation card-switch" next=1>Suivant</button>
+                    </div>
+                </card>
+                <card class="super super-l12 card" data-index="1">
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Année de Bacc II ou NS4<i>*</i></label>
+                                <kinput  class="input super-l12" required name="sub_bacc_year" type="select">
+                                    <hint>Tapez l'année</hint>
+                                    <% for(var i = 2021; i >= 1970; i--){ %>
+                                    <option value="<%= i %>"><%= i %></option>
+                                    <% } %>
+                                </kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-l12 super-flex super-flex-column">
+                        <label class="up-linked">Localisation de la dernière établissement</label>
+                        <div class="super super-l12 super-flex">
+                            <div class="super super-l4 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Pays</label>
+                                    <kinput class="super super-l12 input" required ref="country" name="sub_school_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l4 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Département</label>
+                                    <kinput class="super super-l12 input" required ref="department" name="sub_school_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="super super-l4 pmoy-super-l12 wrapper">
+                                <div class="super super-l12 field">
+                                    <label>Nom de l'établissement<i>*</i></label>
+                                    <kinput  class="input super-l12" ref="school" required name="sub_school" type="select">
+                                        <hint>Tapez le nom de l'établissement</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super super-l12 super-al-right action">
+                        <button class="light card-switch" next=0><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation card-switch" next=2>Suivant</button>
+                    </div>
+                </card>
+                <card class="super super-l12 card" data-index="2">
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Nom de la personne responsable<i>*</i></label>
+                                <kinput  class="input super-l12" required name="sub_parent_lname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <div class="super super-l12 field">
+                                <label>Prénom de la personne responsable<i>*</i></label>
+                                <kinput  class="input super-l12" required name="sub_parent_fname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <label class="linked">Numéro de téléphone de la personne responsable<i>*</i></label>
+                            <div class="super super-l12 field">
+                                <div class="super super-l12 combined super-flex-end">
+                                    <div class="super super-l4" style="padding: .1em 0">+509</div>
+                                    <kinput class="input super-l8" required name="sub_parent_phone" placeholder="XXXX-XXXX" mask="####-####" match="^[234][0-9]{3}-?[0-9]{4}$"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super super-l12 super-al-right action">
+                        <button class="light card-switch" next=1><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation card-switch" next="3">Suivant</button>
+                    </div>
+                </card>
+                <card class="super super-l12 card" data-index="3">
+                    <div class="super-flex-end super-l12 pmoy-super-flex-column">
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <label class="linked">Votre nom d'utilisateur<i>*</i></label>
+                            <div class="super super-l12 field">
+                                <div class="super super-l12 combined super-flex-end">
+                                    <kinput class="input super-l12" placeholder="exemple: pseudo.user" required name="sub_pseudo" match="^[A-Za-z]+[A-Za-z0-9.-]*[A-Za-z0-9]$"></kinput>
+                                    <div class="super super-l1" style="padding: .1em 0"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="super super-l6 pmoy-super-l12 wrapper">
+                            <label class="linked">Votre mot de passe<i>*</i></label>
+                            <div class="super super-l12 field">
+                                <div class="super super-l12 combined super-flex-end">
+                                    <kinput  class="input super-l12" placeholder="********" type="password" required name="sub_password"></kinput>
+                                    <div class="super super-l1 ion-eye password-toggler" alternate="ion-eye,ion-eye-disabled" style="padding: .1em 0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super super-l12 super-al-right action">
+                        <button class="light card-switch" next=2><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation" id="finish">Valider</button>
+                    </div>
+                </card>
+            </div>
+        </div>
+    </div>
+</view>

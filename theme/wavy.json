@@ -1,0 +1,35 @@
+{
+  "name": "Wavy",
+  "items": {
+    "sidemenu": {
+      "name": "sidemenu",
+      "style": null,
+      "draw": [
+        {
+          "func": "moveTo",
+          "args": [0,0]
+        },
+        {
+          "func": "lineTo",
+          "args": ["90%", 0]
+        },
+        {
+          "func": "quadraticBezier",
+          "args": ["75%", "20%", "90%", "40%"]
+        },
+        {
+          "func": "quadraticBezier",
+          "args": ["102%", "60%", "87%", "77%"]
+        },
+        {
+          "func": "quadraticBezier",
+          "args": ["73%","94%", "90%", "100%"]
+        },
+        {
+          "func": "lineTo",
+          "args": [0,"100%"]
+        }
+      ]
+    }
+  }
+}

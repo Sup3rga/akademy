@@ -1,0 +1,73 @@
+<div class="ui-container ui-size-fluid ui-absolute ui-all-close aio academic register-n-list">
+    <div class="ui-container ui-unwrap ui-size-fluid list-presentation list-zone">
+        <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid ui-relative">
+            <div class="ui-container ui-unwrap ui-size-fluid card-manager">
+                <div class="ui-container ui-unwrap ui-column ui-size-fluid header extended">
+                    <h1 class="ui-element ui-size-fluid">
+                        <icon class="ion-android-calendar"></icon>
+                        ${ui.sidemenu.academic}
+                    </h1>
+                    <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center slide-input">
+                        <div class="ui-container ui-unwrap ui-horizontal-right actions">
+                            <button class="akaction var ui-hide session back-to-prev"><icon class="las la-arrow-left"></icon></button>
+                            <button class="akaction var ui-hide layer-form-on session edit-session"
+                                    data-layer-title="${ui.academic.session.text.edition}"
+                                    data-layer-target="#academic-session"
+                                    data-layer-name="session-edition"
+                            ><icon class="las la-edit"></icon></button>
+                            <button class="akaction var ui-hide session delete-session"><icon class="las la-trash"></icon></button>
+                        </div>
+                        <button class="ion-ios-arrow-left var academic-chooser prev"></button>
+                        <kinput type="select" class="ui-element ui-horizontal-center ui-size-4 ui-md-size-3 ui-lg-size-2 var" id="academic-slide">
+                        <%
+                        var k = 0,
+                            currentYear = null;
+                        for(var i in academic){
+                            if(academic[i].etat == 'O'){
+                                currentYear = academic[i];
+                            }
+                        %>
+                            <option value="<%= academic[i].id %>" class="<%= academic[i].etat == 'O' ? 'selected' : '' %>" ><%= academic[i].academie %></option>
+                        <%
+                            k++;
+                        }
+                        %>
+                        </kinput>
+                        <button class="ion-ios-arrow-right var academic-chooser next"></button>
+                        <div class="ui-element var not-super session">
+                            <div class="ui-container ui-unwrap ui-vertical-center arrow-rounded rounded arrow-data">
+                                <span class="ui-element data">
+                                    <span class="content year">
+                                        2021-2022
+                                    </span>
+                                </span>
+                                <span class="ui-element data">
+                                    <span class="content">
+                                        <text>${ui.academic.session.label}</text>
+                                        <text class="session"></text>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ui-container ui-unwrap ui-vertical-center ui-horizontal-right actions">
+                            <button class="akaction var edit-academic layer-form-on"
+                                    data-layer-title="${ui.academic.year.edit}"
+                                    data-layer-target=".register-zone"
+                                    data-layer-name="academic-edition"
+                            ><icon class="las la-edit"></icon></button>
+                            <button class="akaction var chart-academic"><icon class="las la-chart-bar"></icon></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-container ui-size-fluid list body card-container">
+                    @("../../partials/cards/academic.session")
+                    @("../../partials/cards/academic.charts")
+                    @("../../partials/cards/academic.session.view")
+                </div>
+            </div>
+        </div>
+    </div>
+    <% if(allowModule(100)){ %>
+        @("../../partials/forms/academic.form")
+    <% } %>
+</div>

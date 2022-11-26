@@ -1,0 +1,74 @@
+<card class="ui-container ui-size-fluid card room" data-index="1">
+    <div class="ui-container ui-size-fluid list">
+        <%
+            var empty = room.length == 0;
+            for(var i in room){
+        %><div class="ui-element ui-size-6 ui-sm-size-4 ui-md-size-3 ui-lg-size-2 preview-box room-box">
+                <div class="ui-element ui-size-fluid text">
+                    <div>
+                        <text>${ui.admin.room.label}</text>
+                        <br>
+                        <%= room[i].name %>
+                        <br>
+                        <span style="font-size: .8em"><%= room[i].code %></span>
+                    </div>
+                </div>
+                <div class="ui-element ui-size-fluid actions">
+                    <row class="ui-element ui-size-fluid">
+                        <label>${ui.component.label.part.capacity}</label>
+                        <%= room[i].capacity %>
+                        ${ui.component.label.part.place}
+                    </row>
+                    <button class="see-more" href="/admin/rm:<%= room[i].id %>">
+                        ${ui.component.text.see.more}
+                    </button>
+                </div>
+            </div><%
+         }
+            if(empty){
+        %>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center empty-info">
+            <div class="ui-element ui-horizontal-center">
+                <icon class="ui-element ui-size-fluid las la-warehouse" style="font-size: 3em"></icon>
+                <br><br>
+                <text>
+                    ${ui.admin.room.list.empty}
+                </text>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div class="ui-element float-action">
+        <button class="super layer-form-on"
+                data-layer-title="${ui.admin.room.title.creation}"
+                data-layer-name="room"
+                data-layer-target="#room-form"
+                data-layer-size="5,8,10,11"
+                id="addRoom"
+                layerform-src>
+            <i class="ion-plus-round"></i>
+        </button>
+    </div>
+    <template id="room-form">
+        <div class="ui-container ui-size-fluid person-form ui-horizontal-left">
+            <div class="ui-element ui-size-fluid ui-flex">
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.admin.room.label.name}<i>*</i></label>
+                    <kinput class="input ui-element ui-size-fluid" required name="rm_name" match="^[A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ ' -]*[A-Za-zÀ-ÖØ-öø-ÿ]?$"></kinput>
+                </div>
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.admin.room.label.code}<i>*</i></label>
+                    <kinput class="input ui-element ui-size-fluid" required name="rm_code" mask="X-****"></kinput>
+                </div>
+            </div>
+            <div class="ui-element ui-size-fluid field">
+                <label>${ui.admin.room.label.capacity}<i>*</i></label>
+                <kinput class="input ui-element ui-size-fluid" required name="rm_capacity" type="number"></kinput>
+            </div>
+            <div class="ui-element ui-size-fluid field textarea">
+                <label>${ui.admin.room.label.desc}<i>*</i></label>
+                <kinput class="input ui-element ui-size-fluid" required name="rm_desc" type="textarea"></kinput>
+            </div>
+        </div>
+    </template>
+</card>

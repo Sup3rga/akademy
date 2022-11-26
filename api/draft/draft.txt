@@ -1,0 +1,96 @@
+//Centre
+t_town_by_dep_id?dep_id=4	XHRget_town_by_dep_id?dep_id=5
+3 requests
+2.0 kB transferred
+1.9 kB resources
+[{town_id: "15", town_name: "Cerca-la-Source "}, {town_id: "16", town_name: "Thomassique "},…]
+0: {town_id: "15", town_name: "Cerca-la-Source "}
+1: {town_id: "16", town_name: "Thomassique "}
+2: {town_id: "17", town_name: "Hinche "}
+3: {town_id: "18", town_name: "Maïssade "}
+4: {town_id: "19", town_name: "Thomonde "}
+5: {town_id: "20", town_name: "Cerca Cavajal "}
+6: {town_id: "21", town_name: "Lascahobas "}
+7: {town_id: "22", town_name: "Belladères "}
+8: {town_id: "23", town_name: "Savanette "}
+9: {town_id: "24", town_name: "Mirebalais "}
+10: {town_id: "25", town_name: "Saut d'Eau "}
+11: {town_id: "26", town_name: "Boucan Carré "}
+12: {town_id: "136", town_name: "Autre"}
+
+//Artibonite
+0: {town_id: "1", town_name: "Marchand Dessalines"}
+1: {town_id: "2", town_name: "Petite Rivière de l'Artibonite"}
+2: {town_id: "3", town_name: "Grande Saline "}
+3: {town_id: "4", town_name: "Desdunes "}
+4: {town_id: "5", town_name: "Gros Morne "}
+5: {town_id: "6", town_name: "Terre Neuve "}
+6: {town_id: "7", town_name: "Anse Rouge "}
+7: {town_id: "8", town_name: "Gonaives "}
+8: {town_id: "9", town_name: "Ennery "}
+9: {town_id: "10", town_name: "Lestère "}
+10: {town_id: "11", town_name: "Marmelade "}
+11: {town_id: "12", town_name: "Saint Michel de lattalaye "}
+12: {town_id: "13", town_name: "Saint Marc "}
+13: {town_id: "14", town_name: "Verrettes "}
+14: {town_id: "135", town_name: "Autre"}
+
+//Sud
+1: {town_id: "107", town_name: "Aquin "}
+2: {town_id: "108", town_name: "Saint Louis du Sud "}
+3: {town_id: "109", town_name: "Cavaillon "}
+4: {town_id: "110", town_name: "Chardonnières "}
+5: {town_id: "111", town_name: "Les Anglais "}
+6: {town_id: "112", town_name: "Tiburon "}
+7: {town_id: "113", town_name: "Côteaux "}
+8: {town_id: "114", town_name: "Port à Piment "}
+9: {town_id: "115", town_name: "Roche à Bateau "}
+10: {town_id: "116", town_name: "Cayes "}
+11: {town_id: "117", town_name: "Torbeck "}
+12: {town_id: "118", town_name: "Chantal "}
+13: {town_id: "119", town_name: "Camp Perrin "}
+14: {town_id: "120", town_name: "Maniche "}
+15: {town_id: "121", town_name: "Ile à Vaches "}
+16: {town_id: "122", town_name: "Port-Salut "}
+17: {town_id: "123", town_name: "Saint Jean du Sud "}
+18: {town_id: "124", town_name: "Arniquet "}
+19: {town_id: "143", town_name: "Autre"}
+
+//Sud-Est
+0: {town_id: "125", town_name: "Belle-Anse "}
+1: {town_id: "126", town_name: "Grand Gosier "}
+2: {town_id: "127", town_name: "Thiotte "}
+3: {town_id: "128", town_name: "Anse à Pitre "}
+4: {town_id: "129", town_name: "Bainet "}
+5: {town_id: "130", town_name: "Côtes de Fer "}
+6: {town_id: "131", town_name: "Jacmel "}
+7: {town_id: "132", town_name: "Marigot "}
+8: {town_id: "133", town_name: "Cayes Jacmel "}
+9: {town_id: "134", town_name: "La Vallée de Jacmel "}
+10: {town_id: "144", town_name: "Autre"}
+
+//Nippes
+0: {town_id: "71", town_name: "Anse-à-Veau "}
+1: {town_id: "72", town_name: "Petit Trou de Nippes "}
+2: {town_id: "73", town_name: "Lasile "}
+3: {town_id: "74", town_name: "Baradères "}
+4: {town_id: "75", town_name: "Miragoâne "}
+5: {town_id: "76", town_name: "Miragoâne "}
+6: {town_id: "77", town_name: "Petite Rivière de Nippes "}
+7: {town_id: "138", town_name: "Autre"}
+
+//Grand-Anse
+[{town_id: "27", town_name: "Anse d’Hainault "}, {town_id: "28", town_name: "Dame-Marie "},…]
+0: {town_id: "27", town_name: "Anse d’Hainault "}
+1: {town_id: "28", town_name: "Dame-Marie "}
+2: {town_id: "29", town_name: "Les Irois "}
+3: {town_id: "30", town_name: "Corail "}
+4: {town_id: "31", town_name: "Roseaux "}
+5: {town_id: "32", town_name: "Beaumont "}
+6: {town_id: "33", town_name: "Pestel "}
+7: {town_id: "34", town_name: "Jérémie "}
+8: {town_id: "35", town_name: "Abricot "}
+9: {town_id: "36", town_name: "Bonbon "}
+10: {town_id: "37", town_name: "Moron "}
+11: {town_id: "38", town_name: "Chambellan "}
+12: {town_id: "137", town_name: "Autre"}

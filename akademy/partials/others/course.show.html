@@ -1,0 +1,120 @@
+<template id="coursedetails">
+    <%
+        var session = utils.getSession(course.session),
+            section = utils.getSection(course.filiere),
+            classe = utils.getClass(course.niveau),
+            teacher = utils.getTeacher(course.titulaire),
+            horaire = course.horaire;
+    %>
+    <div class="ui-element ui-size-fluid presentation-view scroll-view" id="course-details">
+        <wrapper class="ui-container ui-wrap ui-md-unwrap ui-size-fluid">
+            <div class="ui-element ui-size-fluid ui-md-size-6 course-info">
+                <div class="ui-element ui-size-fluid data name"> ${ui.sidemenu.course} <%= course.nom %></div>
+                <div class="ui-element ui-size-fluid data code"><%= course.code %></div>
+                <div class="ui-element ui-size-fluid data class">${ui.course.taught.at} <%= classe.notation %></div>
+                <div class="ui-element ui-size-fluid ui-flex ui-vertical-center data teacher-details">
+                    <label class="super">${ui.component.text.by}</label>
+                    <div class="ui-element ui-size-10 ui-flex ui-vertical-center teacher-box">
+                        <avatar class="ui-element"  style="background-image: url(<%= teacher.photo != null ? './assets/avatars/'+teacher.photo : '' %>)">
+                            <%= teacher.photo != null ? '' : teacher.prenom[0].toUpperCase(); %>
+                        </avatar>
+                        <div class="ui-element ui-size-10 metadata">
+                            <span class="ui-element ui-size-fluid name"><%= teacher.prenom+" "+teacher.nom.toUpperCase() %></span>
+                            <span class="ui-element ui-size-fluid">${ui.teacher.study.in} <%= teacher.niveau_etude %></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <bubble class="ui-element ui-size-fluid ui-md-size-6 best-student">
+                <div class="ui-element ui-size-fluid head">${ui.student.best.of}</div>
+                <row class="ui-element ui-size-10 empty"></row>
+                <row class="ui-element ui-size-6 empty"></row>
+                <row class="ui-element ui-size-7 empty"></row>
+            </bubble>
+        </wrapper>
+        <wrapper class="ui-element ui-size-fluid schedulers ui-relative">
+            <card-manager class="ui-element ui-size-fluid card-manager">
+                <tabs class="ui-element ui-size-fluid tab styled-bubble">
+                    <tabs-wrapper class="ui-element ui-unwrap ui-size-fluid">
+                        <tab class="ui-element active" data-index="0">
+                            ${ui.course.schedule}
+                        </tab>
+                        <tab class="ui-element" data-index="1">
+                            ${ui.course.reference.books}
+                        </tab>
+                        <tab class="ui-element" data-index="2">
+                            ${ui.course.schedule.graphic}
+                        </tab>
+                        <tab class="ui-element" data-index="3">
+                            ${ui.course.hours.available.graphic} <%= teacher.prenom %>
+                        </tab>
+                    </tabs-wrapper>
+                </tabs>
+                <cards class="ui-element ui-size-fluid scheduling-card">
+                    <card class="ui-element ui-size-fluid ui-flex ui-column active duo-view" data-index="0">
+                        <div class="ui-element ui-size-fluid duo-head">
+                            <button class="ui-element ui-flex ui-vertical-center schedule-action schedule-new layer-form-on"
+                                data-layer-title="${ui.course.schedule.creation}"
+                                data-layer-name="newschedule">
+                                <icon class="las la-plus"></icon>
+                                <text>${ui.course.schedule.new}</text>
+                            </button>
+                            <button class="ui-element ui-hide schedule-action reactable apply">
+                                <icon class="las la-check"></icon>
+                                <text>${ui.component.text.apply}</text>
+                            </button>
+                            <button class="ui-element schedule-action reactable undo ui-hide">
+                                <icon class="las la-undo"></icon>
+                                <text>${ui.component.text.cancel}</text>
+                            </button>
+                        </div>
+                        <div class="ui-element ui-size-fluid duo-body scheduling-list scroll-view">
+                            <%
+                                var workDays = utils.use('workDays'),
+                                    id,
+                                    empty = true;
+                                workDays = workDays.workDays;
+                                for(var i in horaire){
+                                    empty = false;
+                            %>
+                            <div class="ui-element ui-size-fluid ui-flex ui-vertical-center schedule-element-box">
+                                <row class="ui-element schedule-row">
+                                    <div class="ui-element day">
+                                        <icon class="las la-calendar-day"></icon>
+                                        <%= workDays[horaire[i].day] %>
+                                    </div>
+                                    <div class="ui-element hour">
+                                        <icon class="las la-stopwatch"></icon>
+                                        <%= horaire[i].begin %> ~ <%= horaire[i].end %>
+                                    </div>
+                                    <div class="ui-element ui-size-fluid ref">
+                                        ${ui.course.reference.book.unset}
+                                    </div>
+                                </row>
+                                <button class="ui-element delete las la-trash" data-id="<%= horaire[i].id  %>"></button>
+                                <button class="ui-element edit las la-edit layer-form-on"
+                                        data-layer-name="editschedule"
+                                        data-layer-title="${ui.course.schedule.edition}"
+                                        data-id="<%= horaire[i].id  %>">
+                                </button>
+                            </div>
+                            <% }
+                                if(empty){
+                            %>
+                            <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+                                ${ui.course.schedule.list.empty}
+                            </div>
+                            <%  } %>
+                        </div>
+                    </card>
+                    <card class="ui-element ui-size-fluid" data-index="1">
+                    </card>
+                    <card class="ui-element ui-size-fluid" id="course-schedule" data-index="2">
+                    </card>
+                    <card class="ui-element ui-size-fluid" id="teacher-free-schedule" data-index="3">
+                    </card>
+                </cards>
+            </card-manager>
+        </wrapper>
+    </div>
+</template>

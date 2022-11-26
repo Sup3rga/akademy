@@ -1,0 +1,330 @@
+{
+  "Artibonite":{
+    "Marchand Dessalines":{"id":"1","schools":[]},
+    "Petite Rivière de l'Artibonite":{"id":"2","schools":[]},
+    "Grande Saline":{"id":"3","schools":[]},
+    "Desdunes":{"id":"4","schools":[]},
+    "Gros Morne":{"id":"5","schools":[]},
+    "Terre Neuve":{"id":"6","schools":[]},
+    "Anse Rouge":{"id":"7","schools":[]},
+    "Gonaives":{"id":"8","schools":[]},
+    "Ennery":{"id":"9","schools":[]},
+    "Lestère":{"id":"10","schools":[]},
+    "Marmelade":{"id":"11","schools":[]},
+    "Saint Michel de lattalaye":{"id":"12","schools":[]},
+    "Saint Marc":{"id":"13","schools":[]},
+    "Verrettes":{"id":"14","schools":[]}
+  },
+  "Centre":{
+    "Cerca-la-Source":{"id":"15","schools":[]},
+    "Thomassique":{"id":"16","schools":[]},
+    "Hinche":{"id":"17","schools":[]},
+    "Maïssade":{"id":"18","schools":[]},
+    "Thomonde":{"id":"19","schools":[]},
+    "Cerca Cavajal ":{"id":"20","schools":[]},
+    "Lascahobas":{"id":"21","schools":[]},
+    "Belladères":{"id":"22","schools":[]},
+    "Savanette":{"id":"23","schools":[]},
+    "Mirebalais":{"id":"24","schools":[]},
+    "Saut d'Eau":{"id":"25","schools":[]},
+    "Boucan Carré":{"id":"26","schools":[]}
+  },
+  "Grand-Anse":{
+    "Anse d'Hainault":{"id":"27","schools":[]},
+    "Dame-Marie":{"id":"28","schools":[]},
+    "Les Irois":{"id":"29","schools":[]},
+    "Corail":{"id":"30","schools":[]},
+    "Roseaux":{"id":"31","schools":[]},
+    "Beaumont":{"id":"32","schools":[]},
+    "Pestel":{"id":"33","schools":[]},
+    "Jéré9mie":{"id":"34","schools":[]},
+    "Abricot":{"id":"35","schools":[]},
+    "Bonbon":{"id":"36","schools":[]},
+    "Moron":{"id":"37","schools":[]},
+    "Chambellan":{"id":"38","schools":[]}
+  },
+  "Nippes":{
+    "Anse-à-Veau":{"id":"71","schools":[]},
+    "Petit Trou de Nippes":{"id":"72","schools":[]},
+    "Lasile":{"id":"73","schools":[]},
+    "Baradères":{"id":"74","schools":[]},
+    "Miragoâne":{"id":"76","schools":[]},
+    "Petite Rivière de Nippes":{"id":"77","schools":[]}
+  },
+  "Nord": {
+    "Acul du Nord": {
+      "id": 39,
+      "schools": {}
+    },
+    "Barbon": {
+      "id": 48,
+      "schools": {}
+    },
+    "Borgne": {
+      "id": 42,
+      "schools": {}
+    },
+    "Bas Limbé": {
+      "id": 50,
+      "schools": {}
+    },
+    "Cap-Haïtien": {
+      "id": 44,
+      "schools": {}
+    },
+    "Dondon": {
+      "id": 54,
+      "schools": {}
+    },
+    "Grande Rivière du Nord": {
+      "id": 47,
+      "schools": {}
+    },
+    "La Victoire": {
+      "id": 57,
+      "schools": {}
+    },
+    "Limbé": {
+      "id": 49,
+      "schools": {}
+    },
+    "Limonade": {
+      "id": 46,
+      "schools": {}
+    },
+    "Milot": {
+      "id": 41,
+      "schools": {}
+    },
+    "Pignon": {
+      "id": 56,
+      "schools": {}
+    },
+    "Pilate": {
+      "id": 52,
+      "schools": {}
+    },
+    "Plaine du Nord": {
+      "id": 40,
+      "schools": {}
+    },
+    "Plaissance": {
+      "id": 51,
+      "schools": {}
+    },
+    "Port-Margot": {
+      "id": 43,
+      "schools": {}
+    },
+    "Quartier Morin": {
+      "id": 45,
+      "schools": {}
+    },
+    "Ranquitte": {
+      "id": 55,
+      "schools": {}
+    },
+    "Saint-Raphaël": {
+      "id": 53,
+      "schools": {}
+    }
+  },
+  "Nord-Est": {
+    "Capotille": {
+      "id": 62,
+      "schools": {}
+    },
+    "Caracol": {
+      "id": 67,
+      "schools": {}
+    },
+    "Carice": {
+      "id": 69,
+      "schools": {}
+    },
+    "Ferrier": {
+      "id": 59,
+      "schools": {}
+    },
+    "Fort-Liberté": {
+      "id": 58,
+      "schools": {}
+    },
+    "Mombrun Crochu": {
+      "id": 70,
+      "schools": {}
+    },
+    "Mont Organisé": {
+      "id": 63,
+      "schools": {}
+    },
+    "Ouanaminthe": {
+      "id": 61,
+      "schools": {}
+    },
+    "Perches": {
+      "id": 60,
+      "schools": {}
+    },
+    "Sainte Suzanne": {
+      "id": 65,
+      "schools": {}
+    },
+    "Terrier Rouge": {
+      "id": 66,
+      "schools": {}
+    },
+    "Trou du Nord": {
+      "id": 64,
+      "schools": {}
+    },
+    "Vallières": {
+      "id": 68,
+      "schools": {}
+    }
+  },
+  "Nord-Ouest": {
+    "Anse à Foleur": {
+      "id": 88,
+      "schools": {}
+    },
+    "Baie de Henne": {
+      "id": 80,
+      "schools": {}
+    },
+    "Bassin Bleu": {
+      "id": 85,
+      "schools": {}
+    },
+    "Bombardopolis": {
+      "id": 79,
+      "schools": {}
+    },
+    "Chansolme": {
+      "id": 86,
+      "schools": {}
+    },
+    "Jean-Rabel": {
+      "id": 81,
+      "schools": {}
+    },
+    "La Tortue": {
+      "id": 83,
+      "schools": {}
+    },
+    "Môle Saint Nicolas": {
+      "id": 78,
+      "schools": {}
+    },
+    "Port-de-Paix": {
+      "id": 82,
+      "schools": {}
+    },
+    "Saint Louis du Nord": {
+      "id": 87,
+      "schools": {}
+    }
+  },
+  "Ouest": {
+    "Anse à Galets": {
+      "id": 95,
+      "schools": {}
+    },
+    "Arcahaie": {
+      "id": 89,
+      "schools": {}
+    },
+    "Carrefour": {
+      "id": 102,
+      "schools": {}
+    },
+    "Cornillon": {
+      "id": 94,
+      "schools": {}
+    },
+    "Croix-des-Bouquets": {
+      "id": 90,
+      "schools": {}
+    },
+    "Delmas": {
+      "id": 101,
+      "schools": {}
+    },
+    "Fonds Verettes": {
+      "id": 93,
+      "schools": {}
+    },
+    "Ganthier": {
+      "id": 92,
+      "schools": {}
+    },
+    "Grand Goâve": {
+      "id": 99,
+      "schools": {}
+    },
+    "Gressier": {
+      "id": 105,
+      "schools": {}
+    },
+    "Kenscoff": {
+      "id": 104,
+      "schools": {}
+    },
+    "Léogâne": {
+      "id": 97,
+      "schools": {}
+    },
+    "Petit Goâve": {
+      "id": 98,
+      "schools": {}
+    },
+    "Pétion-Ville": {
+      "id": 103,
+      "schools": {}
+    },
+    "Pointe à Raquette": {
+      "id": 96,
+      "schools": {}
+    },
+    "Port-au-Prince": {
+      "id": 100,
+      "schools": {}
+    },
+    "Thomazeau": {
+      "id": 92,
+      "schools": {}
+    }
+  },
+  "Sud":{
+    "Aquin":{"id":"107","schools":[]},
+    "Saint Louis du Sud":{"id":"108","schools":[]},
+    "Cavaillon":{"id":"109","schools":[]},
+    "Chardonnières":{"id":"110","schools":[]},
+    "Les Anglais":{"id":"111","schools":[]},
+    "Tiburon":{"id":"112","schools":[]},
+    "Côteaux":{"id":"113","schools":[]},
+    "Port à Piment":{"id":"114","schools":[]},
+    "Roche à Bateau":{"id":"115","schools":[]},
+    "Cayes":{"id":"116","schools":[]},
+    "Torbeck":{"id":"117","schools":[]},
+    "Chantal":{"id":"118","schools":[]},
+    "Camp Perrin":{"id":"119","schools":[]},
+    "Maniche":{"id":"120","schools":[]},
+    "Ile à Vaches":{"id":"121","schools":[]},
+    "Port-Salut":{"id":"122","schools":[]},
+    "Saint Jean du Sud":{"id":"123","schools":[]},
+    "Arniquet":{"id":"124","schools":[]}
+  },
+  "Sud-Est":{
+    "Belle-Anse":{"id":"125","schools":[]},
+    "Grand Gosier":{"id":"126","schools":[]},
+    "Thiotte":{"id":"127","schools":[]},
+    "Anse à Pitre":{"id":"128","schools":[]},
+    "Bainet":{"id":"129","schools":[]},
+    "Côtes de Fer":{"id":"130","schools":[]},
+    "Jacmel":{"id":"131","schools":[]},
+    "Marigot":{"id":"132","schools":[]},
+    "Cayes Jacmel":{"id":"133","schools":[]},
+    "La Vallée de Jacmel":{"id":"134","schools":[]}
+  }
+}

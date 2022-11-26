@@ -1,0 +1,88 @@
+<template id="showroom">
+    <div class="ui-container ui-size-fluid presentation-view showroom">
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center head">
+            <icon class="las la-arrow-left back-to-prev"></icon>
+            <icon class="las sector-action layer-form-on la-edit"
+                  data-id="<%= room.id %>"
+                  data-layer-title="${ui.admin.room.title.edition}"
+                  data-layer-name="roomedit"
+                  data-layer-target="#room-form"
+                  layerform-src></icon>
+            <icon class="las sector-action la-trash" data-id="<%= room.id %>"></icon>
+            <text class="ui-element ui-size-6"><%= room.name %> (<%= room.code %>)</text>
+        </div>
+        <div class="ui-container ui-size-fluid ui-flex list-wrapper">
+            <div class="ui-element ui-size-fluid list-view ui-scroll-y">
+                <wrapper class="ui-element ui-size-fluid ui-md-size-10 ui-lg-size-7">
+                    <bubble class="ui-element ui-size-fluid none">
+                        <text class="head designed">${ui.component.label.room.info}</text>
+                        <grid class="ui-element ui-size-fluid">
+                            <row>
+                                <cell class="ui-element ui-size-3">
+                                    ${ui.component.label.name}
+                                </cell>
+                                <cell class="ui-element ui-size-9">
+                                    <%= room.name %>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell class="ui-element ui-size-3">
+                                    ${ui.component.label.code}
+                                </cell>
+                                <cell class="ui-element ui-size-9">
+                                    <%= room.code %>
+                                </cell>
+                            </row>
+                            <row>
+                                <cell class="ui-element ui-size-3">
+                                    ${ui.component.label.part.capacity}
+                                </cell>
+                                <cell class="ui-element ui-size-9">
+                                    <%= room.capacity %> ${ui.component.label.part.place}
+                                </cell>
+                            </row>
+                            <row>
+                                <cell class="ui-element ui-size-3">
+                                   ${ui.component.label.description}
+                                </cell>
+                                <cell class="ui-element ui-size-9">
+                                    <%= room.description %>
+                                </cell>
+                            </row>
+                        </grid>
+                    </bubble>
+                </wrapper>
+                <div class="ui-container ui-size-fluid">
+                    <wrapper class="ui-element ui-size-fluid ui-md-size-6">
+                        <bubble class="ui-element ui-size-fluid prime">
+                            <text class="head">${ui.component.label.assign}</text>
+                            <div class="ui-element ui-size-fluid informations">
+                                <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+                                    ${ui.admin.room.assign.course.empty}
+                                </div>
+                            </div>
+                        </bubble>
+                    </wrapper><!--
+                 --><wrapper class="ui-element ui-size-fluid ui-md-size-6">
+                        <bubble class="ui-element ui-size-fluid second">
+                            <text class="head">${ui.component.label.for.exams}</text>
+                            <div class="ui-element ui-size-fluid informations">
+                                <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+                                    ${ui.admin.room.assign.exams.empty}
+                                </div>
+                            </div>
+                        </bubble>
+                        <bubble class="ui-element ui-size-fluid third">
+                            <text class="head">${ui.component.label.other.events}</text>
+                            <div class="ui-element ui-size-fluid informations">
+                                <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+                                    ${ui.admin.room.assign.events.empty}
+                                </div>
+                            </div>
+                        </bubble>
+                    </wrapper>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

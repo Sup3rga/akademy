@@ -1,0 +1,196 @@
+:root{
+    --theme: #2e556d;
+    --textColor: black;
+    --inactiveTextColor: #aaa;
+    --activeTextColor: white;
+    --weekNameColor: #343;
+    --calendarMask: rgba(250,250,250,0.2);
+    --defaultMask: rgba(240,240,240,0.3);
+    --navMask: #eee;
+    --cellPadding: .4em .2em;
+    --daySize: 1em;
+    --monthSize: 1.2em;
+    --yearSize: 1.1em;
+    --cellFont: 'Arial';
+    --headerFont: 'Arial Black';
+}
+
+.calendar-ui *{
+    box-sizing: border-box;
+}
+.calendar-ui{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: .4em;
+    flex-direction: column;
+    background-color: var(--calendarMask);
+}
+.calendar-ui .calendar-header{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    color: var(--textColor);
+    font-family: var(--headerFont);
+}
+
+.calendar-ui .calendar-header .nav{
+    display: flex;
+    padding: 0 .4em;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.calendar-ui .calendar-header .nav:hover{
+    background-color: var(--navMask);
+}
+
+.calendar-ui .calendar-header .central{
+    display: flex;
+    height: 90%;
+    max-height: 4em;
+    width: 70%;
+    justify-content: center;
+}
+.calendar-ui .calendar-header .central ._date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .8em;
+    margin: .3em;
+    background-color: var(--defaultMask);
+    border-radius: .6em;
+}
+
+.calendar-ui .calendar-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 0 .3em;
+    align-items: flex-start;
+    padding-bottom: .4em;
+    background-color: var(--defaultMask);
+    border-radius: 1em;
+    font-family: var(--cellFont);
+}
+
+.calendar-ui .calendar-body .row{
+    display: flex;
+    width: 100%;
+}
+.calendar-ui .calendar-body .cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 100% !important;
+    width: 100% !important;
+    position: relative;
+    text-overflow: ellipsis;
+    padding: var(--cellPadding);
+    color: var(--inactiveTextColor);
+    cursor: pointer;
+    border-radius: .4em;
+}
+
+.calendar-ui .calendar-body .cell.day{
+    overflow: unset;
+    white-space: normal;
+}
+
+.calendar-ui .calendar-body .cell.day{
+    font-size: var(--daySize);
+}
+.calendar-ui .calendar-body .cell.month{
+    font-size: var(--monthSize);
+}
+.calendar-ui .calendar-body .cell.year{
+    font-size: var(--yearSize);
+}
+
+.calendar-ui .calendar-body .cell.current{
+    color: var(--textColor);
+}
+
+.calendar-ui .calendar-body .cell.day:hover,
+.calendar-ui .calendar-body .cell.month:hover,
+.calendar-ui .calendar-body .cell.year:hover{
+    background-color: rgba(200,200,200,0.2);
+}
+
+.calendar-ui .calendar-body .cell.week{
+    color: var(--weekNameColor);
+    font-weight: bold;
+}
+.calendar-ui .calendar-body .cell.marked::before{
+    content: " ";
+    width: 15%;
+    height: 25%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    background-color: var(--theme);
+}
+
+.calendar-ui .calendar-body .cell.marked .markevent{
+    position: absolute;
+    left: 100%;
+    width: auto;
+    display: none;
+    min-width: 100px;
+    top: 50%;
+    z-index: 2;
+    border-radius: .4em;
+    transform: translateY(-50%);
+    background-color: var(--theme);
+    padding: .2em;
+    padding-left: 5px;
+    color: white;
+    box-shadow: 0 0 2px 1px #333;
+}
+.calendar-ui .calendar-body .cell.marked:hover .markevent{
+    display: block;
+}
+.calendar-ui .body .cell.marked .markevent p{
+    padding: .3em;
+    display: block;
+    margin: .2em 0;
+    border-radius: .2em;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.calendar-ui .calendar-body .cell.marked .markevent::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: inherit;
+    box-shadow: -2px 1px 2px 0 #333;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.calendar-ui .calendar-body .cell.marked.today::before{
+     background-color: #eee;
+}
+
+.calendar-ui .calendar-body .cell.today{
+    font-weight: bold;
+    background-color: var(--theme);
+    color: var(--activeTextColor);
+}
+.calendar-ui .calendar-body .cell.month.current{
+    font-weight: bold;
+    color: var(--theme);
+}
+.calendar-ui .calendar-body .cell.day.today:hover{
+     background-color: var(--theme);
+ }

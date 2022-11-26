@@ -1,0 +1,67 @@
+#calendar{
+    background-color: var(--activeTextColor);
+    height: 100%;
+    border-radius: .4em;
+}
+.calendar-wrapper{
+    padding: 0 1em;
+}
+
+/**
+    Tab card header
+ */
+.inline-tab{
+    white-space: nowrap;
+    overflow: hidden;
+    /*overflow-x: auto;*/
+    touch-action: pan-x;
+    --scrollbar-width: 1px;
+}
+
+.inline-tab .onglet{
+    white-space: normal;
+}
+
+/**
+    Float action
+ */
+.float-action button.with-text{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 1.3em;
+    font-family: Lexend-Bold;
+    font-size: .8em;
+    position: relative;
+    left: -50px;
+}
+
+/**
+    Action button
+ */
+.action button.bold{
+    font-family: Lexend-Bold;
+    border-radius: 1.2em !important;
+}
+.action button{
+    border-radius: .6em;
+    padding: .5em .6em .5em .6em;
+}
+.action button icon, .action button i{
+    padding: .2em .8em 0 .3em;
+}
+/**
+    Administration item
+ */
+.administration .list .body .class-box{
+    padding: .4em;
+    box-shadow: 0 0 2px 0 #ccc;
+    border-radius: .4em;
+    margin: .2em 0 .4em 0;
+}
+.administration .list .body .class-box item{
+    box-shadow: 0 0 2px 0 #aaa;
+}
+.administration .list .body .class-box item.none{
+    font-family: Poppins-Bold;
+}

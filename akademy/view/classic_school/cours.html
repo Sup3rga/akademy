@@ -1,0 +1,46 @@
+<div class="ui-container ui-size-fluid ui-absolute ui-all-close course aio register-n-list">
+    <div class="ui-container ui-unwrap ui-column ui-size-fluid list-presentation_d card-manager list-zone">
+            <div class="ui-container ui-size-fluid ui-unwrap ui-column header extended">
+                <div class="ui-container ui-size-fluid ui-unwrap">
+                    <h1 class="ui-element ui-size-4">
+                        <icon class="las la-pencil-ruler"></icon>
+                        Gestion des cours
+                    </h1>
+                    <div class="ui-element ui-size-8">
+                        <div class="ui-element ui-size-fluid inline-tab">
+                            <div class="ui-element onglet-wrapper">
+                                <div class="ui-element onglet card-tab active" href="/course" data-index="0">
+                                    <span class="ui-element ui-size-fluid text">Tous les cours</span>
+                                    <span class="ui-element ui-size-fluid line"></span>
+                                </div>
+                                <% if(allowModule(210)){ %>
+                                <div class="ui-element onglet card-tab" href="/course/card:2" data-index="1">
+                                    <span class="ui-element ui-size-fluid text">Horaires des cours</span>
+                                    <span class="ui-element ui-size-fluid line"></span>
+                                </div>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-container ui-unwrap ui-size-fluid ui-sm-size-11 ui-md-size-11 card-container body criterias actions" style="overflow: unset !important; z-index: 3">
+                    @("../../partials/cards/course.list.tab")
+                    @("../../partials/cards/course.schedulers.tab")
+                    @("../../partials/cards/course.details.tab")
+                </div>
+            </div>
+            <div class="ui-element ui-size-fluid body card-container">
+                <!-- liste -->
+                @("../../partials/cards/course.list")
+                <!-- horaire -->
+                <% if(allowModule(210)){ %>
+                @("../../partials/cards/course.schedulers")
+                <% } %>
+                <card class="ui-element ui-size-fluid card presentations" data-index="4">
+                    @("../../partials/others/course.show")
+                </card>
+            </div>
+        <% if(allowModule(170) && currentYear != null){ %>
+        <% } %>
+    </div>
+</div>

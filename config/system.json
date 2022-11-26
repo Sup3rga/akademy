@@ -1,0 +1,64 @@
+{
+  "namespaces": {
+    "university": "University",
+    "school": "School"
+  },
+  "data_access": {
+    "school": {
+      "admin": [
+        "/","/course","/admin","/academic-year","/faculty","/promotion",
+        "/room", "/teacher", "/student","/course","/notes","/users"
+      ],
+      "student": [],
+      "teacher": [],
+      "econome": [],
+      "librarian": [],
+      "applicant": []
+    },
+    "university": {}
+  },
+  "packages": {
+    "university": [
+      "data.AcademicYear",
+      "data.Course",
+      "data.Faculty",
+      "data.Grade",
+      "data.Hierarchy",
+      "data.Notes",
+      "data.Student",
+      "data.Summary",
+      "data.Teacher"
+    ],
+    "school": [
+      "data.AcademicYear",
+      "data.AcademicLevel",
+      "data.Course",
+      "data.Faculty",
+      "data.Grade",
+      "data.Hierarchy",
+      "data.Notes",
+      "data.Student",
+      "data.Summary",
+      "data.Teacher",
+      "data.ClassRoom",
+      "data.ExamPeriod",
+      "data.Exams",
+      "data.Logistic",
+      "data.Promotion",
+      "data.Room",
+      "data.Sessions",
+      "data.Work",
+      "data.WorkSheet"
+    ]
+  },
+  "autoload_dir": [
+    "",
+    "data/",
+    "utils/",
+    "lib/",
+    "data/commons/",
+    "data/commons/localization/",
+    "data/commons/models/",
+    "data/commons/models/academic/"
+  ]
+}

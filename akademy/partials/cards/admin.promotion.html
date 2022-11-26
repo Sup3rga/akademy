@@ -1,0 +1,112 @@
+<card class="ui-element ui-size-fluid card promo" data-index="2">
+    <div class="ui-element ui-size-fluid duo-view scroll-view">
+        <div class="ui-element ui-size-fluid duo-head">
+            <text class="title">
+                ${ui.sidemenu.academic}
+            </text>
+            <button class="ui-element ui-size-2 ui-flex ui-vertical-center input-icon ui-relative">
+                <icon class="las la-calendar"></icon>
+                <kinput type="select" class="ui-element ui-size-fluid academic-year">
+                    <%
+                        var currentYear = utils.use('currentYear').currentYear;
+                    for(var i in academic){
+                    %>
+                    <option placeholder="${ui.sidemenu.academic}" value="<%= academic[i].id %>" class="<%= academic[i].id == currentYear ? 'selected' : ''%>"><%= academic[i].academie %></option>
+                    <%
+                    }
+                    %>
+                </kinput>
+                <icon class="las la-sort-down"></icon>
+            </button>
+        </div>
+        <div class="ui-element ui-size-fluid duo-body ui-scroll-y list">
+            <%
+            var empty = promotion.length == 0, grade, room;
+            promotion = utils.sortClassroomByGrade(promotion);
+            for(var i in promotion){
+            grade = utils.getClass(i);
+            %>
+            <div class="ui-element ui-size-fluid head">
+                <%= grade.notation %>
+            </div>
+            <div class="ui-element ui-size-fluid promo-list">
+                <% for(var k in promotion[i]){
+                room = utils.getRoom(promotion[i][k].room);
+                %>
+                <div class="ui-element ui-size-6 ui-sm-size-4 ui-md-size-3 ui-lg-size-2 preview-box promo-box <%= promotion[i][k].year == currentYear ? '' : 'ui-hide' %>" data-year="<%= promotion[i][k].year %>">
+                    <div class="ui-element ui-size-fluid text">
+                        <div>
+                            <text>${ui.component.label.part.promotion}</text>
+                            <br>
+                            <%= grade.notation %>
+                            <br>
+                            <span style="font-size: .8em"><%= room.name %></span>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid actions">
+                        <row class="ui-element ui-size-fluid">
+                            <icon class="las la-user-graduate"></icon>
+                            <%= promotion[i][k].promotion.length %>
+                            ${ui.component.label.part.student.school}
+                        </row>
+                        <button class="see-more" href="/admin/promo:<%= promotion[i][k].id %>">
+                            ${ui.component.text.see.more}
+                        </button>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <% }
+            if(empty){
+            %>
+            <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+                <div class="ui-horizontal-center">
+                    <icon class="ui-element ui-size-fluid las la-graduation-cap" style="font-size: 3em"></icon>
+                    <br><br>
+                    <text>
+                        ${ui.admin.promotion.list.empty}
+                    </text>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </div>
+    <div class="ui-element float-action">
+        <button class="ui-element" id="multipleSelect">
+            <i class="ion-android-checkbox-outline"></i>
+        </button>
+        <button class="ui-element layer-form-on"
+                data-layer-title="${ui.admin.promotion.title.creation}"
+                data-layer-name="promotion"
+                id="addPromo">
+            <i class="ion-plus-round"></i>
+        </button>
+    </div>
+    <template id="promo-form">
+        <div class="ui-container ui-size-fluid ui-horizontal-left person-form">
+            <div class="ui-element ui-size-fluid field">
+                <label>${ui.admin.promotion.label.academic.section}<i>*</i></label>
+                <kinput class="input ui-element ui-size-fluid academic-section" type="select">
+                    <% for(var i in faculty){ %>
+                    <option value="<%= faculty[i].id %>"><%= faculty[i].nom %></option>
+                    <% } %>
+                </kinput>
+            </div>
+            <div class="ui-container ui-unwrap ui-size-fluid">
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.admin.promotion.label.grade}<i>*</i></label>
+                    <kinput class="input ui-element ui-size-fluid academic-grade" required name="clroom_grade" type="select">
+                    </kinput>
+                </div>
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.admin.promotion.label.room}<i>*</i></label>
+                    <kinput class="input ui-element ui-size-fluid" required name="clroom_room" type="select">
+                        <% for(var i in room){ %>
+                        <option value="<%= room[i].id %>"><%= room[i].name %> (<%= room[i].code %>)</option>
+                        <% } %>
+                    </kinput>
+                </div>
+            </div>
+        </div>
+    </template>
+</card>

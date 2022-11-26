@@ -1,0 +1,36 @@
+<div class="ui-container ui-size-fluid ui-scroll-y dashboard" style="height: 95%; padding: 0 .5em 2em .5em">
+    <div class="ui-container ui-unwrap ui-size-fluid">
+        <div class="ui-container ui-size-8 ui-unwrap ui-vertical-center welcome">
+            <div class="ui-element ui-size-6 text">
+                <span class="ui-element ui-size-fluid ui-horizontal-right greetings">
+                    ${ui.dashboard.hi} <span class="light super"><%= prenom %></span>
+                </span>
+                <span class="ui-element ui-size-fluid ui-horizontal-justify explain">
+                ${ui.dashboard.greetings}
+            </span>
+            </div>
+            <div class="ui-element ui-size-6 welcome-img"></div>
+        </div>
+        <div class="ui-element ui-size-4 calendar-wrapper">
+            <div id="calendar" class="super super-l12">
+
+            </div>
+        </div>
+    </div>
+    <div class="ui-element ui-size-fluid">
+        <h1 style="font-family: Poppins-SemiBold"><icon class="las la-chart-area"></icon> ${ui.dashboard.resume.text}</h1>
+    </div>
+    <div class="ui-container ui-unwrap ui-size-fluid diagrams">
+        <div class="ui-element ui-size-8 canvas-wrapper">
+            <h3>${ui.dashboard.stats}</h3>
+            <canvas class="ui-element ui-size-fluid" id="timeline"></canvas>
+        </div>
+        <div class="ui-element ui-size-4 canvas-wrapper">
+            <h3>${ui.dashboard.stats.promotion}</h3>
+            <canvas class="ui-element ui-size-fluid" id="promotion"></canvas>
+        </div>
+    </div>
+    <div class="ui-element ui-size-fluid" style="height: 40px">
+
+    </div>
+</div>

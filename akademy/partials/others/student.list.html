@@ -1,0 +1,70 @@
+<div class="ui-element ui-size-fluid student-list">
+    <%
+    var empty = students.length == 0,
+        simple = typeof simple == 'undefined' ? false : simple,
+        linked = typeof linked == 'undefined' ? false : linked,
+        simpleText = typeof simpleText == 'undefined' ? false :  simpleText,
+        student;
+    if(!empty && !simple){
+    %>
+    <div class="ui-element ui-size-fluid ui-flex ui-vertical-center row check-all">
+        <input type="checkbox" class="input ui-element ui-size-1 all">
+        <text class="checkable ui-element ui-size-11">
+            ${ui.component.text.select.all}
+        </text>
+    </div>
+    <%
+    }
+    else if(empty){
+    %>
+    <div class="ui-element ui-size-fluid ui-flex ui-all-center empty-info">
+        <div class="ui-element">
+            <icon class="ui-element ui-size-fluid las la-user-graduate" style="font-size: 3em"></icon>
+            <br><br>
+            <text>
+                <%= simpleText ?
+                "${ui.admin.students.list.empty.school}" :
+                "${ui.admin.promotion.free.students.list.empty.school}"
+                %>
+            </text>
+        </div>
+    </div>
+    <%
+    }
+    for(var i in students){
+    student = students[i];
+        if(!simple){
+    %>
+    <div class="ui-element ui-size-fluid ui-flex ui-vertical-center item row">
+        <input type="checkbox" value="<%= student.id %>" class="input ui-element ui-size-1">
+    <% }
+       if(linked){ %>
+            <div class="student-row ui-element ui-size-11" href="/student/id:<%= student.id %>">
+   <%  }
+       else{
+            %>
+            <div class="student-row ui-element ui-size-11 checkable">
+    <% } %>
+            <avatar style="background-image: url(<%= student.photo != null ? './assets/avatars/'+student.photo : '' %>)">
+                <%= student.photo != null ? '' : student.prenom[0].toUpperCase(); %>
+            </avatar>
+            <div class="ui-element ui-size-7 data">
+                    <span class="ui-element ui-size-fluid name">
+                       <%= student.prenom+", "+student.nom.toUpperCase() %>
+                    </span>
+                <span class="ui-element ui-size-fluid ui-flex ui-vertical-center suite">
+                        <span class="ui-element el"><%= student.age %> ans</span>
+                        <span class="ui-element el"><%=
+                            student.sexe == "M" ?
+                            (student.age > 12 ? "${ui.component.label.man}" : "${ui.component.label.boy}") :
+                            (student.age > 18 ? "${ui.component.label.woman}" : "${ui.component.label.girl}")
+                        %></span>
+                    </span>
+            </div>
+        </div>
+    <% if(!simple){ %>
+    </div>
+    <% }
+    }
+    %>
+</div>

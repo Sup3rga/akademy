@@ -1,0 +1,83 @@
+<card class="ui-container ui-unwrap ui-size-fluid card active fac" data-index="0">
+    <div class="ui-container ui-unwrap ui-column ui-size-fluid list">
+        <div class="ui-element ui-size-fluid label">
+            ${ui.admin.academiclevel.head.label}
+        </div>
+        <div class="ui-container ui-size-fluid ui-scroll-y body">
+            <%
+            var tab = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','p','q','r','s','t','u'];
+            var k = 0;
+            currentYear = utils.getAcademicYear(currentYear);
+            for(var i in faculty){
+            %>
+                <div class="ui-element ui-size-fluid ui-flex ui-column ui-size-4 ui-md-size-3 ui-lg-size-2 preview-box ui-no-scroll level-box">
+                    <div class="ui-element ui-size-fluid text">
+                        <div>
+                            <text>${ui.admin.academic.section.name.school}</text>
+                            <br>
+                            <%= faculty[i].nom %>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-flex ui-column ui-vertical-bottom actions">
+                        <row class="ui-element ui-size-fluid">
+                            <icon class="las la-users"></icon>
+                            <%= currentYear ? faculty[i].stats[currentYear.academie].promotion_total : 0 %> ${ui.component.label.part.promotion}
+                        </row>
+                        <row class="ui-element ui-size-fluid">
+                            <icon class="las la-user-graduate"></icon>
+                            <%= currentYear ? faculty[i].stats[currentYear.academie].active_student_total : 0 %> ${ui.component.label.part.student.school}
+                        </row>
+                        <button class="see-more" href="/admin/cls:<%= faculty[i].id %>"><icon class="las la-binoculars"></icon> ${ui.component.text.see}</button>
+                    </div>
+                </div>
+                <% k++ %>
+            <% }
+            if(k == 0){
+            %>
+            <div class="ui-element ui-size-fluid ui-flex ui-vertical-center empty-info">
+                ${ui.admin.academiclevel.empty}
+            </div>
+            <% } %>
+        </div>
+        <div class="super float-action">
+            <button class="super layer-form-on"
+                    data-layer-title="${ui.admin.academiclevel.create}"
+                    data-layer-name="academiclevel"
+                    id="addLevel">
+                <i class="las la-plus"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Template for adding academic level -->
+    <template id="level">
+        <div class="ui-container ui-size-fluid person-form ui-horizontal-left">
+            <div class="ui-element ui-size-fluid field">
+                <label>${ui.admin.academiclevel.add.level.label.name}<i>*</i></label>
+                <kinput class="input ui-element ui-size-fluid" required name="lvl_name" match="^[A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ ' -]+[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+            <div class="ui-element ui-size-fluid field">
+                <label>${ui.admin.academiclevel.add.level.label.previous}</label>
+                <kinput class="ui-element ui-size-fluid input" name="lvl_next" type="select">
+                    <%
+                    for(var i in faculty){
+                    %>
+                    <option value="<%= faculty[i].id %>"><%= faculty[i].nom %></option>
+                    <% } %>
+                </kinput>
+            </div>
+        </div>
+    </template>
+    <!-- Template for adding class -->
+    <template id="class">
+        <div class="ui-container ui-wrap ui-md-unwrap ui-size-fluid person-form ui-horizontal-left">
+            <div class="ui-element ui-size-fluid ui-md-size-6 field">
+                <label>${ui.admin.academiclevel.add.class.label.name}</label>
+                <kinput class="input ui-element ui-size-fluid" required name="cls_name" match="^[A-Za-zÀ-ÖØ-öø-ÿ0-9][A-Za-zÀ-ÖØ-öø-ÿ ' -]+[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+            <div class="ui-element ui-size-fluid ui-md-size-6 field">
+                <label>${ui.admin.academiclevel.add.class.label.level}<i>*</i></label>
+                <kinput class="ui-element ui-size-fluid input" required min="1" max="6" name="cls_level" type="number"></kinput>
+            </div>
+        </div>
+    </template>
+</card>

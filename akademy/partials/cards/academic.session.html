@@ -1,0 +1,59 @@
+<card class="ui-container ui-size-fluid card session active presentation-view" data-index="0">
+    <%
+    if(k > 0){
+        var session_ttl = 0;
+        for(var i in currentYear.sessions){
+            %><div class="ui-element ui-size-4 ui-md-size-3 ui-lg-size-2 session-wrapper">
+                <div class="ui-size-fluid ui-container ui-unwrap ui-column ui-all-center session-box <%= currentYear.sessions[i].state == 'E' ? 'current' : '' %>"
+                     href="/academic-year/id:<%= currentYear.sessions[i].id %>&ay:<%= currentYear.id %>">
+                    <label>${ui.academic.session.label}</label>
+                    <icon><%= currentYear.sessions[i].number %></icon>
+                    <label class="interval">
+                        <%= utils.localDate(currentYear.sessions[i].begin) %>
+                        <br>~<br>
+                        <%= utils.localDate(currentYear.sessions[i].end) %>
+                    </label>
+                </div>
+            </div><%
+        }
+        if(currentYear.etat == 'O'){
+            session_ttl++;
+    %><div class="ui-element ui-size-4 ui-md-size-3 ui-lg-size-2 session-wrapper">
+        <div class="ui-container ui-size-fluid ui-unwrap ui-all-center ui-column session-box adder layer-form-on"
+             data-layer-title="${ui.academic.session.text.creation}"
+             data-layer-target="#academic-session"
+             data-layer-name="session"
+             data-target="<%= currentYear.id %>">
+            <icon class="las la-plus"></icon>
+            <label>${ui.academic.new.session}</label>
+        </div>
+    </div>
+    <%
+        }
+        else if(!session_ttl){
+        %>
+        <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center empty-info">
+            ${ui.academic.session.empty}
+        </div>
+        <%
+        }
+    }
+    else{
+    %>
+    <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center empty-info">
+        ${ui.academic.ready.error}
+    </div>
+    <%
+    }
+    %>
+    <% if(allowModule(100)){ %>
+    <div class="ui-element float-action">
+        <button class="las la-plus layer-form-on aka-form"
+                data-layer-title="${ui.sidemenu.academic}"
+                data-layer-target=".register-zone"
+                data-layer-name="academic"></button>
+    </div>
+    <% } %>
+</card>
+@("../forms/academic.session")
+@("../others/session.viewer")

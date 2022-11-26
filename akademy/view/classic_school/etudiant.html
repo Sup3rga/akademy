@@ -1,0 +1,240 @@
+<div class="ui-element ui-size-fluid ui-absolute ui-all-close student aio register-n-list">
+    <div class="ui-container ui-unwrap ui-size-fluid list-presentation_d card-manager list-zone">
+            <div class="ui-container ui-unwrap ui-column ui-size-fluid header <%= currentYear != null ? 'extended' : '' %>">
+                <h1 class="ui-element ui-size-fluid ui-horizontal-left">
+                    <icon class="las la-user-graduate"></icon>
+                    ${ui.student.view.title.school}
+                </h1>
+                <% if(currentYear != null){ %>
+                <div class="ui-container ui-size-fluid ui-relative criterias actions">
+                    <div class="ui-container ui-size-fluid card-manager free student-view-head">
+                        <div class="ui-container ui-size-fluid card-container fluid ui-fluid-height body">
+                            <card class="ui-container card ui-unwrap ui-size-fluid ui-sm-size-11 ui-md-size-11 ui-lg-size-8 active" data-index="0">
+                                <button class="ui-md-element ui-hide" alternate="sort" direction="up">
+                                    <icon class="las la-sort-alpha-up"></icon>
+                                </button>
+                                <button class="ui-md-element ui-hide" alternate="sort" direction="down">
+                                    <icon class="las la-sort-alpha-down"></icon>
+                                </button>
+                                <button class="ui-md-element ui-hide" alternate="autofold" target=".student-list" self>
+                                    <icon class="las la-compress-arrows-alt"></icon>
+                                </button>
+                                <div class="ui-md-element ui-lg-hide button-bubble">
+                                    <button class="ui-element ui-md-hide">
+                                        <icon class="las la-eye"></icon>
+                                    </button>
+                                    <div class="ui-container ui-horizontal-center bubble-box ui-hide left">
+                                        <button class="ui-element" alternate="sort" direction="up">
+                                            <icon class="las la-sort-alpha-up"></icon>
+                                        </button>
+                                        <button class="ui-element" alternate="sort" direction="down">
+                                            <icon class="las la-sort-alpha-down"></icon>
+                                        </button>
+                                        <button class="ui-element" alternate="autofold" target=".student-list" self>
+                                            <icon class="las la-compress-arrows-alt"></icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="ui-container ui-unwrap ui-size-2 ui-vertical-center ui-relative input-icon">
+                                    <icon class="las la-calendar"></icon>
+                                    <kinput type="select" class="ui-element ui-size-fluid academic-year">
+                                        <% for(var i in academic){
+                                        %>
+                                        <option placeholder="${ui.sidemenu.academic}" value="<%= academic[i].id %>" class="<%= academic[i].id == currentYear ? 'selected' : ''%>"><%= academic[i].academie %></option>
+                                        <%
+                                        }
+                                        %>
+                                    </kinput>
+                                    <icon class="las la-sort-down"></icon>
+                                </button>
+                                <button class="ui-container ui-unwrap ui-size-2 ui-vertical-center ui-relative input-icon">
+                                    <icon class="las la-layer-group"></icon>
+                                    <kinput type="select" class="ui-element ui-size-fluid academic-section super-relative" multiple>
+                                    </kinput>
+                                    <icon class="las la-sort-down"></icon>
+                                </button>
+                                <button class="ui-container ui-unwrap ui-size-2 ui-vertical-center ui-relative input-icon">
+                                    <icon class="las la-chalkboard-teacher"></icon>
+                                    <kinput type="select" class="ui-element ui-size-fluid academic-grade" multiple>
+                                    </kinput>
+                                    <icon class="las la-sort-down"></icon>
+                                </button>
+                                <button class="ui-md-element ui-sm-hide ui-hide">
+                                    <icon class="las la-print"></icon>
+                                </button>
+                                <button class="ui-md-element ui-sm-hide ui-hide layer-form-on add-student"
+                                        data-layer-title="${ui.student.form.title.creation.school}"
+                                        data-layer-target="#studentForm"
+                                        data-layer-name="student"
+                                        layerform-src
+                                        data-layer-size="6,9,11,12"
+                                >
+                                    <icon class="las la-plus"></icon>
+                                </button>
+                                <button class="ui-lg-element ui-md-hide ui-hide">
+                                    <icon class="las la-file-import"></icon>
+                                </button>
+                                <button class="ui-lg-element ui-md-hide ui-hide">
+                                    <icon class="las la-file-export"></icon>
+                                </button>
+                                <div class="ui-md-element ui-lg-hide button-bubble">
+                                    <button class="ui-element">
+                                        <icon class="las la-ellipsis-h"></icon>
+                                    </button>
+                                    <div class="ui-container ui-horizontal-center bubble-box ui-hide">
+                                        <button class="ui-md-hide ui-sm-element">
+                                            <icon class="las la-print"></icon>
+                                        </button>
+                                        <button class="ui-md-hide ui-sm-element layer-form-on add-student"
+                                                data-layer-title="${ui.student.form.title.creation.school}"
+                                                data-layer-target="#studentForm"
+                                                data-layer-name="student"
+                                                layerform-src
+                                                data-layer-size="6,9,11,12"
+                                        >
+                                            <icon class="las la-plus"></icon>
+                                        </button>
+                                        <button class="ui-element">
+                                            <icon class="las la-file-import"></icon>
+                                        </button>
+                                        <button class="ui-element">
+                                            <icon class="las la-file-export"></icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </card>
+                            <card class="ui-container ui-vertical-center ui-unwrap ui-size-fluid card" data-index="1">
+                                <button class="ui-element back-to-prev">
+                                    <icon class="las la-arrow-left"></icon>
+                                </button>
+                                <div class="ui-element ui-size-8 student-name">
+                                </div>
+                            </card>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <div class="ui-element ui-size-fluid body card-manager students-view">
+                <div class="ui-container ui-size-fluid card-container body">
+                    <card class="ui-container ui-size-fluid card" data-index="1">
+                    </card>
+                    <card class="ui-container ui-size-fluid student-list card active" data-index="0">
+                        <div class="ui-element ui-size-fluid scroll-view wrap student-view">
+                            <%
+                            var k = 0, classe;
+                            for(var i in student){
+                            classe = utils.getClass(student[i].niveau);
+                            k++;
+                            %>
+                            <item class="ui-hide ui-element ui-size-fluid id-item list-item student-item" data-id="<%= student[i].id %>" data-fac="<%= classe.filiere %>" data-year="<%= student[i].annee_academique %>" data-grade="<%= classe.id %>" data-filter="<%= student[i].prenom+' '+student[i].nom+' '+student[i].code %>">
+                                <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid summary">
+                                    <avatar style="background-image: url(<%= student[i].photo != null ? './assets/avatars/'+student[i].photo : '' %>)">
+                                        <%= student[i].photo != null ? '' : student[i].prenom[0].toUpperCase(); %>
+                                    </avatar>
+                                    <div class="ui-element ui-size-7 data">
+                                <span class="ui-element ui-size-fluid name">
+                                       <%= student[i].prenom+", "+student[i].nom.toUpperCase() %>
+                                    </span>
+                                        <span class="ui-container ui-unwrap ui-vertical-center ui-size-fluid suite">
+                                    <span class="ui-element el"><%= student[i].age %> ans</span>
+                                    <span class="ui-element el"><%=
+                                        student[i].sexe == "M" ?
+                                            (student[i].age > 12 ? "${ui.component.label.man}" : "${ui.component.label.boy}") :
+                                            (student[i].age > 18 ? "${ui.component.label.woman}" : "${ui.component.label.girl}")
+                                        %></span>
+                                </span>
+                                    </div>
+                                    <div class="ui-element ui-size-3 action see">
+                                        <button class="light"><icon class="ion-eye"></icon> <span>${ui.component.text.see.more}</span></button>
+                                    </div>
+                                </div>
+                                <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid metadata">
+                                    <div class="ui-container ui-unwrap ui-all-center ui-column avatar-box">
+                                        <avatar class="ui-element" style="background-image: url(<%= student[i].photo != null ? './assets/avatars/'+student[i].photo : '' %>)">
+                                            <%= student[i].photo != null ? '' : student[i].prenom[0].toUpperCase(); %>
+                                        </avatar>
+                                        <div class="ui-element ui-size-fluid code">
+                                            <%= student[i].code %>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-column ui-vertical-center ui-size-10">
+                                        <div class="ui-container ui-unwrap ui-size-fluid">
+                                            <grid class="ui-element ui-size-6">
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.academic.section}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= utils.getSection(classe.filiere).nom %></cell>
+                                                </row>
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.class}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= classe.notation %></cell>
+                                                </row>
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.birthplace}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= student[i].lieu_naissance %></cell>
+                                                </row>
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.birthdate}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= utils.localDate(student[i].date_naissance) %></cell>
+                                                </row>
+                                            </grid>
+                                            <grid class="ui-element ui-size-6">
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.address}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= student[i].adresse %></cell>
+                                                </row>
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.responsible.person}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= student[i].personne_ref == null ? "Aucun" : student[i].personne_ref %></cell>
+                                                </row>
+                                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                                    <cell class="ui-element ui-size-6 label">${ui.component.label.responsible.person.phone}</cell>
+                                                    <cell class="ui-element ui-size-6 content"><%= student[i].telephone_ref %></cell>
+                                                </row>
+                                            </grid>
+                                        </div>
+                                        <div class="ui-element ui-size-fluid actions">
+                                            <button class="visit" href="/student/id:<%= student[i].id %>"><icon class="las la-folder-open"></icon> ${ui.component.text.see.about}</button>
+                                            <button class="edit layer-form-on"
+                                                    data-layer-title="${ui.student.form.title.edition.school}"
+                                                    data-layer-target="#studentForm"
+                                                    data-layer-name="editstudent"
+                                                    data-id="<%= student[i].id %>"
+                                                    layerform-src
+                                                    data-layer-size="6,9,11,12"
+                                            ><icon class="las la-edit"></icon> ${ui.component.text.edit.info}</button>
+                                            <button class="delete" data-id="<%= student[i].id %>"><icon class="las la-trash"></icon> ${ui.component.text.delete.from.system}</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </item>
+                            <%
+                            }
+                            %>
+                            <div class="ui-container ui-unwrap ui-all-center ui-size-fluid empty-info <%= k ? 'ui-hide' : '' %>">
+                                ${ui.student.view.empty}
+                            </div>
+                        </div>
+                        <% if(allowModule(120) && currentYear != null){ %>
+                        <div class="ui-element ui-size-fluid ui-absolute ui-all-close mask">
+                        </div>
+                        <div class="ui-element float-action">
+                            <input type="file" class="ui-no-dimension ui-absolute" id="choose-file">
+                            <button class="ion-android-document file-register"></button>
+                            <button class="ion-plus-round layer-form-on add-student"
+                                    data-layer-title="${ui.student.form.title.creation.school}"
+                                    data-layer-target="#studentForm"
+                                    data-layer-name="student"
+                                    layerform-src
+                                    data-layer-size="6,9,11,12"
+                            ></button>
+                        </div>
+                        <% } %>
+                    </card>
+                </div>
+            </div>
+    </div>
+    <% if(allowModule(120)){ %>
+        @("../../partials/forms/student.form")
+    <% } %>
+</div>

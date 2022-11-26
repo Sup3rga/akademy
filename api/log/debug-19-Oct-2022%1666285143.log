@@ -1,0 +1,538 @@
+[ 19-Oct-2022 12:59:03 ] At /opt/lampp/htdocs/akademy/api/utils/Storage.php line 31 ERR:: SQLSTATE[HY000] [2002] Connection refused
+[ 19-Oct-2022 13:32:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 13:32:40 ] [Total] []
+[ 19-Oct-2022 13:39:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 13:39:50 ] [Total] []
+[ 19-Oct-2022 13:40:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 13:40:07 ] [Total] []
+[ 19-Oct-2022 15:26:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:26:03 ] [Total] []
+[ 19-Oct-2022 15:27:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:27:55 ] [Total] []
+[ 19-Oct-2022 15:40:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:40:58 ] [Total] []
+[ 19-Oct-2022 15:42:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:42:39 ] [Total] []
+[ 19-Oct-2022 15:43:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:43:11 ] [Total] []
+[ 19-Oct-2022 15:46:02 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:46:03 ] [Total] []
+[ 19-Oct-2022 15:46:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:46:13 ] [Total] []
+[ 19-Oct-2022 15:47:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:47:32 ] [Total] []
+[ 19-Oct-2022 15:48:23 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:48:24 ] [Total] []
+[ 19-Oct-2022 15:49:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:49:01 ] [Total] []
+[ 19-Oct-2022 15:57:56 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:57:56 ] [Total] []
+[ 19-Oct-2022 15:58:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:58:21 ] [Total] []
+[ 19-Oct-2022 15:58:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:58:40 ] [Total] []
+[ 19-Oct-2022 15:58:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:58:55 ] [Total] []
+[ 19-Oct-2022 15:59:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 15:59:39 ] [Total] []
+[ 19-Oct-2022 16:00:11 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:00:11 ] [Total] []
+[ 19-Oct-2022 16:00:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:00:44 ] [Total] []
+[ 19-Oct-2022 16:02:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:02:55 ] [Total] []
+[ 19-Oct-2022 16:03:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 19-Oct-2022 16:03:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 19-Oct-2022 16:03:37 ] [Total] []
+[ 19-Oct-2022 16:03:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:03:54 ] [Total] []
+[ 19-Oct-2022 16:04:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:04:15 ] [Total] []
+[ 19-Oct-2022 16:04:52 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:04:53 ] [Total] []
+[ 19-Oct-2022 16:05:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:05:47 ] [Total] []
+[ 19-Oct-2022 16:05:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:05:59 ] [Total] []
+[ 19-Oct-2022 16:07:06 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:07:07 ] [Total] []
+[ 19-Oct-2022 16:07:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:07:12 ] [Total] []
+[ 19-Oct-2022 16:07:16 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 19-Oct-2022 16:07:16 ] [Total] []
+[ 19-Oct-2022 16:07:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 19-Oct-2022 16:07:20 ] [Total] []
+[ 19-Oct-2022 16:08:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:08:54 ] [Total] []
+[ 19-Oct-2022 16:09:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 19-Oct-2022 16:09:37 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 19-Oct-2022 16:09:37 ] [Total] []
+[ 19-Oct-2022 16:09:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:09:43 ] [Total] []
+[ 19-Oct-2022 16:09:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 19-Oct-2022 16:09:47 ] [Total] []
+[ 19-Oct-2022 16:09:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 19-Oct-2022 16:09:48 ] [Total] []
+[ 19-Oct-2022 16:10:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:10:42 ] [Total] []
+[ 19-Oct-2022 16:11:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:11:05 ] [Total] []
+[ 19-Oct-2022 16:11:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:11:46 ] [Total] []
+[ 19-Oct-2022 16:13:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:13:04 ] [Total] []
+[ 19-Oct-2022 16:14:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:14:40 ] [Total] []
+[ 19-Oct-2022 16:15:56 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:15:56 ] [Total] []
+[ 19-Oct-2022 16:16:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:16:18 ] [Total] []
+[ 19-Oct-2022 16:17:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:17:10 ] [Total] []
+[ 19-Oct-2022 16:18:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 19-Oct-2022 16:18:10 ] [Total] []
+[ 20-Oct-2022 10:54:08 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 10:54:08 ] [Total] []
+[ 20-Oct-2022 11:01:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:01:04 ] [Total] []
+[ 20-Oct-2022 11:01:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:01:35 ] [Total] []
+[ 20-Oct-2022 11:04:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:04:08 ] [Total] []
+[ 20-Oct-2022 11:06:23 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:06:24 ] [Total] []
+[ 20-Oct-2022 11:08:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:08:12 ] [Total] []
+[ 20-Oct-2022 11:08:12 ] [Busy] Brie Larvane Jean >> 2
+[ 20-Oct-2022 11:08:12 ] [Busy] Brie Larvane Jean >> 0
+[ 20-Oct-2022 11:08:12 ] [Busy] Maxime Hérald Pierre >> 2
+[ 20-Oct-2022 11:08:12 ] [Busy] Maxime Hérald Pierre >> 0
+[ 20-Oct-2022 11:08:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:08:42 ] [Total] []
+[ 20-Oct-2022 11:08:42 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:08:42 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 11:08:42 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:08:42 ] [Busy] Maxime Hérald Pierre >> 0/0
+[ 20-Oct-2022 11:17:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:17:25 ] [Total] []
+[ 20-Oct-2022 11:17:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:17:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:17:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:17:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:20:26 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:20:26 ] [Total] []
+[ 20-Oct-2022 11:20:26 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:20:26 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:20:26 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:20:26 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:23:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:23:21 ] [Total] []
+[ 20-Oct-2022 11:23:21 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:23:21 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:23:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:23:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:25:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:25:24 ] [Total] []
+[ 20-Oct-2022 11:25:24 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:25:24 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:25:24 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:25:24 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:25:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:25:48 ] [Total] []
+[ 20-Oct-2022 11:25:48 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:25:48 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:25:48 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:25:48 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:26:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:26:44 ] [Total] []
+[ 20-Oct-2022 11:26:44 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:26:44 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:26:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:26:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:27:37 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:27:37 ] [Total] []
+[ 20-Oct-2022 11:27:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:27:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:27:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:27:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:27:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:27:46 ] [Total] []
+[ 20-Oct-2022 11:27:46 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:27:46 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:27:46 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:27:46 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:28:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:28:09 ] [Total] []
+[ 20-Oct-2022 11:28:09 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:28:09 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:28:09 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:28:09 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:28:34 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:28:34 ] [Total] []
+[ 20-Oct-2022 11:28:34 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:28:34 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:28:34 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:28:34 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:41:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:41:44 ] [Total] []
+[ 20-Oct-2022 11:41:44 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:41:44 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:41:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:41:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:45:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 20-Oct-2022 11:45:46 ] [Total] []
+[ 20-Oct-2022 11:45:46 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:45:46 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:45:46 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:45:46 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:46:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:46:33 ] [Total] []
+[ 20-Oct-2022 11:46:33 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:46:33 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:46:33 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:46:33 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:47:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:47:58 ] [Total] []
+[ 20-Oct-2022 11:47:58 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:47:58 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:47:58 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:47:58 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:48:37 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:48:37 ] [Total] []
+[ 20-Oct-2022 11:48:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:48:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:48:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:48:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:48:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:48:55 ] [Total] []
+[ 20-Oct-2022 11:48:55 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:48:55 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:48:55 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:48:55 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:49:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:49:21 ] [Total] []
+[ 20-Oct-2022 11:49:21 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:49:21 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:49:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:49:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:50:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:50:14 ] [Total] []
+[ 20-Oct-2022 11:50:14 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:50:14 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:50:14 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:50:14 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:50:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:50:50 ] [Total] []
+[ 20-Oct-2022 11:50:50 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:50:50 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:50:50 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:50:50 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:52:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:52:03 ] [Total] []
+[ 20-Oct-2022 11:52:03 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:52:03 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:52:03 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:52:03 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:52:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:52:20 ] [Total] []
+[ 20-Oct-2022 11:52:20 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:52:20 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:52:20 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:52:20 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:56:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:56:29 ] [Total] []
+[ 20-Oct-2022 11:56:29 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:56:29 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:56:29 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:56:29 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:56:59 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:57:00 ] [Total] []
+[ 20-Oct-2022 11:57:00 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:57:00 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:57:00 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:57:00 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:57:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 11:57:36 ] [Total] []
+[ 20-Oct-2022 11:57:36 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:57:36 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 11:57:36 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 11:57:36 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:02:37 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:02:37 ] [Total] []
+[ 20-Oct-2022 12:02:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:02:37 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:02:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:02:37 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:02:56 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:02:57 ] [Total] []
+[ 20-Oct-2022 12:02:57 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:02:57 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:02:57 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:02:57 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:05:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:05:25 ] [Total] []
+[ 20-Oct-2022 12:05:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:05:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:05:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:05:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:05:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:05:58 ] [Total] []
+[ 20-Oct-2022 12:05:58 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:05:58 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:05:58 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:05:58 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:06:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:06:25 ] [Total] []
+[ 20-Oct-2022 12:06:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:06:25 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:06:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:06:25 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:07:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:07:13 ] [Total] []
+[ 20-Oct-2022 12:07:13 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:07:13 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:07:13 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:07:13 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:07:48 ] [{"day":"0","begin":"13:00","end":"15:00","id":"81","course":"1","class":"6","room":"7","tp":"false"},{"day":"1","begin":"08:00","end":"10:00","id":"82","course":"1","class":"6","room":"7","tp":"false"}]
+[ 20-Oct-2022 12:07:48 ] [Busy] Brie Larvane Jean >> 2/2
+[ 20-Oct-2022 12:07:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:07:48 ] [Total] []
+[ 20-Oct-2022 12:07:48 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:07:48 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:07:48 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:07:48 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:08:02 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:08:02 ] [Total] []
+[ 20-Oct-2022 12:08:02 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:08:02 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:08:02 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:08:02 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:13:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:13:40 ] [Total] []
+[ 20-Oct-2022 12:13:40 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:13:40 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:13:40 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:13:40 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:16:11 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:16:12 ] [Total] []
+[ 20-Oct-2022 12:16:12 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:16:12 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:16:12 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:16:12 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:16:22 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:16:23 ] [Total] []
+[ 20-Oct-2022 12:16:23 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:16:23 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:16:23 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:16:23 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:17:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:17:01 ] [Total] []
+[ 20-Oct-2022 12:17:01 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:17:01 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:17:01 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:17:01 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:17:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:17:44 ] [Total] []
+[ 20-Oct-2022 12:17:44 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:17:44 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:17:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:17:44 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:18:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:18:08 ] [Total] []
+[ 20-Oct-2022 12:18:08 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:18:08 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:18:08 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:18:08 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:18:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:18:15 ] [Total] []
+[ 20-Oct-2022 12:18:15 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:18:15 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:18:15 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:18:15 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:19:24 ] [Total] []
+[ 20-Oct-2022 12:19:24 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:24 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:24 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:24 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:19:40 ] [Total] []
+[ 20-Oct-2022 12:19:40 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:40 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:40 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:40 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:59 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:19:59 ] [Total] []
+[ 20-Oct-2022 12:19:59 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:59 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:19:59 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:19:59 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:20:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:20:22 ] [Total] []
+[ 20-Oct-2022 12:20:22 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:20:22 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:20:22 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:20:22 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:20:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:20:45 ] [Total] []
+[ 20-Oct-2022 12:20:45 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:20:45 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:20:45 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:20:45 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:22:11 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:22:12 ] [Total] []
+[ 20-Oct-2022 12:22:12 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:22:12 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:22:12 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:22:12 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:22:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:22:17 ] [Total] []
+[ 20-Oct-2022 12:22:17 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:22:17 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:22:17 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:22:17 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:23:18 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:23:19 ] [Total] []
+[ 20-Oct-2022 12:23:19 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:23:19 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:23:19 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:23:19 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:02 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:25:02 ] [Total] []
+[ 20-Oct-2022 12:25:02 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:02 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:02 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:02 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:25:34 ] [Total] []
+[ 20-Oct-2022 12:25:34 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:34 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:34 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:34 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:25:50 ] [Total] []
+[ 20-Oct-2022 12:25:50 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:50 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:25:50 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:25:50 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:27:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:27:21 ] [Total] []
+[ 20-Oct-2022 12:27:21 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:27:21 ] [Busy] Brie Larvane Jean >> 0/0
+[ 20-Oct-2022 12:27:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:27:21 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:35:59 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:35:59 ] [Total] []
+[ 20-Oct-2022 12:35:59 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:35:59 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:35:59 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:35:59 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:37:01 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:37:01 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:37:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:37:02 ] [Total] []
+[ 20-Oct-2022 12:37:02 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:37:02 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:37:02 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:37:02 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:39:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:39:33 ] [Total] []
+[ 20-Oct-2022 12:39:33 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:39:33 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:39:33 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:39:33 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:39:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:39:47 ] [Total] []
+[ 20-Oct-2022 12:39:47 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:39:47 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:39:47 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:39:47 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:40:09 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:40:09 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:40:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:40:10 ] [Total] []
+[ 20-Oct-2022 12:40:10 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:40:10 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:40:10 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:40:10 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:40:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:40:40 ] [Total] []
+[ 20-Oct-2022 12:40:40 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:40:40 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:40:40 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:40:40 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:42:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:42:43 ] [Total] []
+[ 20-Oct-2022 12:42:43 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:42:43 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:42:43 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:42:43 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:45:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:45:10 ] [Total] []
+[ 20-Oct-2022 12:45:10 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:45:10 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:45:10 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:45:10 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:45:29 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:45:29 ] [Busy] Maxime Hérald Pierre >> 2/0
+[ 20-Oct-2022 12:45:29 ] [Comparison] Arithmétique and Arithmétique
+[ 20-Oct-2022 12:45:29 ] [Hours] [{}] 
+ [{}]
+[ 20-Oct-2022 12:45:29 ] [Comparison] Géométrie and Arithmétique
+[ 20-Oct-2022 12:45:29 ] [Hours] [{},{}] 
+ [{}]
+[ 20-Oct-2022 12:45:29 ] [Comparison] Géométrie and Arithmétique
+[ 20-Oct-2022 12:45:29 ] [Hours] [{},{}] 
+ [{}]
+[ 20-Oct-2022 12:45:29 ] [Comparison] Analyse I and Arithmétique
+[ 20-Oct-2022 12:45:29 ] [Hours] [{},{}] 
+ [{}]
+[ 20-Oct-2022 12:45:29 ] [Comparison] Analyse I and Arithmétique
+[ 20-Oct-2022 12:45:29 ] [Hours] [{},{}] 
+ [{}]
+[ 20-Oct-2022 12:45:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:45:30 ] [Total] []
+[ 20-Oct-2022 12:45:30 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:45:30 ] [Busy] Brie Larvane Jean >> 2/0
+[ 20-Oct-2022 12:45:30 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:45:30 ] [Busy] Maxime Hérald Pierre >> 3/0
+[ 20-Oct-2022 12:49:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:49:15 ] [Total] []
+[ 20-Oct-2022 12:49:36 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:49:36 ] [Comparison] Arithmétique and Arithmétique
+[ 20-Oct-2022 12:49:36 ] [Referent] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Current] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Comparison] Géométrie and Arithmétique
+[ 20-Oct-2022 12:49:36 ] [Referent] {"day":0,"begin":"13:00","end":"15:00","id":81,"course":1,"class":6,"room":7,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Current] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Referent] {"day":1,"begin":"08:00","end":"10:00","id":82,"course":1,"class":6,"room":7,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Current] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Comparison] Analyse I and Arithmétique
+[ 20-Oct-2022 12:49:36 ] [Referent] {"day":0,"begin":"09:00","end":"12:00","id":75,"course":2,"class":6,"room":7,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Current] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Referent] {"day":1,"begin":"10:00","end":"13:00","id":80,"course":2,"class":6,"room":7,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Current] {"day":0,"begin":"08:00","end":"12:00","id":0,"course":3,"class":1,"room":9,"tp":false}
+[ 20-Oct-2022 12:49:36 ] [Comparison] Arithmétique II and Arithmétique
+[ 20-Oct-2022 12:49:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:49:37 ] [Total] []
+[ 20-Oct-2022 12:51:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:51:21 ] [Total] []
+[ 20-Oct-2022 12:54:41 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:54:41 ] [Total] []
+[ 20-Oct-2022 12:55:00 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:55:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:55:01 ] [Total] []
+[ 20-Oct-2022 12:55:26 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:55:26 ] [Total] []
+[ 20-Oct-2022 12:55:46 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:55:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:55:46 ] [Total] []
+[ 20-Oct-2022 12:57:38 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:57:39 ] [Total] []
+[ 20-Oct-2022 12:57:55 ] [{"day":"0","begin":"08:00","end":"12:00","tp":"false","class":"1","room":"9"}]
+[ 20-Oct-2022 12:57:55 ] [Check] ["08:00","12:00","\/","07:00:00","09:00:00"]
+[ 20-Oct-2022 12:57:55 ] [Check] ["08:00","12:00","\/","12:00:00","19:00:00"]
+[ 20-Oct-2022 12:57:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:57:56 ] [Total] []
+[ 20-Oct-2022 12:59:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 20-Oct-2022 12:59:01 ] [Total] []

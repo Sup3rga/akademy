@@ -1,0 +1,56 @@
+<div class="ui-container ui-unwrap ui-size-fluid ui-absolute ui-all-close administration">
+    <div class="ui-element ui-size-fluid ui-relative card-manager adminer">
+        <div class="ui-element ui-size-fluid header extended">
+            <h1>
+                <icon class="las la-university"></icon>
+                Administration
+            </h1>
+            <div class="ui-element ui-size-fluid inline-tab ui-unwrap">
+                <div class="ui-element onglet-wrapper ui-unwrap">
+                    <div class="ui-element onglet card-tab active" href="/admin" data-index="0">
+                        <span class="ui-element ui-size-fluid text">Classes</span>
+                        <span class="ui-element ui-size-fluid line"></span>
+                    </div>
+                    <div class="ui-element onglet card-tab" href="/admin/crd:1" data-index="1">
+                        <span class="ui-element ui-size-fluid text">Salles</span>
+                        <span class="ui-element ui-size-fluid line"></span>
+                    </div>
+                    <div class="ui-element onglet card-tab" data-index="2" href="/admin/crd:2">
+                        <span class="ui-element ui-size-fluid text">Gestion Promotions</span>
+                        <span class="ui-element ui-size-fluid line"></span>
+                    </div>
+                    <div class="ui-element onglet card-tab" data-index="3" href="/admin/crd:3">
+                        <span class="ui-element ui-size-fluid text">Gestion travail</span>
+                        <span class="ui-element ui-size-fluid line"></span>
+                    </div>
+                    <div class="ui-element onglet card-tab" href="/admin/crd:4" data-index="4">
+                        <span class="ui-element ui-size-fluid text">Poste hiérarchique</span>
+                        <span class="ui-element ui-size-fluid line"></span>
+                    </div>
+<!--                    <div class="super onglet card-tab" data-index="5" href="/admin/crd:5">-->
+<!--                        <span class="super super-l12 text">Évènements</span>-->
+<!--                        <span class="super super-l12 line"></span>-->
+<!--                    </div>-->
+<!--                    <div class="super onglet card-tab" data-index="6" href="/admin/crd:6">-->
+<!--                        <span class="super super-l12 text">Rapports</span>-->
+<!--                        <span class="super super-l12 line"></span>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid body card-container">
+            <!-- Niveau academique et classe -->
+            @("../../partials/cards/admin.academicLevel")
+            @("../../partials/cards/admin.room")
+            @("../../partials/cards/admin.promotion")
+            @("../../partials/cards/admin.work")
+            <!-- Poste -->
+            @("../../partials/cards/admin.hierarchy")
+            <card class="ui-element ui-size-fluid presentations card" data-index="7">
+                @[285]("../../partials/others/class.list")
+                @("../../partials/others/room.show")
+                @("../../partials/others/promotion.viewer")
+            </card>
+        </div>
+    </div>
+</div>

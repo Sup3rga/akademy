@@ -1,0 +1,35 @@
+<card class="ui-element ui-size-fluid card course-scheduler-tab" data-index="1">
+    <button class="ui-element ui-size-3 ui-flex ui-vertical-center input-icon ui-relative">
+        <icon class="las la-calendar"></icon>
+        <kinput type="select" class="ui-element ui-size-fluid academic-year">
+            <% for(var i in academic){
+            %>
+            <option placeholder="Année académique" value="<%= academic[i].id %>" class="<%= academic[i].id == currentYear ? 'selected' : ''%>"><%= academic[i].academie %></option>
+            <%
+            }
+            %>
+        </kinput>
+        <icon class="las la-sort-down"></icon>
+    </button>
+    <button class="ui-element ui-size-3 ui-flex ui-vertical-center input-icon ui-relative">
+        <icon class="las la-layer-group"></icon>
+        <kinput type="select" class="ui-element ui-size-fluid academic-section super-relative" multiple>
+        </kinput>
+        <icon class="las la-sort-down"></icon>
+    </button>
+    <button class="ui-element ui-size-3 ui-flex ui-vertical-center input-icon ui-relative">
+        <icon class="las la-users"></icon>
+        <kinput type="select" class="ui-element ui-size-fluid academic-grade promotion">
+        </kinput>
+        <icon class="las la-sort-down"></icon>
+    </button>
+    <button class="ui-element ui-size-3 ui-flex ui-vertical-center input-icon ui-relative">
+        <icon class="las la-sort-numeric-down"></icon>
+        <kinput type="select" class="ui-element ui-size-fluid academic-session">
+        </kinput>
+        <icon class="las la-sort-down"></icon>
+    </button>
+    <button class="ui-element">
+        <icon class="las la-print"></icon>
+    </button>
+</card>

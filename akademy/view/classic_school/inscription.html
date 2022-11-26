@@ -1,0 +1,359 @@
+<header class="ui-container ui-size-fluid ui-vertical-center ui-unwrap">
+    <div class="ui-container ui-size-10 ui-lg-size-5 ui-horizontal-left ui-vertical-center banner-sector">
+        <span class="logo super"></span> Akademy
+    </div>
+    <div class="ui-hide ui-md-container ui-unwrap ui-horizontal-right ui-size-7 link-sector">
+        <a href=".">
+            Accueil
+            <span></span>
+        </a>
+        <a href="./communauty">
+            Notre Organisation
+            <span></span>
+        </a>
+        <a href="./apply" class="active">
+            Inscription
+            <span></span>
+        </a>
+        <a href="./login">
+            <i class="ion-person"></i>Connexion
+            <span></span>
+        </a>
+    </div>
+    <div class="ui-container ui-column ui-size-2 ui-md-hide menu-action">
+        <span class="line top"></span>
+        <span class="line middle"></span>
+        <span class="line bottom"></span>
+    </div>
+</header>
+<menu class="ui-element ui-md-hide ui-size-12 ui-scroll-y">
+    <a href=".">
+        Accueil
+    </a>
+    <a href="./communauty">
+        Notre Organisation
+    </a>
+    <a href="./apply" class="active">
+        Inscription
+    </a>
+    <a href="./login">
+        <i class="ion-person"></i>Connexion
+    </a>
+</menu>
+<view class="ui-container ui-size-fluid ui-horizontal-center subscription" style="background-image: url(~/assets/calc.png); background-size: 30%; background-color: #eee">
+    <div class="ui-container ui-column ui-size-fluid ui-md-size-10 ui-lg-size-8 ui-xl-size-6 ui-horizontal-left subscription-wrapper">
+        <h2>Formulaire d'inscription</h2>
+        <div class="ui-container ui-size-fluid ui-relative progress-line">
+            <div class="ui-container ui-absolute ui-all-close ui-vertical-center line-wrapper">
+                <span class="line ui-element ui-size-fluid path"></span>
+            </div>
+            <div class="ui-container ui-absolute ui-all-close ui-vertical-center line-wrapper">
+                <span class="line ui-element steppable"></span>
+            </div>
+            <div class="ui-container ui-unwrap ui-absolute ui-all-close ui-vertical-center">
+                <div class="ui-container ui-horizontal-center step active">
+                    <div class="ui-container ui-all-center circle">
+                        1
+                    </div>
+                    <div class="ui-element ui-size-fluid text">
+                        Informations personnelles
+                    </div>
+                </div>
+                <div class="ui-container ui-horizontal-center step">
+                    <div class="ui-container ui-all-center circle">
+                        2
+                    </div>
+                    <div class="ui-element ui-size-fluid text">
+                        Informations Académiques
+                    </div>
+                </div>
+                <div class="ui-container ui-horizontal-center step">
+                    <div class="ui-container ui-all-center circle">
+                        3
+                    </div>
+                    <div class="ui-element ui-size-fluid text">
+                        Informations de Référence
+                    </div>
+                </div>
+                <div class="ui-container ui-horizontal-center step">
+                    <div class="ui-container ui-all-center circle">
+                        4
+                    </div>
+                    <div class="ui-element ui-size-fluid text">
+                        Informations d'authentification
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-container ui-size-fluid ui-relative card-manager subscription-form" autoresize>
+            <div class="ui-container ui-size-fluid body">
+                <card class="ui-element ui-size-fluid card active" data-index="0">
+                    <div class="ui-container ui-size-fluid ui-vertical-bottom">
+                        <div class="ui-container ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Nom<i>*</i></label>
+                                <kinput  class="ui-element ui-size-fluid input" required name="sub_lname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                        <div class="ui-container ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Prénom<i>*</i></label>
+                                <kinput  class="input ui-element ui-size-fluid" required name="sub_fname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-size-fluid ui-md-wrap ui-wrap ui-vertical-bottom">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Sexe<i>*</i></label>
+                                <kinput class="ui-element ui-size-fluid input" required type="select">
+                                    <option value=""></option>
+                                    <option value="F">Féminin</option>
+                                    <option value="M">Masculin</option>
+                                </kinput>
+                            </div>
+                        </div>
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <label class="linked">Numéro de téléphone<i>*</i></label>
+                            <div class="ui-element ui-size-fluid field">
+                                <div class="ui-container ui-unwrap ui-vertical-bottom ui-size-fluid combined">
+                                    <div class="ui-element ui-size-4" style="padding: .1em 0">+509</div>
+                                    <kinput class="ui-element ui-size-8 input" placeholder="XXXX-XXXX" required name="sub_phone" mask="####-####" match="^[234][0-9]{3}-?[0-9]{4}$"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-column ui-size-fluid">
+                        <label class="up-linked">Lieu de naissance<i>*</i></label>
+                        <div class="ui-container ui-unwrap ui-size-fluid">
+                            <div class="ui-element ui-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Pays</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="country" name="sub_birthplace_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Département</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="department" name="sub_birthplace_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Ville</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="town" name="sub_birthplace_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-vertical-bottom ui-size-fluid ui-unwrap ui-md-wrap">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Adresse e-mail<i>*</i></label>
+                                <kinput class="input ui-element ui-size-fluid" required name="sub_mail" match="^[a-z]+[a-z0-9.]*@[a-z]+[a-z0-9.]*\\.[a-z]+[a-z0-9]*$"></kinput>
+                            </div>
+                        </div>
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>NIF<i>*</i></label>
+                                <kinput class="input ui-element ui-size-fluid " required name="sub_nif" mask="###-###-###-#" match="^([0-9]{3}-){3}[0-9]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-size-fluid ui-column ">
+                        <label class="up-linked">Adresse de résidence permanente<i>*</i></label>
+                        <div class="ui-container ui-size-fluid ui-unwrap">
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Pays</label>
+                                    <kinput class="ui-container ui-size-fluid  input" required ref="country" name="sub_addr_perm_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Département</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="department" name="sub_addr_perm_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Ville</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="town" name="sub_addr_perm_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Rue</label>
+                                    <kinput class="ui-element ui-size-fluid input" required name="sub_addr_perm_street"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="super-l12 super-flex super-flex-column">
+                        <label class="up-linked">Adresse de résidence provisoire</label>
+                        <div class="ui-container ui-unwrap ui-size-fluid">
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Pays</label>
+                                    <kinput class="ui-element ui-size-fluid input" ref="country" name="sub_addr_temp_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre" manual>Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Département</label>
+                                    <kinput class="ui-element ui-size-fluid input" manualtype="text" ref="department" name="sub_addr_temp_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Ville</label>
+                                    <kinput class="ui-element ui-size-fluid input" ref="town" name="sub_addr_temp_town">
+                                        <hint>Tapez le nom de la ville</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-3 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Rue</label>
+                                    <kinput class="ui-element ui-size-fluid input" name="sub_addr_temp_street"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-horizontal-right action">
+                        <button class="disabled validation card-switch" next=1>Suivant</button>
+                    </div>
+                </card>
+                <card class="ui-element ui-size-fluid card" data-index="1">
+                    <div class="ui-container ui-vertical-bottom ui-size-fluid">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Année de Bacc II ou NS4<i>*</i></label>
+                                <kinput  class="ui-element ui-size-fluid input" required name="sub_bacc_year" type="select">
+                                    <hint>Tapez l'année</hint>
+                                    <% for(var i = 2021; i >= 1970; i--){ %>
+                                    <option value="<%= i %>"><%= i %></option>
+                                    <% } %>
+                                </kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-size-fluid">
+                        <label class="up-linked">Localisation de la dernière établissement</label>
+                        <div class="ui-container ui-unwrap ui-size-fluid">
+                            <div class="ui-element ui-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Pays</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="country" name="sub_school_country" type="select">
+                                        <hint>Tapez le nom du pays</hint>
+                                        <option value="Haiti">Haiti</option>
+                                        <option value="Autre">Autre</option>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Département</label>
+                                    <kinput class="ui-element ui-size-fluid input" required ref="department" name="sub_school_dep">
+                                        <hint>Tapez le nom du département</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                            <div class="ui-element ui-size-fluid ui-md-size-4 wrapper">
+                                <div class="ui-element ui-size-fluid field">
+                                    <label>Nom de l'établissement<i>*</i></label>
+                                    <kinput  class="input ui-element ui-size-fluid" ref="school" required name="sub_school" type="select">
+                                        <hint>Tapez le nom de l'établissement</hint>
+                                    </kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-horizontal-right action">
+                        <button class="light card-switch" next=0><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation card-switch" next=2>Suivant</button>
+                    </div>
+                </card>
+                <card class="ui-element ui-size-fluid card" data-index="2">
+                    <div class="ui-container ui-wrap ui-md-unwrap ui-vertical-bottom ui-size-fluid">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Nom de la personne responsable<i>*</i></label>
+                                <kinput  class="input ui-element ui-size-fluid" required name="sub_parent_lname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <div class="ui-element ui-size-fluid field">
+                                <label>Prénom de la personne responsable<i>*</i></label>
+                                <kinput  class="input ui-element ui-size-fluid" required name="sub_parent_fname" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-vertical-bottom ui-unwrap ui-md-wrap ui-size-fluid">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <label class="linked">Numéro de téléphone de la personne responsable<i>*</i></label>
+                            <div class="ui-element ui-size-fluid field">
+                                <div class="ui-container ui-unwrap ui-vertical-bottom ui-size-fluid combined">
+                                    <div class="ui-element ui-size-4" style="padding: .1em 0">+509</div>
+                                    <kinput class="input ui-element ui-size-8" required name="sub_parent_phone" placeholder="XXXX-XXXX" mask="####-####" match="^[234][0-9]{3}-?[0-9]{4}$"></kinput>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-horizontal-right action">
+                        <button class="light card-switch" next=1><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation card-switch" next="3">Suivant</button>
+                    </div>
+                </card>
+                <card class="ui-element ui-size-fluid card" data-index="3">
+                    <div class="ui-container ui-wrap ui-md-unwrap ui-vertical-bottom ui-size-fluid">
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <label class="linked">Votre nom d'utilisateur<i>*</i></label>
+                            <div class="ui-element ui-size-fluid field">
+                                <div class="ui-container ui-unwrap ui-size-fluid combined super-flex-end">
+                                    <kinput class="input ui-element ui-size-fluid" placeholder="exemple: pseudo.user" required name="sub_pseudo" match="^[A-Za-z]+[A-Za-z0-9.-]*[A-Za-z0-9]$"></kinput>
+                                    <div class="super ui-element ui-size-1" style="padding: .1em 0"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-element ui-size-fluid ui-md-size-6 wrapper">
+                            <label class="linked">Votre mot de passe<i>*</i></label>
+                            <div class="ui-element ui-size-fluid field">
+                                <div class="ui-container ui-unwrap ui-size-fluid combined super-flex-end">
+                                    <kinput  class="input ui-element ui-size-fluid" placeholder="********" type="password" required name="sub_password"></kinput>
+                                    <div class="super ui-element ui-size-1 ion-eye password-toggler" alternate="ion-eye,ion-eye-disabled" style="padding: .1em 0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-element ui-size-fluid ui-horizontal-right action">
+                        <button class="light card-switch" next=2><i class="ion-ios-arrow-back"></i> Revenir en arrière</button>
+                        <button class="disabled validation" id="finish">Valider</button>
+                    </div>
+                </card>
+            </div>
+        </div>
+    </div>
+</view>

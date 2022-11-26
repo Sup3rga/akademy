@@ -1,0 +1,46 @@
+<card class="super super-l12 card active years super-flex" data-index="0">
+    <div class="super super-l7 body super-scrollable-y">
+        <%
+        var k = 0;
+        for(var i in academic){ %>
+            <item class="super super-l12 <%= academic[i].etat == 'O' ? 'active' : ''%>" data-index="<%= i %>" data-filter="<%= academic[i].academie %>">
+                <%= academic[i].academie %>
+            </item>
+        <%
+        k++;
+        }
+        if(k == 0){
+        %>
+        <div class="super super-l12 empty-info super-flex-center">
+            ${ui.academic.empty.list}
+        </div>
+        <% } %>
+
+    </div>
+    <div class="super super-l5 presentation super-relative super-scrollable-y">
+        <div class="super super-l12 empty-info super-flex-center">
+            ${ui.general.empty.info}
+        </div>
+        <div class="super super-l12 infos not-super">
+            <div class="super super-l12">
+                ${ui.sidemenu.academic} : <span class="super academie"></span>
+            </div>
+            <canvas class="super super-l12 diagramme"></canvas>
+            <div class="super super-l12 action state-box">
+                <label class="super super-l12">${ui.academic.state}</label>
+                <div class="super combined switch automatic state" value="F">
+                    <button class="super red off" data-value="F" index="0">${ui.component.text.open}</button>
+                    <button class="super green" data-value="O" index="1">${ui.component.text.closed}</button>
+                </div>
+            </div>
+            <div class="super super-l12 action">
+                <% if(allowModule(100)){ %>
+                <button id="editYear"><icon class="las la-edit"></icon> ${ui.component.text.edit.info}</button>
+                <% } %>
+                <% if(allowModule(110)){ %>
+                <button id="passYear"><icon class="las la-graduation-cap"></icon> ${ui.academic.upgrade.student}</button>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</card>

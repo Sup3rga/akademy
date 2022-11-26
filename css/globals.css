@@ -1,0 +1,1797 @@
+/* line 32, ../sass/_var.scss */
+.print-preview .head .extras div, .field label, .action button, .form-popup .box .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 38, ../sass/_var.scss */
+.print-preview .head {
+  padding: .4em;
+  background-color: #d5e3e5;
+}
+/* line 41, ../sass/_var.scss */
+.print-preview .head .name {
+  font-family: Poppins-SemiBold;
+  font-size: 1.3em;
+  padding: .3em 0;
+}
+/* line 46, ../sass/_var.scss */
+.print-preview .head .year {
+  padding: .3em 0;
+  font-family: Lexend;
+  font-size: 1em;
+}
+/* line 51, ../sass/_var.scss */
+.print-preview .head .text {
+  font-family: Lexend-SemiBold;
+  font-size: 1.1em;
+  padding: .4em 0;
+}
+/* line 56, ../sass/_var.scss */
+.print-preview .head .extras {
+  padding: .3em 0;
+}
+/* line 58, ../sass/_var.scss */
+.print-preview .head .extras div {
+  font-family: Rubik-Light;
+  font-size: .9em;
+}
+/* line 62, ../sass/_var.scss */
+.print-preview .head .extras div.fac {
+  font-size: 1em;
+  text-align: left;
+  padding-left: .4em;
+  font-family: Poppins-SemiBold;
+}
+
+/* line 304, ../sass/_var.scss */
+.card-manager .header .actions, card-manager .header .actions, .duo-view .duo-head {
+  padding: .3em .2em;
+}
+/* line 306, ../sass/_var.scss */
+.card-manager .header .actions button, card-manager .header .actions button, .duo-view .duo-head button {
+  border: 0;
+  background-color: rgba(230, 230, 250, 0.5);
+  font-size: 1.3em;
+  border-radius: .5em;
+  cursor: pointer;
+  padding: .3em .5em;
+  margin: 0 .2em;
+  transition-duration: .2s;
+  position: relative;
+}
+/* line 316, ../sass/_var.scss */
+.card-manager .header .actions button text, card-manager .header .actions button text, .duo-view .duo-head button text {
+  font-size: .7em;
+  font-family: Lexend;
+  position: relative;
+  top: -1px;
+}
+/* line 322, ../sass/_var.scss */
+.card-manager .header .actions button input, card-manager .header .actions button input, .duo-view .duo-head button input {
+  font-size: .7em;
+  height: 100%;
+  font-family: Roboto;
+}
+/* line 327, ../sass/_var.scss */
+.card-manager .header .actions button:hover, card-manager .header .actions button:hover, .duo-view .duo-head button:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+  color: #0e4357;
+}
+/* line 331, ../sass/_var.scss */
+.card-manager .header .actions button.active, card-manager .header .actions button.active, .duo-view .duo-head button.active {
+  color: #fff;
+  background-color: #0e4357;
+}
+
+/* line 4, ../sass/globals.scss */
+:root {
+  --theme: white;
+  --activeTextColor: #0e4357;
+  --textColor: white;
+  --inactiveTextColor: #888;
+  --weekNameColor: #94bcc4;
+  --defaultMask: rgba(0, 0, 0, 0.1);
+  --navMask: rgba(0, 0, 0, 0.2);
+  --daySize: .9em;
+  --yearSize: 1.3em;
+  --cellFont: Poppins;
+  --headerFont: Poppins-Bold;
+  --layerformHeaderHeight: 50px;
+  --cardManager-header-height: 50px;
+  --cardManager-header-extended-height: 100px;
+  --appbarHeight: 60px;
+  --schedule-ui-header-background: #465f61;
+  --schedule-ui-font: OpenSans;
+  --schedule-ui-item-background: #a2ccd2;
+  --schedule-ui-item-size: 65%;
+  --scrollbar-width: 8px;
+}
+
+/* line 26, ../sass/globals.scss */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 31, ../sass/globals.scss */
+body {
+  font-family: Roboto;
+}
+
+/* line 35, ../sass/globals.scss */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+/* Track */
+/* line 40, ../sass/globals.scss */
+::-webkit-scrollbar-track {
+  background: #f7f7f7;
+  width: 2px;
+}
+
+/* Handle */
+/* line 46, ../sass/globals.scss */
+::-webkit-scrollbar-thumb {
+  background: #294a5e;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+/* line 52, ../sass/globals.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #1f3a4b;
+}
+
+/* line 56, ../sass/globals.scss */
+h1 {
+  font-family: Poppins;
+}
+
+/* line 59, ../sass/globals.scss */
+h2 {
+  font-family: Lexend-Medium;
+}
+
+/* line 63, ../sass/globals.scss */
+.cap-letter {
+  text-transform: capitalize;
+}
+
+/* line 66, ../sass/globals.scss */
+.upper-letter {
+  text-transform: uppercase;
+}
+
+/* line 69, ../sass/globals.scss */
+.lower-letter {
+  text-transform: lowercase;
+}
+
+/* line 73, ../sass/globals.scss */
+.modal-box {
+  padding: .5em;
+  background-color: white;
+}
+
+/* line 78, ../sass/globals.scss */
+.field {
+  padding: 0 .4em;
+  font-size: .9em;
+  height: 50px;
+  margin: .8em 0;
+  position: relative;
+  font-family: Roboto;
+  border-bottom: 2px solid #09a3d0;
+}
+/* line 88, ../sass/globals.scss */
+.field.textarea {
+  height: 100px;
+}
+/* line 90, ../sass/globals.scss */
+.field.textarea .input {
+  height: 61px;
+  top: 54%;
+}
+/* line 95, ../sass/globals.scss */
+.field label {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  padding-left: 5px;
+  height: 20px;
+  color: #999;
+  -moz-transform: translate3d(0, -30%, 0);
+  -ms-transform: translate3d(0, -30%, 0);
+  -webkit-transform: translate3d(0, -30%, 0);
+  transform: translate3d(0, -30%, 0);
+  transition-property: transform, font-size,color;
+  transition-duration: .2s;
+  top: 50%;
+}
+/* line 108, ../sass/globals.scss */
+.field .input {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+  top: 50%;
+  font-size: 1em;
+  display: inline-block;
+  z-index: 2;
+  border: 0;
+  background-color: transparent;
+}
+/* line 120, ../sass/globals.scss */
+.field select {
+  padding: 0;
+}
+/* line 123, ../sass/globals.scss */
+.field .combined {
+  width: inherit;
+  height: 20px;
+  position: absolute;
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+  top: 50%;
+  z-index: 2;
+  padding-right: .8em;
+  padding-left: .2em;
+}
+/* line 132, ../sass/globals.scss */
+.field .combined icon {
+  font-size: 1.4em;
+  color: #555;
+}
+/* line 136, ../sass/globals.scss */
+.field .combined .input {
+  display: inline-block;
+  height: inherit;
+  position: relative;
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  top: 0;
+}
+/* line 144, ../sass/globals.scss */
+.field.animated {
+  border-bottom: 2px solid #0e4357;
+}
+/* line 146, ../sass/globals.scss */
+.field.animated label {
+  font-size: 10px;
+  color: #000;
+  -moz-transform: translate3d(0, -100%, 0);
+  -ms-transform: translate3d(0, -100%, 0);
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+/* line 152, ../sass/globals.scss */
+.field.static {
+  border-bottom: 0;
+  background-color: #eee;
+  padding: .5em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
+/* line 157, ../sass/globals.scss */
+.field.static label {
+  display: none;
+}
+/* line 160, ../sass/globals.scss */
+.field.static .input, .field.static .combined {
+  height: inherit;
+  width: 95%;
+  top: 0;
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+/* line 165, ../sass/globals.scss */
+.field.static .input .input, .field.static .combined .input {
+  display: inline-block;
+  height: inherit;
+}
+/* line 169, ../sass/globals.scss */
+.field.static .input icon, .field.static .combined icon {
+  color: #999;
+}
+/* line 174, ../sass/globals.scss */
+.field.invalid {
+  background-color: #eed5d5;
+  border-bottom: 2px solid #692b2b;
+}
+/* line 176, ../sass/globals.scss */
+.field.invalid, .field.invalid label, .field.invalid .input {
+  color: #7a3a3a;
+}
+/* line 180, ../sass/globals.scss */
+.field.invalid.static {
+  border-bottom: 0;
+}
+/* line 184, ../sass/globals.scss */
+.field.extended {
+  height: 100px;
+}
+/* line 187, ../sass/globals.scss */
+.field.limited {
+  overflow: hidden;
+}
+/* line 190, ../sass/globals.scss */
+.field.combo {
+  height: auto;
+}
+/* line 192, ../sass/globals.scss */
+.field.combo label {
+  position: relative;
+  color: #000;
+  -moz-transform: unset;
+  -ms-transform: unset;
+  -webkit-transform: unset;
+  transform: unset;
+}
+/* line 197, ../sass/globals.scss */
+.field.combo field-option, .field.combo .field-option {
+  padding: .4em;
+  margin: .1em;
+  display: inline-flex;
+  align-items: center;
+}
+/* line 202, ../sass/globals.scss */
+.field.combo field-option input, .field.combo .field-option input {
+  margin: 0 .2em;
+  padding: .3em;
+}
+/* line 206, ../sass/globals.scss */
+.field.combo field-option label, .field.combo .field-option label {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 214, ../sass/globals.scss */
+avatar, .avatar {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background: #ebf1f3;
+  line-height: 40px;
+  text-align: center;
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 226, ../sass/globals.scss */
+.action {
+  padding: .5em 0;
+}
+/* line 228, ../sass/globals.scss */
+.action button {
+  padding: .8em 1em;
+  margin: .2em;
+  border: 0;
+  font-family: Avenir-Book;
+  font-size: 1em;
+  background-color: #0e4357;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNjIzMjk4IiB5MT0iMS4wODAwNzEiIHgyPSIwLjM3NjcwMiIgeTI9Ii0wLjA4MDA3MSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE2NDY0OCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -moz-linear-gradient(102deg, #164648, rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(102deg, #164648, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(348deg, #164648, rgba(0, 0, 0, 0));
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  color: white;
+  cursor: pointer;
+}
+/* line 240, ../sass/globals.scss */
+.action button.light {
+  background-color: rgba(200, 200, 200, 0.1);
+  background-image: unset;
+  color: #0e4357;
+}
+/* line 245, ../sass/globals.scss */
+.action button:hover {
+  background-color: #435d67;
+}
+/* line 248, ../sass/globals.scss */
+.action button.light:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+/* line 252, ../sass/globals.scss */
+.action .combined {
+  display: inline-flex;
+  margin: .2em;
+}
+/* line 255, ../sass/globals.scss */
+.action .combined button {
+  margin: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-top: 1px solid #cde;
+  border-bottom: 1px solid #cde;
+  background-image: unset;
+}
+/* line 261, ../sass/globals.scss */
+.action .combined button:first-child {
+  border-left: 1px solid #cde;
+  -moz-border-radius: 2em 0 0 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em 0 0 2em;
+}
+/* line 265, ../sass/globals.scss */
+.action .combined button:last-child {
+  border-right: 1px solid #cde;
+  -moz-border-radius: 0 2em 2em 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 2em 2em 0;
+}
+/* line 269, ../sass/globals.scss */
+.action .combined button.off {
+  background-color: #f5f8f9;
+  color: #0e4357;
+}
+/* line 275, ../sass/globals.scss */
+.action .combined.state button {
+  color: white;
+}
+/* line 277, ../sass/globals.scss */
+.action .combined.state button.green {
+  background-color: #387319;
+}
+/* line 280, ../sass/globals.scss */
+.action .combined.state button.red {
+  background-color: #731919;
+}
+/* line 283, ../sass/globals.scss */
+.action .combined.state button.off {
+  background-color: #f5f8f9;
+  color: #87a1ab;
+}
+/* line 289, ../sass/globals.scss */
+.action .combined.invalid {
+  border-color: #9d6e6e;
+}
+/* line 291, ../sass/globals.scss */
+.action .combined.invalid button {
+  background-color: #a88282;
+}
+/* line 293, ../sass/globals.scss */
+.action .combined.invalid button.off {
+  background-color: #f7d5d5;
+  color: #774433;
+}
+/* line 299, ../sass/globals.scss */
+.action .combined.disabled {
+  background-color: unset !important;
+  color: #ddd !important;
+}
+/* line 302, ../sass/globals.scss */
+.action .combined.disabled button {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #ddd !important;
+  background-image: unset;
+  color: #ccc !important;
+}
+/* line 308, ../sass/globals.scss */
+.action .combined.disabled button.off {
+  background-color: #eee !important;
+  color: #ddd !important;
+}
+/* line 312, ../sass/globals.scss */
+.action .combined.disabled button:first-child {
+  border-left: 1px solid #eee;
+}
+/* line 315, ../sass/globals.scss */
+.action .combined.disabled button:last-child {
+  border-right: 1px solid #eee;
+}
+/* line 321, ../sass/globals.scss */
+.action .disabled {
+  background-color: #eee !important;
+  background-image: unset;
+  color: #ddd !important;
+}
+/* line 326, ../sass/globals.scss */
+.action .toggler {
+  height: 24px;
+  position: relative;
+  background-color: #ccc;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  -moz-box-shadow: 0 0 1px 0 #ccc;
+  -webkit-box-shadow: 0 0 1px 0 #ccc;
+  box-shadow: 0 0 1px 0 #ccc;
+}
+/* line 332, ../sass/globals.scss */
+.action .toggler .button {
+  height: 30px;
+  width: 30px;
+  top: -3px;
+  left: -3px;
+  position: absolute;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #eee;
+  -moz-box-shadow: 0 0 1px 0 #aaa;
+  -webkit-box-shadow: 0 0 1px 0 #aaa;
+  box-shadow: 0 0 1px 0 #aaa;
+  transition-property: left;
+  transition-duration: .2s;
+}
+/* line 344, ../sass/globals.scss */
+.action .toggler.inside .button {
+  height: 20px;
+  width: 20px;
+  top: 2px;
+  left: 2px;
+}
+/* line 350, ../sass/globals.scss */
+.action .toggler.on {
+  background-color: #d5e8e6;
+}
+/* line 352, ../sass/globals.scss */
+.action .toggler.on .button {
+  background-color: #8ea6a3;
+  left: calc(100% - 37px);
+}
+/* line 356, ../sass/globals.scss */
+.action .toggler.on.inside .button {
+  left: calc(100% - 22px);
+}
+
+/* line 363, ../sass/globals.scss */
+.float-action {
+  padding: .5em 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  right: 10px;
+  width: 70px;
+  height: auto;
+}
+/* line 371, ../sass/globals.scss */
+.float-action button {
+  display: inline-block;
+  border: 0;
+  margin: .2em 0;
+  font-size: 1.4em;
+  background-color: #0e4357;
+  -moz-border-radius: 40%;
+  -webkit-border-radius: 40%;
+  border-radius: 40%;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  line-height: 52px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition-duration: .3s;
+  transition-property: transform;
+  box-shadow: 0 1px 3px 0 #05121c;
+}
+/* line 389, ../sass/globals.scss */
+.float-action button.rotate {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 392, ../sass/globals.scss */
+.float-action button:hover {
+  background-color: #435d67;
+}
+
+/* line 398, ../sass/globals.scss */
+.alert-box {
+  padding: .5em;
+}
+/* line 400, ../sass/globals.scss */
+.alert-box .wrapper {
+  background-color: #eee;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  color: #777;
+  height: auto;
+  padding: 1em .5em;
+}
+/* line 406, ../sass/globals.scss */
+.alert-box .wrapper icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: rgba(240, 240, 240, 0.2);
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 415, ../sass/globals.scss */
+.alert-box .wrapper .text {
+  font-family: Lexend;
+  font-size: .9em;
+  padding: .2em .5em;
+  text-align: justify;
+  height: auto;
+}
+/* line 423, ../sass/globals.scss */
+.alert-box.fail .wrapper {
+  background-color: #e8c3c3;
+  color: #944b4b;
+}
+/* line 427, ../sass/globals.scss */
+.alert-box.success .wrapper {
+  background-color: #c8e8c3;
+  color: #5a733b;
+}
+/* line 431, ../sass/globals.scss */
+.alert-box.warn .wrapper {
+  background-color: #efecb7;
+  color: #736e3b;
+}
+
+/* line 437, ../sass/globals.scss */
+.waiter-load {
+  padding: 3em;
+}
+/* line 439, ../sass/globals.scss */
+.waiter-load .box {
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.2);
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+}
+/* line 443, ../sass/globals.scss */
+.waiter-load .box .animation-view {
+  height: 20vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 449, ../sass/globals.scss */
+.waiter-load .box .bulbe {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background-color: #dcf0f9;
+  transition-duration: .2s;
+  transition-property: transform,background-color;
+  transition-timing-function: cubic-bezier(-0.014, 0.435, -0.023, 0.61);
+  margin: 0 .8em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 459, ../sass/globals.scss */
+.waiter-load .box .bulbe.up {
+  background-color: #b1dfe8;
+  -moz-transform: translate3d(0, -75%, 0);
+  -ms-transform: translate3d(0, -75%, 0);
+  -webkit-transform: translate3d(0, -75%, 0);
+  transform: translate3d(0, -75%, 0);
+}
+/* line 464, ../sass/globals.scss */
+.waiter-load .box .text {
+  font-family: Poppins-SemiBold;
+  color: #555;
+  font-size: 1.2em;
+}
+/* line 469, ../sass/globals.scss */
+.waiter-load .box .progression {
+  height: 4px;
+  border-radius: .4em;
+  background-color: #f0f0f0;
+  position: relative;
+}
+/* line 474, ../sass/globals.scss */
+.waiter-load .box .progression .indicator {
+  background-color: #0e4357;
+  height: inherit;
+  border-radius: inherit;
+}
+
+/* line 483, ../sass/globals.scss */
+.dialog-box {
+  display: none;
+  z-index: 100;
+  background-color: rgba(250, 250, 250, 0.3);
+}
+/* line 487, ../sass/globals.scss */
+.dialog-box .wrapper {
+  justify-content: center;
+}
+/* line 490, ../sass/globals.scss */
+.dialog-box .box {
+  background-color: #fff;
+  -moz-border-radius: 0.2em;
+  -webkit-border-radius: 0.2em;
+  border-radius: 0.2em;
+  -moz-box-shadow: 0 1px 4px 1px #ccc;
+  -webkit-box-shadow: 0 1px 4px 1px #ccc;
+  box-shadow: 0 1px 4px 1px #ccc;
+  flex-direction: column;
+}
+/* line 495, ../sass/globals.scss */
+.dialog-box .box .message {
+  min-height: 100px;
+  padding: .4em .5em;
+  font-size: .9em;
+}
+/* line 499, ../sass/globals.scss */
+.dialog-box .box .message icon {
+  font-size: 1.6em;
+  padding: .5em;
+  margin: .3em;
+}
+/* line 503, ../sass/globals.scss */
+.dialog-box .box .message icon.rounded {
+  background-color: rgba(200, 200, 200, 0.4);
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  line-height: 40px;
+  text-align: center;
+  padding: 0;
+}
+/* line 511, ../sass/globals.scss */
+.dialog-box .box .message icon.rounded.gray {
+  color: #ccc;
+}
+/* line 514, ../sass/globals.scss */
+.dialog-box .box .message icon.rounded.green {
+  background-color: rgba(201, 224, 193, 0.4);
+  color: #345934;
+}
+/* line 518, ../sass/globals.scss */
+.dialog-box .box .message icon.rounded.red {
+  background-color: rgba(224, 176, 176, 0.4);
+  color: #593434;
+}
+/* line 522, ../sass/globals.scss */
+.dialog-box .box .message icon.rounded.yellow {
+  background-color: rgba(255, 241, 201, 0.4);
+  color: #595434;
+}
+/* line 528, ../sass/globals.scss */
+.dialog-box .box .message div, .dialog-box .box .message span, .dialog-box .box .message text, .dialog-box .box .message .text {
+  padding: .4em 0;
+  font-family: Poppins;
+}
+/* line 533, ../sass/globals.scss */
+.dialog-box .box .action {
+  padding: .3em .5em;
+  background-color: rgba(200, 200, 200, 0.2);
+  text-align: right;
+}
+/* line 537, ../sass/globals.scss */
+.dialog-box .box .action button {
+  padding: .5em 1em;
+  background-color: unset;
+  color: #0e4357;
+  font-family: Lexend-SemiBold;
+}
+/* line 542, ../sass/globals.scss */
+.dialog-box .box .action button:hover {
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+/* line 551, ../sass/globals.scss */
+.mask {
+  background-color: rgba(240, 240, 240, 0.2);
+}
+
+/* line 555, ../sass/globals.scss */
+.error-ressource {
+  justify-content: center;
+}
+/* line 557, ../sass/globals.scss */
+.error-ressource .box {
+  padding: 1em;
+}
+/* line 559, ../sass/globals.scss */
+.error-ressource .box icon {
+  color: #768881;
+  font-size: 9em;
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  display: inline-block;
+  margin-bottom: .2em;
+}
+/* line 566, ../sass/globals.scss */
+.error-ressource .box .text {
+  padding: 1em .4em;
+  font-family: Poppins;
+  color: #667;
+  font-size: 2em;
+}
+
+/* line 575, ../sass/globals.scss */
+kinput {
+  padding: .4em;
+}
+
+/* line 580, ../sass/globals.scss */
+.register-n-list {
+  white-space: nowrap;
+  -moz-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -webkit-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  transition-duration: .3s;
+  transition-property: transform;
+}
+/* line 585, ../sass/globals.scss */
+.register-n-list .mask {
+  display: none;
+  opacity: 0;
+  z-index: 2;
+}
+/* line 590, ../sass/globals.scss */
+.register-n-list .list-zone, .register-n-list .register-zone {
+  white-space: normal;
+}
+/* line 593, ../sass/globals.scss */
+.register-n-list .register-zone {
+  width: 50%;
+  padding: 0 2em 0 1em;
+}
+/* line 597, ../sass/globals.scss */
+.register-n-list.fugitif {
+  -moz-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+/* line 599, ../sass/globals.scss */
+.register-n-list.fugitif .mask {
+  display: inline-block;
+}
+
+/* line 605, ../sass/globals.scss */
+.empty-info, .empty-box {
+  height: 100%;
+  color: #ccc;
+  font-family: Poppins;
+  font-size: 1.1em;
+  justify-content: center;
+  padding: .4em .8em;
+}
+/* line 612, ../sass/globals.scss */
+.empty-info .wrapper-box, .empty-box .wrapper-box {
+  padding: .3em;
+}
+/* line 614, ../sass/globals.scss */
+.empty-info .wrapper-box icon, .empty-box .wrapper-box icon {
+  font-size: 2.5em;
+  padding: .4em;
+}
+
+/* line 621, ../sass/globals.scss */
+.card-manager, card-manager {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/* line 630, ../sass/globals.scss */
+.card-manager .header, card-manager .header {
+  padding: .2em .5em;
+  box-shadow: 2px 1px 2px 0 #ccc;
+  height: var(--cardManager-header-height);
+}
+/* line 634, ../sass/globals.scss */
+.card-manager .header h1, card-manager .header h1 {
+  font-family: Poppins-SemiBold;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 642, ../sass/globals.scss */
+.card-manager .header .slide-input button, card-manager .header .slide-input button {
+  padding: .4em;
+  border: 0;
+  font-size: 1.3em;
+  border-radius: .4em;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* line 649, ../sass/globals.scss */
+.card-manager .header .slide-input button.disabled, card-manager .header .slide-input button.disabled {
+  color: #eee;
+}
+/* line 653, ../sass/globals.scss */
+.card-manager .header .slide-input kinput, card-manager .header .slide-input kinput {
+  font-size: 1.3em;
+  font-family: Lexend;
+  vertical-align: middle;
+  padding-top: .5em !important;
+}
+/* line 658, ../sass/globals.scss */
+.card-manager .header .slide-input kinput input, card-manager .header .slide-input kinput input {
+  background-color: #efc;
+}
+/* line 663, ../sass/globals.scss */
+.card-manager .header .card-tab, card-manager .header .card-tab {
+  padding: 0 .5em;
+  height: 40px;
+  -moz-border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  border-radius: 0.4em;
+  transition-duration: .2s;
+  transition-property: background-color;
+  cursor: pointer;
+}
+/* line 670, ../sass/globals.scss */
+.card-manager .header .card-tab .text, card-manager .header .card-tab .text {
+  font-size: 1em;
+  font-family: Poppins;
+  color: #777;
+  padding: .3em .2em;
+}
+/* line 676, ../sass/globals.scss */
+.card-manager .header .card-tab .line, card-manager .header .card-tab .line {
+  height: 5px;
+  -moz-border-radius: 0.4em 0.4em 0.2em 0.2em;
+  -webkit-border-radius: 0.4em;
+  border-radius: 0.4em 0.4em 0.2em 0.2em;
+}
+/* line 680, ../sass/globals.scss */
+.card-manager .header .card-tab:hover, card-manager .header .card-tab:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+/* line 684, ../sass/globals.scss */
+.card-manager .header .card-tab.active .text, card-manager .header .card-tab.active .text {
+  color: #000;
+}
+/* line 687, ../sass/globals.scss */
+.card-manager .header .card-tab.active .line, card-manager .header .card-tab.active .line {
+  background-color: #0e4357;
+}
+/* line 692, ../sass/globals.scss */
+.card-manager .header .actions, card-manager .header .actions {
+  height: 100%;
+}
+/* line 696, ../sass/globals.scss */
+.card-manager .header.extended, card-manager .header.extended {
+  height: var(--cardManager-header-extended-height);
+}
+/* line 698, ../sass/globals.scss */
+.card-manager .header.extended .actions, card-manager .header.extended .actions {
+  height: calc(var(--cardManager-header-extended-height) / 2.2);
+}
+/* line 701, ../sass/globals.scss */
+.card-manager .header.extended card, card-manager .header.extended card {
+  display: flex;
+  padding: 0;
+  height: 85%;
+}
+/* line 708, ../sass/globals.scss */
+.card-manager tabs, card-manager tabs {
+  padding: .2em;
+  overflow: hidden;
+  height: 40px;
+  white-space: nowrap;
+}
+/* line 713, ../sass/globals.scss */
+.card-manager tabs tabs-wrapper, card-manager tabs tabs-wrapper {
+  height: inherit;
+}
+/* line 716, ../sass/globals.scss */
+.card-manager tabs tab, card-manager tabs tab {
+  height: calc(40px - 10px);
+  white-space: normal;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  cursor: pointer;
+  margin: 0 .4em;
+}
+/* line 724, ../sass/globals.scss */
+.card-manager tabs tab:hover, .card-manager tabs tab.active, card-manager tabs tab:hover, card-manager tabs tab.active {
+  color: #0e4357;
+}
+/* line 729, ../sass/globals.scss */
+.card-manager tabs.styled-bubble tab, card-manager tabs.styled-bubble tab {
+  border-radius: 1em;
+  padding: .3em .6em;
+  color: #000;
+}
+/* line 733, ../sass/globals.scss */
+.card-manager tabs.styled-bubble tab:hover, card-manager tabs.styled-bubble tab:hover {
+  background-color: #eeee;
+}
+/* line 736, ../sass/globals.scss */
+.card-manager tabs.styled-bubble tab.active, card-manager tabs.styled-bubble tab.active {
+  color: #fff;
+  background-color: #0e4357;
+}
+/* line 743, ../sass/globals.scss */
+.card-manager tabs.styled-line tab, card-manager tabs.styled-line tab {
+  padding: .3em .6em;
+  position: relative;
+  border-radius: .4em;
+  color: #000;
+}
+/* line 749, ../sass/globals.scss */
+.card-manager tabs.styled-line tab.active:hover, card-manager tabs.styled-line tab.active:hover {
+  background-color: #f7f7f7;
+}
+/* line 752, ../sass/globals.scss */
+.card-manager tabs.styled-line tab.active:after, card-manager tabs.styled-line tab.active:after {
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #0e4357;
+  border-radius: .4em .4em .2em .2em;
+}
+/* line 766, ../sass/globals.scss */
+.card-manager .body, .card-manager cards, card-manager .body, card-manager cards {
+  height: calc(100% - 40px);
+  position: relative;
+  overflow: hidden;
+}
+/* line 770, ../sass/globals.scss */
+.card-manager .body.fluid, .card-manager cards.fluid, card-manager .body.fluid, card-manager cards.fluid {
+  height: 100%;
+}
+/* line 773, ../sass/globals.scss */
+.card-manager .body .card, .card-manager .body card, .card-manager cards .card, .card-manager cards card, card-manager .body .card, card-manager .body card, card-manager cards .card, card-manager cards card {
+  position: absolute;
+  z-index: 1;
+  padding: 1em;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition-duration: .2s;
+  transition-property: z-index, opacity;
+}
+/* line 785, ../sass/globals.scss */
+.card-manager .body .card.active, .card-manager .body card.active, .card-manager cards .card.active, .card-manager cards card.active, card-manager .body .card.active, card-manager .body card.active, card-manager cards .card.active, card-manager cards card.active {
+  opacity: 1;
+  z-index: 2;
+}
+/* line 792, ../sass/globals.scss */
+.card-manager.free, .card-manager.free .body, .card-manager.free cards, card-manager.free, card-manager.free .body, card-manager.free cards {
+  overflow: unset;
+}
+
+/* line 798, ../sass/globals.scss */
+.button-bubble {
+  position: relative;
+  z-index: 4;
+}
+/* line 801, ../sass/globals.scss */
+.button-bubble .bubble-box {
+  position: absolute;
+  padding: .4em;
+  background-color: red;
+  height: auto;
+  z-index: 4;
+  gap: .2em;
+  width: auto;
+  right: 0;
+  top: 40px;
+  background-color: white;
+  filter: drop-shadow(0 0 4px #aaa);
+  border-radius: .4em;
+}
+/* line 817, ../sass/globals.scss */
+.button-bubble .bubble-box button {
+  margin-bottom: .4em;
+}
+/* line 820, ../sass/globals.scss */
+.button-bubble .bubble-box:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  top: -5px;
+  right: 20%;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: inherit;
+}
+/* line 831, ../sass/globals.scss */
+.button-bubble .bubble-box.left {
+  right: unset;
+  left: 0;
+}
+/* line 834, ../sass/globals.scss */
+.button-bubble .bubble-box.left:after {
+  right: unset;
+  left: 20%;
+}
+
+/* line 842, ../sass/globals.scss */
+.form-popup {
+  background-color: rgba(200, 200, 200, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  opacity: 0;
+  transition-duration: .2s;
+  transition-property: z-index,opacity;
+  overflow: hidden;
+}
+/* line 852, ../sass/globals.scss */
+.form-popup .box {
+  height: 90vh;
+  background-color: #fff;
+  -moz-border-radius: 0.4em;
+  -webkit-border-radius: 0.4em;
+  border-radius: 0.4em;
+  -moz-box-shadow: 0 1px 3px 0 #ccc;
+  -webkit-box-shadow: 0 1px 3px 0 #ccc;
+  box-shadow: 0 1px 3px 0 #ccc;
+  -moz-transform: translate3d(0, 20%, 0);
+  -ms-transform: translate3d(0, 20%, 0);
+  -webkit-transform: translate3d(0, 20%, 0);
+  transform: translate3d(0, 20%, 0);
+  transition-property: transform;
+  transition-duration: .2s;
+}
+/* line 860, ../sass/globals.scss */
+.form-popup .box .title {
+  height: 50px;
+  font-family: Muli-Bold;
+  font-size: 1.2em;
+  padding: 0 .4em;
+  line-height: 50px;
+}
+/* line 868, ../sass/globals.scss */
+.form-popup .box .body {
+  height: 100%;
+  padding: 0 2em;
+}
+/* line 872, ../sass/globals.scss */
+.form-popup .box .action {
+  background-color: #f3f1f1;
+  height: 80px;
+}
+/* line 875, ../sass/globals.scss */
+.form-popup .box .action button {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+/* line 880, ../sass/globals.scss */
+.form-popup.right-alignment {
+  justify-content: flex-end;
+}
+/* line 882, ../sass/globals.scss */
+.form-popup.right-alignment .box {
+  height: 100vh;
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -moz-border-radius: 0.4em 0 0 0.4em;
+  -webkit-border-radius: 0.4em;
+  border-radius: 0.4em 0 0 0.4em;
+  -moz-box-shadow: -1px 0px 3px 0 #ccc;
+  -webkit-box-shadow: -1px 0px 3px 0 #ccc;
+  box-shadow: -1px 0px 3px 0 #ccc;
+}
+/* line 889, ../sass/globals.scss */
+.form-popup.left-alignment {
+  justify-content: flex-start;
+}
+/* line 891, ../sass/globals.scss */
+.form-popup.left-alignment .box {
+  height: 100vh;
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  -moz-border-radius: 0 0.4em 0.4em 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 0.4em 0.4em 0;
+  -moz-box-shadow: 1px 0px 3px 0 #ccc;
+  -webkit-box-shadow: 1px 0px 3px 0 #ccc;
+  box-shadow: 1px 0px 3px 0 #ccc;
+}
+/* line 898, ../sass/globals.scss */
+.form-popup.active {
+  z-index: 2;
+  opacity: 1;
+}
+/* line 901, ../sass/globals.scss */
+.form-popup.active .box {
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 907, ../sass/globals.scss */
+wrapper {
+  padding: .2em;
+}
+
+/* line 911, ../sass/globals.scss */
+.scroll-view {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 916, ../sass/globals.scss */
+.scroll-view .wrap {
+  padding: .4em;
+}
+
+/* line 921, ../sass/globals.scss */
+.duo-view {
+  display: flex;
+  flex-direction: column;
+}
+/* line 924, ../sass/globals.scss */
+.duo-view .duo-head {
+  height: var(--cardManager-header-height);
+  display: flex;
+  align-items: center;
+}
+/* line 930, ../sass/globals.scss */
+.duo-view .duo-head .title {
+  font-family: Poppins-Medium;
+  padding: 0 .3em;
+}
+/* line 934, ../sass/globals.scss */
+.duo-view .duo-head button {
+  height: calc(var(--cardManager-header-height) - 10px);
+}
+/* line 938, ../sass/globals.scss */
+.duo-view .duo-body {
+  height: calc(100% - var(--cardManager-header-height));
+}
+
+/* line 943, ../sass/globals.scss */
+inline-form {
+  display: none;
+}
+
+/* line 947, ../sass/globals.scss */
+.layer-form {
+  background-color: rgba(200, 200, 250, 0.1);
+  z-index: 99;
+  transition-duration: .2s;
+  will-change: opacity;
+  opacity: 1;
+  overflow: hidden;
+  backdrop-filter: blur(1px);
+}
+/* line 956, ../sass/globals.scss */
+.layer-form inline-form {
+  display: block;
+}
+/* line 960, ../sass/globals.scss */
+.layer-form .box {
+  background-color: #fff;
+  max-height: 98vh;
+  height: auto;
+  border-radius: .4em;
+  transition-duration: .1s;
+  transform: scale(1, 1);
+  transition-property: transform;
+  box-shadow: 0 2px 4px 0 #888;
+}
+/* line 973, ../sass/globals.scss */
+.layer-form .header {
+  padding: 0 .4em;
+  font-family: Poppins-Bold;
+  height: var(--layerformHeaderHeight);
+}
+/* line 977, ../sass/globals.scss */
+.layer-form .header .close-zone icon {
+  display: inline-block;
+  padding: .4em;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+/* line 984, ../sass/globals.scss */
+.layer-form .waiter-load {
+  position: relative;
+  padding: 0;
+  text-align: center;
+}
+/* line 989, ../sass/globals.scss */
+.layer-form .waiter-load .box .bulbe {
+  width: 34px;
+  height: 34px;
+}
+/* line 993, ../sass/globals.scss */
+.layer-form .waiter-load .box .text {
+  position: relative;
+  transform: translateY(-100%);
+}
+/* line 999, ../sass/globals.scss */
+.layer-form .actions {
+  padding: 0 .4em;
+  height: var(--layerformHeaderHeight);
+  background-color: #f8f7fc;
+  border-radius: 0 0 .4em .4em;
+}
+/* line 1004, ../sass/globals.scss */
+.layer-form .actions button {
+  height: 2.5em;
+  font-family: Lexend-Medium;
+  border: 0;
+  margin: 0 .4em;
+  border-radius: .4em;
+  cursor: pointer;
+  background-color: rgba(250, 250, 250, 0.2);
+}
+/* line 1012, ../sass/globals.scss */
+.layer-form .actions button:focus {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+/* line 1016, ../sass/globals.scss */
+.layer-form .actions.inside {
+  height: auto;
+  background-color: unset;
+  padding: .4em;
+}
+/* line 1020, ../sass/globals.scss */
+.layer-form .actions.inside button {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+/* line 1026, ../sass/globals.scss */
+.layer-form .form-view {
+  padding: .5em 1em;
+  font-size: .9em;
+  height: auto;
+  max-height: calc(98vh - var(--layerformHeaderHeight) * 2);
+  overflow: hidden;
+  overflow-y: auto;
+}
+/* line 1034, ../sass/globals.scss */
+.layer-form .form-view .wrapper.left {
+  padding-right: .2em;
+}
+/* line 1037, ../sass/globals.scss */
+.layer-form .form-view .wrapper.right {
+  padding-left: .2em;
+}
+/* line 1043, ../sass/globals.scss */
+.layer-form.down {
+  opacity: 0.4;
+}
+/* line 1045, ../sass/globals.scss */
+.layer-form.down .box {
+  transform: scale(0.95, 0.95);
+}
+/* line 1050, ../sass/globals.scss */
+.layer-form.fixed {
+  opacity: 1;
+}
+/* line 1052, ../sass/globals.scss */
+.layer-form.fixed .box {
+  transform: unset;
+}
+/* line 1056, ../sass/globals.scss */
+.layer-form.transparent {
+  text-align: center;
+}
+/* line 1058, ../sass/globals.scss */
+.layer-form.transparent .box {
+  box-shadow: unset;
+  background-color: unset;
+}
+/* line 1062, ../sass/globals.scss */
+.layer-form.transparent .box .waiter-load .box {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 #888;
+}
+/* line 1068, ../sass/globals.scss */
+.layer-form.transparent .blur {
+  backdrop-filter: blur(10px);
+  box-shadow: unset;
+  background-color: unset;
+}
+
+/* line 1076, ../sass/globals.scss */
+akacontextmenu {
+  position: absolute;
+  display: block;
+  z-index: 100;
+  width: 400px;
+  height: 200px;
+  background-color: red;
+  border-radius: 0 .4em .4em .4em;
+}
+
+/* line 1086, ../sass/globals.scss */
+.print-preview {
+  height: 90vh;
+  background-color: #fff;
+}
+/* line 1087, ../sass/globals.scss */
+.print-preview .head {
+  background-color: #fff;
+}
+
+/* line 1095, ../sass/globals.scss */
+.animate-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+
+/* line 1103, ../sass/globals.scss */
+.fast-animate-spin {
+  -moz-animation: spin .5s infinite linear;
+  -o-animation: spin .5s infinite linear;
+  -webkit-animation: spin .5s infinite linear;
+  animation: spin .5s infinite linear;
+  display: inline-block;
+}
+
+/* line 1111, ../sass/globals.scss */
+.preview-box {
+  padding: .4em;
+  height: 250px;
+  padding: .4em;
+}
+/* line 1116, ../sass/globals.scss */
+.preview-box .text {
+  height: 100%;
+  font-size: 115%;
+  overflow: hidden;
+  font-family: Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .3s;
+  border-radius: .8em;
+  padding: .4em;
+  background-color: #e1e7ea;
+  text-transform: capitalize;
+}
+/* line 1129, ../sass/globals.scss */
+.preview-box .text div {
+  display: block;
+  text-align: center;
+}
+/* line 1133, ../sass/globals.scss */
+.preview-box .text text {
+  display: inline-block;
+  float: left;
+  position: relative;
+  font-size: .6em;
+  border-radius: .4em;
+  margin-right: .3em;
+  padding: .4em;
+  background-color: #333;
+  color: #fff;
+}
+/* line 1145, ../sass/globals.scss */
+.preview-box .actions {
+  height: 0%;
+  transition-duration: .3s;
+  overflow: hidden;
+  background-color: #eee;
+  border-radius: .8em;
+  margin-top: .4em;
+}
+/* line 1152, ../sass/globals.scss */
+.preview-box .actions row {
+  padding: .3em;
+  margin: .1em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Roboto;
+  font-size: .9em;
+}
+/* line 1160, ../sass/globals.scss */
+.preview-box .actions row icon {
+  font-size: 1.3em;
+}
+/* line 1163, ../sass/globals.scss */
+.preview-box .actions row label {
+  padding: .3em;
+  background-color: #0e4357;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: Lexend-Medium;
+  border-radius: .4em;
+  margin-right: .4em;
+}
+/* line 1173, ../sass/globals.scss */
+.preview-box .actions button {
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  font-family: Lexend-Bold;
+  padding: .6em 0;
+  border-radius: .4em;
+  cursor: pointer;
+}
+/* line 1181, ../sass/globals.scss */
+.preview-box .actions button:hover {
+  background-color: rgba(160, 190, 200, 0.4);
+}
+/* line 1187, ../sass/globals.scss */
+.preview-box:hover .text {
+  height: 55%;
+  font-size: 120%;
+  background-color: #0e4357;
+  color: #fff;
+}
+/* line 1192, ../sass/globals.scss */
+.preview-box:hover .text text {
+  font-size: .5em;
+  transform: translateY(10px);
+}
+/* line 1197, ../sass/globals.scss */
+.preview-box:hover .actions {
+  height: 45%;
+  padding: .3em;
+}
+
+/* line 1204, ../sass/globals.scss */
+.arrow-data {
+  padding: 0 !important;
+  display: flex;
+  height: 40px;
+  position: relative;
+  box-shadow: 1px 1px 1px 0 #ddf;
+  z-index: 0;
+  background-color: #f0f0fa;
+  margin-right: 15px;
+  font-family: Poppins;
+}
+/* line 1214, ../sass/globals.scss */
+.arrow-data .data {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  position: relative;
+  background-color: inherit;
+  padding: .4em .8em .4em 1.4em;
+  white-space: nowrap;
+}
+/* line 1223, ../sass/globals.scss */
+.arrow-data .data .content {
+  position: relative;
+  z-index: 2;
+}
+/* line 1227, ../sass/globals.scss */
+.arrow-data .data:after {
+  content: " ";
+  height: 28px;
+  width: 28px;
+  z-index: 1;
+  background-color: inherit;
+  display: block;
+  position: absolute;
+  box-shadow: 1px 1px 1px 0 #ccc;
+  right: -10px;
+  transform: rotate(-45deg);
+}
+/* line 1240, ../sass/globals.scss */
+.arrow-data.arrow-rounded .data:after {
+  border-radius: .4em 0 .4em 0;
+}
+/* line 1243, ../sass/globals.scss */
+.arrow-data.rounded {
+  border-radius: .8em;
+}
+/* line 1245, ../sass/globals.scss */
+.arrow-data.rounded .data {
+  border-radius: .8em;
+}
+
+/* line 1252, ../sass/globals.scss */
+.presentation-view .head {
+  font-family: OpenSans-Semibold;
+  font-size: 1em;
+}
+/* line 1256, ../sass/globals.scss */
+.presentation-view wrapper {
+  padding: .4em;
+}
+/* line 1258, ../sass/globals.scss */
+.presentation-view wrapper bubble {
+  padding: .4em;
+  background-color: #f7f7f8;
+  border-radius: 1em;
+  height: auto;
+  min-height: inherit;
+  margin: .3em 0;
+}
+/* line 1261, ../sass/globals.scss */
+.presentation-view wrapper bubble.prime {
+  background-color: #e7ecff;
+}
+/* line 1264, ../sass/globals.scss */
+.presentation-view wrapper bubble.second {
+  background-color: #fff1e9;
+}
+/* line 1267, ../sass/globals.scss */
+.presentation-view wrapper bubble.third {
+  background-color: #f2ffea;
+}
+/* line 1270, ../sass/globals.scss */
+.presentation-view wrapper bubble.none {
+  background-color: rgba(210, 230, 250, 0.1);
+}
+/* line 1277, ../sass/globals.scss */
+.presentation-view wrapper bubble .head {
+  font-size: 1.1em;
+  padding: .3em 0;
+  font-family: Poppins-Light;
+  text-transform: capitalize;
+  position: relative;
+}
+/* line 1283, ../sass/globals.scss */
+.presentation-view wrapper bubble .head.designed:after {
+  content: " ";
+  display: inline-block;
+  width: 80%;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  border-radius: 2em;
+  height: 80%;
+  background-color: #0e4357;
+  opacity: .1;
+}
+/* line 1295, ../sass/globals.scss */
+.presentation-view wrapper bubble .head.sub {
+  font-family: OpenSans;
+  font-size: 1em;
+}
+/* line 1302, ../sass/globals.scss */
+.presentation-view grid {
+  padding: .4em;
+}
+/* line 1304, ../sass/globals.scss */
+.presentation-view grid row {
+  padding: .3em;
+}
+/* line 1306, ../sass/globals.scss */
+.presentation-view grid row cell {
+  padding: .3em;
+  font-family: Merriweather-Light;
+  line-height: 1.5em;
+}
+/* line 1310, ../sass/globals.scss */
+.presentation-view grid row cell:first-child {
+  font-family: OpenSans-Semibold;
+  text-transform: capitalize;
+  text-space: 3px;
+}
+
+/* line 1320, ../sass/globals.scss */
+grid {
+  display: flex;
+  padding: .1em;
+  flex-direction: column;
+}
+/* line 1324, ../sass/globals.scss */
+grid row {
+  display: flex;
+  padding: .1em;
+}
+/* line 1327, ../sass/globals.scss */
+grid row.head {
+  font-weight: bold;
+}
+/* line 1330, ../sass/globals.scss */
+grid row cell {
+  display: inline-block;
+  padding: .1em;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}

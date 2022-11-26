@@ -1,0 +1,39 @@
+<card class="super super-l12 card poste" data-index="4">
+    <div class="super super-l12 list super-flex super-flex-column">
+        <div class="super super-l12 super-scrollable-y body">
+            <% 
+            
+            for(var i in hierarchy){ %>
+            <item class="super super-flex-center super-l12 poste">
+                            <span class="super super-l9 name super-flex-center" data-index="<%= i %>">
+                                <%= hierarchy[i].notation %>
+                                <%= hierarchy[i].filiere != null ? " de "+hierarchy[i].filiere : "" %>
+                            </span>
+                <span class="super super-l3 action super-flex-center super-flex-align-end">
+                                <% if(allowModule(290)){ %>
+                                <button class="edit ion-edit light" data-index="<%= i %>"></button>
+                                <% } %>
+                                <% if(allowModule(300)){ %>
+                                <button class="delete ion-trash-b light" data-index="<%= i %>"></button>
+                                <% } %>
+                            </span>
+            </item>
+            <% } %>
+        </div>
+    </div>
+    <div class="super float-action">
+        <!-- <button class="super" id="multipleSelect">
+            <i class="ion-android-checkbox-outline"></i>
+        </button> -->
+        <button class="super layer-form-on"
+                data-layer-title="${ui.admin.promotion.title.creation}"
+                data-layer-name="poste"
+                data-layer-target="#poste"
+                id="addPoste"
+                layerform-src
+            >
+            <i class="ion-plus-round"></i>
+        </button>
+    </div>
+</card>
+@("../forms/admin.hierarchy.form")

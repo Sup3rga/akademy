@@ -1,0 +1,53 @@
+<template id="course-form">
+    <div class="ui-element ui-size-fluid ui-horizontal-left person-form" id="courseForm">
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom group">
+            <div class="ui-element ui-size-8 field">
+                <label>${ui.course.name}</label>
+                <kinput type="text" required class="input ui-element ui-size-fluid" name="cr_name" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '#+0-9&/:-]*[A-Za-zÀ-ÖØ-öø-ÿ]*$"></kinput>
+            </div>
+            <div class="sui-element ui-size-4 field">
+                <label>${ui.course.code}</label>
+                <kinput type="text" required class="input ui-element ui-size-fluid" name="cr_code" mask="********" match="^[a-z]{2,3}-[0-9]{2,4}$"></kinput>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid hint-box alert-box">
+            <div class="ui-element ui-size-fluid ui-flex ui-vertical-center wrapper">
+                <icon class="ion-information rounded"></icon>
+                <div class="ui-element ui-size-10 text">
+                    ${ui.course.code.explanation}
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom group">
+            <div class="ui-element ui-size-6 field faculty">
+                <label>${ui.academic.exam.period.label.section.school}</label>
+                <kinput type="select" required class="input ui-element ui-size-fluid academic-section" name="cr_fac" match="^[0-9]+$">
+                </kinput>
+            </div>
+            <div class="ui-element ui-size-6 field grade">
+                <label>${ui.component.label.class}</label>
+                <kinput type="select" required class="input ui-element ui-size-fluid academic-grade" name="cr_grade" match="^[0-9]+$">
+                </kinput>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom group">
+            <div class="ui-element ui-size-3 field">
+                <label>${ui.academic.session.label}</label>
+                <kinput type="select" required class="input ui-element ui-size-fluid sessions" name="cr_session" match="^[0-9]+$">
+                </kinput>
+            </div>
+            <div class="ui-element ui-size-3 field">
+                <label>${ui.component.label.bareme}</label>
+                <kinput type="number" required class="input ui-element ui-size-fluid" name="cr_rate" match="^[0-9]+$"></kinput>
+            </div>
+            <div class="ui-element ui-size-6 field th_principale">
+                <label>${ui.component.label.principal.teacher}</label>
+                <kinput type="select" required class="input ui-element ui-size-fluid" name="cr_principale" match="^[0-9]+$">
+                    <% for(var i in teacher){ %>
+                        <option value="<%= teacher[i].id %>"><%= teacher[i].prenom+" "+teacher[i].nom %></option>
+                    <% } %>
+                </kinput>
+            </div>
+        </div>
+    </div>
+</template>

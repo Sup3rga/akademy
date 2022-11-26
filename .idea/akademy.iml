@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/markbaker/matrix" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/markbaker/complex" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/ezyang/htmlpurifier" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/myclabs/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/phpoffice/phpspreadsheet" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api/vendor/maennchen/zipstream-php" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,41 @@
+<template id="promo-transfer">
+    <div class="ui-container ui-size-fluid duo-view transfer-grid">
+        <div class="ui-element ui-size-fluid duo-head">
+            <text class="title">
+                Promotion source
+            </text>
+            <button class="ui-element ui-size-5 ui-flex ui-vertical-center input-icon ui-relative">
+                <icon class="las la-users"></icon>
+                <kinput type="select" class="ui-element ui-size-fluid academic-grade">
+                    <% for(var i in promo){
+                        if(current != promo[i].id){
+                    %>
+                        <option value="<%= promo[i].id %>"><%= utils.getClass(promo[i].grade).notation + ' ' +utils.getRoom(promo[i].room).name %></option>
+                    <% }
+                       } %>
+                </kinput>
+                <icon class="las la-sort-down"></icon>
+            </button>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex duo-body super-flex ui-relative">
+            <%
+                var students = [],
+                    simpleText = true;
+            %>
+            <div class="ui-element ui-size-6 transfer-source scroll-view">
+                @("./student.list")
+            </div>
+            <div class="ui-element ui-size-6 transfer-destination student-list scroll-view">
+                @("./student.list")
+            </div>
+            <div class="float-action">
+                <button class="set-transfer" target="in">
+                    <icon class="las la-arrow-right"></icon>
+                </button>
+                <button class="set-transfer" target="out">
+                    <icon class="las la-arrow-left"></icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

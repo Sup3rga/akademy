@@ -1,0 +1,175 @@
+<card class="ui-container ui-size-fluid card session-view" data-index="2">
+    <template id="session-view">
+        <div class="ui-container ui-size-fluid ui-md-unwrap presentation-view ui-scroll-y ui-md-no-scroll ui-row-reverse list-view">
+            <div class="ui-container ui-size-fluid ui-md-size-4 ui-relative calendar-events">
+                <div class="ui-element ui-size-fluid ui-absolute ui-all-close card-manager calendar-view">
+                    <div class="ui-element ui-size-fluid ui-unwrap ui-all-center actions">
+                        <button class="ui-element onglet card-tab active" data-index="0">
+                            <icon class="las la-calendar-day"></icon>
+                        </button>
+                        <button class="ui-element onglet card-tab" data-index="1">
+                            <icon class="las la-clipboard-list"></icon>
+                        </button>
+                    </div>
+                    <div class="ui-element ui-size-fluid body card-container">
+                        <card class="ui-element ui-size-fluid card active" data-index="0">
+                            <wrapper class="ui-container ui-size-fluid ui-unwrap ui-md-wrap">
+                                <bubble class="ui-element ui-size-fluid calendar-zone"></bubble>
+                            </wrapper>
+                        </card>
+                        <card class="ui-element ui-size-fluid ui-scroll-y card" data-index="1">
+                            <wrapper class="ui-container ui-size-fluid">
+                                <bubble class="ui-container ui-size-6 ui-md-size-fluid ui-scroll-y event-summary">
+                                    <div class="head ui-container ui-size-fluid">Évènements</div>
+                                    <div class="head sub currentdate ui-container ui-size-fluid"></div>
+                                </bubble>
+                            </wrapper>
+                        </card>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-container ui-size-fluid ui-md-size-8 ui-relative">
+                <div class="ui-container ui-size-fluid ui-relative ui-md-scroll">
+                    <wrapper class="ui-container ui-size-fluid details">
+                        <bubble class="ui-container ui-size-fluid">
+                            <div class="ui-container ui-size-fluid head">${ui.academic.session.view.label.about}</div>
+                            <div class="ui-container ui-size-fluid">
+                                <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center ui-md-vertical-top ui-all-center stats">
+                                    <item class="ui-element ui-size-4">
+                                        <icon class="las la-book-reader"></icon>
+                                        <label class="number"><%= stats.works %></label>
+                                        <label>${ui.academic.session.stats.work}</label>
+                                    </item>
+                                    <item class="ui-element ui-size-4">
+                                        <icon class="las la-chalkboard-teacher"></icon>
+                                        <label class="number"><%= stats.courses %></label>
+                                        <label>${ui.academic.session.stats.course}</label>
+                                    </item>
+                                    <item class="ui-element ui-size-4 ">
+                                        <icon class="las la-diagnoses"></icon>
+                                        <label class="number"><%= stats.exams %></label>
+                                        <label>${ui.academic.session.stats.exam}</label>
+                                    </item>
+                                </div>
+                                <div class="ui-element ui-size-fluid ui-column ui-lg-flex ui-lg-row">
+                                    <div class="ui-container ui-size-fluid intervals">
+                                        <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center row">
+                                            <icon class="las la-calendar-day"></icon>
+                                            <span class="ui-container ui-size-4">
+                                            ${ui.academic.session.stats.label.date.begin}
+                                        </span>
+                                            : <%= utils.localDate(begin) %>
+                                        </div>
+                                        <div class="ui-container ui-size-fluid row ui-unwrap ui-vertical-center">
+                                            <icon class="las la-calendar-day"></icon>
+                                            <span class="ui-container ui-size-4">
+                                            ${ui.academic.session.stats.label.date.end}
+                                        </span>
+                                            : <%= utils.localDate(end) %>
+                                        </div>
+                                        <div class="ui-container ui-size-fluid ui-unwrap row">
+                                            <icon class="las la-hourglass-half"></icon>
+                                            <span class="ui-container ui-size-4">
+                                            ${ui.academic.session.stats.label.state}
+                                        </span>
+                                            : <%= state == "A" ?
+                                            "${ui.academic.session.stats.label.state.pending}" :
+                                            state == "E" ?
+                                            "${ui.academic.session.stats.label.state.running}" :
+                                            "${ui.academic.session.stats.label.state.end}"
+                                            %>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </bubble>
+                    </wrapper>
+                    <wrapper class="ui-container ui-size-fluid">
+                        <bubble class="ui-container ui-size-fluid none">
+                            <div class="ui-container ui-size-fluid head">${ui.academic.session.view.label.planning}</div>
+                            <%
+                            var empty = periods.length == 0;
+
+                            for(var i in periods){
+                            %>
+                            <div class="ui-container ui-size-fluid period-wrapper">
+                                <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center summary-row">
+                                    <icon class="las la-calendar-day"></icon>
+                                    <div class="ui-container ui-size-9">
+                                        <text class="ui-element">
+                                            <%= utils.localDate(periods[i].begin) + " ~ " + utils.localDate(periods[i].end) %>
+                                        </text>
+                                        <text class="ui-container ui-size-fluid min">
+                                            <%= periods[i].group.length %> planifications trouvées
+                                        </text>
+                                    </div>
+                                    <div class="ui-container ui-size-3 ui-horizontal-right">
+                                        <icon class="ion-ios-arrow-down down-button"></icon>
+                                    </div>
+                                </div>
+                                <div class="ui-container ui-size-fluid suite-row">
+                                    <% for(var j in periods[i].group){ %>
+                                        <row class="ui-container ui-size-fluid">
+                                            <%= utils.getClass(periods[i].group[j].grade).notation %>
+                                        </row>
+                                    <% } %>
+                                </div>
+                            </div>
+                            <%
+                            }
+                            if(empty){
+                            %>
+                            <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center empty-info">
+                                ${ui.academic.session.view.planning.list.empty}
+                            </div>
+                            <% } %>
+                        </bubble>
+                    </wrapper>
+                </div>
+                <div class="ui-md-container ui-size-fluid ui-hide float-action">
+                    <button class="las la-plus create-period layer-form-on aka-form"
+                            data-layer-title="${ui.academic.session.view.planning.title.creation}"
+                            data-layer-name="period"
+                            data-layer-size="5,6,7,10"></button>
+                </div>
+            </div>
+        </div>
+        <div class="ui-container ui-md-hide float-action">
+            <button class="las create-period la-plus layer-form-on aka-form"
+                    data-layer-title="${ui.academic.session.view.planning.title.creation}"
+                    data-layer-name="period"
+                    data-layer-size="5,6,7,10"></button>
+        </div>
+    </template>
+    <inline-form id="period-form">
+        <label>${ui.academic.exam.period.label.begin}</label>
+        <div class="ui-container ui-size-fluid field">
+            <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center combined">
+                <icon class="ui-element las la-calendar-day"></icon>
+                <kinput type="date" class="input" required name="exam_begin"></kinput>
+            </div>
+        </div>
+        <label>${ui.academic.exam.period.label.end}</label>
+        <div class="ui-container ui-size-fluid field">
+            <div class="ui-container ui-size-fluid ui-unwrap ui-vertical-center combined">
+                <icon class="ui-element las la-calendar-day"></icon>
+                <kinput type="date" class="input" required name="exam_end"></kinput>
+            </div>
+        </div>
+        <div class="ui-container ui-size-fluid field">
+            <label>${ui.academic.exam.period.label.section.school}</label>
+            <kinput type="select" class="input ui-container ui-size-fluid section-list" multiple>
+                <% for(var i in faculty){ %>
+                    <option value="<%=faculty[i].id%>" class="field-option super super-l12">
+                        <%= faculty[i].nom %>
+                    </option>
+                <% } %>
+            </kinput>
+        </div><!--
+     --><div class="ui-container ui-size-fluid field">
+            <label>${ui.academic.exam.period.label.all.section.school}</label>
+            <kinput type="select" class="input ui-container ui-size-fluid grade-list" name="exam_grades" multiple>
+            </kinput>
+        </div>
+    </inline-form>
+</card>

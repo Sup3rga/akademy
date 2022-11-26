@@ -1,0 +1,123 @@
+<template id="teacher-form">
+    <div class="ui-element ui-size-fluid person-form ui-horizontal-left" id="teacherForm">
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center identification">
+            <div class="ui-element ui-size-4 ui-flex ui-all-center">
+                <div class="super avatar-box">
+                    <input type="file" accept="image/x-png,image/gif,image/jpeg" class="ui-no-dimension" id="picture-file">
+                    <avatar class="ui-element">
+                        <icon class="las la-user"></icon>
+                        <div class="background"></div>
+                    </avatar>
+                    <icon class="ui-element avatar-chooser ion-android-camera" trigger="#picture-file"></icon>
+                </div>
+            </div>
+            <div class="ui-element ui-size-8 field-wrapper">
+                <div class="ui-element ui-size-fluid">
+                    <div class="ui-element ui-size-fluid field">
+                        <label>${ui.teacher.lastname}</label>
+                        <kinput type="text" class="input ui-element ui-size-fluid" required name="th_nom" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                    </div>
+                </div><!--
+             --><div class="ui-element ui-size-fluid field">
+                    <label>${ui.teacher.firstname}</label>
+                    <kinput type="text" class="input ui-element ui-size-fluid" required name="th_prenom" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                </div>
+                <div class="ui-element ui-size-fluid ui-flex">
+                    <div class="ui-element ui-size-fluid field">
+                        <label>${ui.component.label.gender}</label>
+                        <kinput type="select" class="input ui-element ui-size-fluid sexe" required name="th_sexe" match="^[\\S]$">
+                            <option value="F">${ui.component.label.gender.female}</option>
+                            <option value="M">${ui.component.label.gender.male}</option>
+                        </kinput>
+                    </div>
+                    <div class="ui-element ui-size-fluid field">
+                        <label>Status matrimonial</label>
+                        <kinput type="select" class="input ui-element ui-size-fluid" name="th_status">
+                            <option value="Célibataire">Célibataire</option>
+                            <option value="Marié(e)">Marié(e)</option>
+                            <option value="Fiancé">Fiancé</option>
+                            <option value="Non spécifié">Non spécifié</option>
+                        </kinput>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center group">
+            <label class="linked ui-element ui-size-3">${ui.component.label.birthplace}</label>
+            <div class="ui-element ui-size-9 ui-flex">
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.component.label.town}</label>
+                    <kinput type="text" class="input ui-element ui-size-fluid" required name="th_birthplace_town" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                </div>
+                <div class="ui-element ui-size-6 field">
+                    <label>${ui.component.label.country}</label>
+                    <kinput type="text" class="input ui-element ui-size-fluid" required name="th_birthplace_country" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center group">
+            <label class="linked ui-element ui-size-3">${ui.component.label.birthdate}</label>
+            <div class="ui-element ui-size-9 field">
+                <div class="ui-element ui-size-fluid ui-flex ui-vertical-center combined">
+                    <icon class="super las la-calendar-day"></icon>
+                    <kinput type="date" class="input ui-element ui-size-fluid" required name="th_birthdate"></kinput>
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center group">
+            <label class="linked ui-element ui-size-3">${ui.component.label.address}</label>
+            <div class="ui-element ui-size-3 field">
+                <label>${ui.component.label.street}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" required name="th_address_street" match="^#? *[A-Za-zÀ-ÖØ-öø-ÿ0-9' -]+$"></kinput>
+            </div>
+            <div class="ui-element ui-size-3 field">
+                <label>${ui.component.label.town}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" required name="th_address_town" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+            <div class="ui-element ui-size-3 field">
+                <label>${ui.component.label.country}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" required name="th_address_country" match="^[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ]+[A-Za-zÀ-ÖØ-öø-ÿ '-]*[A-Za-zÀ-ÖØ-öø-ÿ]$"></kinput>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center group">
+            <label class="linked ui-element ui-size-3">${ui.component.label.phone}</label>
+            <div class="ui-element ui-size-9 field">
+                <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom combined">
+                    <div class="ui-element ui-size-4" style="padding: .1em 0">+509</div>
+                    <kinput type="text" class="input ui-element ui-size-8" mask="####-####" match="^[34][0-9]{3}-?[0-9]{4}$" placeholder="XXXX-XXXX" name="th_phone">
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom group">
+            <div class="ui-element ui-size-6 field">
+                <label>${ui.component.label.skill.level}</label>
+                <kinput type="select" class="input ui-element ui-size-fluid" match="^[\\w]+$" name="th_skill">
+                    <option value="Bacc">${ui.component.label.skill.level.bacc}</option>
+                    <option value="Licence">${ui.component.label.skill.level.licence}</option>
+                    <option value="Master">${ui.component.label.skill.level.master}</option>
+                    <option value="Doctorat">${ui.component.label.skill.level.doctor}</option>
+                </kinput>
+            </div>
+            <div class="ui-element ui-size-6 field">
+                <label>${ui.component.label.email}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" match="^[a-z]+[a-z0-9.]*@[a-z]+[a-z0-9.]*\\.[a-z]+[a-z0-9]*$" name="th_email"></kinput>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-bottom group">
+            <div class="ui-element ui-size-6 field">
+                <label>${ui.component.label.nif}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" mask="###-###-###-#" match="^([0-9]{3}-){3}[0-9]$" name="th_nif"></kinput>
+            </div>
+            <div class="ui-element ui-size-6 field">
+                <label>${ui.component.label.ninu}</label>
+                <kinput type="text" class="input ui-element ui-size-fluid" mask="##########" match="^[1-5][0-9]{9}$" name="th_ninu"></kinput>
+            </div>
+        </div>
+        <div class="ui-element ui-size-fluid group">
+            <label class="ui-element ui-size-fluid">${ui.component.label.memo} (${ui.component.label.not.required})</label>
+            <div class="ui-element ui-size-fluid field">
+                <kinput type="textarea" class="ui-element ui-size-fluid" name="th_memo" placeholder="${ui.component.label.write.here}"></kinput>
+            </div>
+        </div>
+    </div>
+</template>

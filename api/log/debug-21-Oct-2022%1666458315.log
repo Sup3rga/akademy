@@ -1,0 +1,606 @@
+[ 21-Oct-2022 13:05:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 13:05:17 ] [Total] []
+[ 21-Oct-2022 13:05:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:05:48 ] [Total] []
+[ 21-Oct-2022 13:30:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:30:28 ] [Total] []
+[ 21-Oct-2022 13:41:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd=1&amp;id=8"}
+[ 21-Oct-2022 13:41:01 ] [Total] []
+[ 21-Oct-2022 13:41:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd=1&amp;id=8"}
+[ 21-Oct-2022 13:41:05 ] [Total] []
+[ 21-Oct-2022 13:41:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd=1&amp;id=8"}
+[ 21-Oct-2022 13:41:39 ] [Total] []
+[ 21-Oct-2022 13:41:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd=1&amp;id=8"}
+[ 21-Oct-2022 13:41:43 ] [Total] []
+[ 21-Oct-2022 13:41:47 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd=1+id=8"}
+[ 21-Oct-2022 13:41:48 ] [Total] []
+[ 21-Oct-2022 13:41:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd:1+id:8"}
+[ 21-Oct-2022 13:41:48 ] [Total] []
+[ 21-Oct-2022 13:41:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course\/crd:1"}
+[ 21-Oct-2022 13:41:49 ] [Total] []
+[ 21-Oct-2022 13:41:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:41:50 ] [Total] []
+[ 21-Oct-2022 13:41:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:41:53 ] [Total] []
+[ 21-Oct-2022 13:44:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/notes"}
+[ 21-Oct-2022 13:44:08 ] [Total] []
+[ 21-Oct-2022 13:48:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:48:00 ] [Total] []
+[ 21-Oct-2022 13:53:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:53:01 ] [Total] []
+[ 21-Oct-2022 13:53:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:53:21 ] [Total] []
+[ 21-Oct-2022 13:55:22 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:55:22 ] [Total] []
+[ 21-Oct-2022 13:56:18 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:56:18 ] [Total] []
+[ 21-Oct-2022 13:58:51 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:58:52 ] [Total] []
+[ 21-Oct-2022 13:59:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 13:59:44 ] [Total] []
+[ 21-Oct-2022 14:00:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:00:39 ] [Total] []
+[ 21-Oct-2022 14:01:51 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:01:51 ] [Total] []
+[ 21-Oct-2022 14:07:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:07:28 ] [Total] []
+[ 21-Oct-2022 14:08:37 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:08:38 ] [Total] []
+[ 21-Oct-2022 14:08:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:08:54 ] [Total] []
+[ 21-Oct-2022 14:09:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:09:15 ] [Total] []
+[ 21-Oct-2022 14:13:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:13:51 ] [Total] []
+[ 21-Oct-2022 14:19:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:19:36 ] [Total] []
+[ 21-Oct-2022 14:19:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:19:57 ] [Total] []
+[ 21-Oct-2022 14:20:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:20:24 ] [Total] []
+[ 21-Oct-2022 14:21:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:21:05 ] [Total] []
+[ 21-Oct-2022 14:21:38 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:21:39 ] [Total] []
+[ 21-Oct-2022 14:22:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:22:54 ] [Total] []
+[ 21-Oct-2022 14:23:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:23:50 ] [Total] []
+[ 21-Oct-2022 14:24:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:24:56 ] [Total] []
+[ 21-Oct-2022 14:26:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:26:05 ] [Total] []
+[ 21-Oct-2022 14:31:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:31:45 ] [Total] []
+[ 21-Oct-2022 14:33:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:33:21 ] [Total] []
+[ 21-Oct-2022 14:33:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:33:43 ] [Total] []
+[ 21-Oct-2022 14:33:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:33:58 ] [Total] []
+[ 21-Oct-2022 14:34:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:34:13 ] [Total] []
+[ 21-Oct-2022 14:34:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:34:34 ] [Total] []
+[ 21-Oct-2022 14:36:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:36:06 ] [Total] []
+[ 21-Oct-2022 14:36:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:36:11 ] [Total] []
+[ 21-Oct-2022 14:36:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:36:14 ] [Total] []
+[ 21-Oct-2022 14:36:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:36:31 ] [Total] []
+[ 21-Oct-2022 14:43:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:43:11 ] [Total] []
+[ 21-Oct-2022 14:45:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:45:43 ] [Total] []
+[ 21-Oct-2022 14:45:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:45:54 ] [Total] []
+[ 21-Oct-2022 14:47:06 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:47:06 ] [Total] []
+[ 21-Oct-2022 14:47:30 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:47:31 ] [Total] []
+[ 21-Oct-2022 14:49:34 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:49:34 ] [Total] []
+[ 21-Oct-2022 14:50:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:50:00 ] [Total] []
+[ 21-Oct-2022 14:51:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:51:27 ] [Total] []
+[ 21-Oct-2022 14:53:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:53:05 ] [Total] []
+[ 21-Oct-2022 14:54:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:54:03 ] [Total] []
+[ 21-Oct-2022 14:54:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:54:10 ] [Total] []
+[ 21-Oct-2022 14:54:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:54:43 ] [Total] []
+[ 21-Oct-2022 14:55:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:55:56 ] [Total] []
+[ 21-Oct-2022 14:56:32 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:56:32 ] [Total] []
+[ 21-Oct-2022 14:57:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:57:14 ] [Total] []
+[ 21-Oct-2022 14:57:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:57:54 ] [Total] []
+[ 21-Oct-2022 14:58:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:58:30 ] [Total] []
+[ 21-Oct-2022 14:58:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:58:44 ] [Total] []
+[ 21-Oct-2022 14:59:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:59:04 ] [Total] []
+[ 21-Oct-2022 14:59:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 14:59:28 ] [Total] []
+[ 21-Oct-2022 15:00:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:00:29 ] [Total] []
+[ 21-Oct-2022 15:01:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:01:27 ] [Total] []
+[ 21-Oct-2022 15:01:41 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:01:41 ] [Total] []
+[ 21-Oct-2022 15:01:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:01:48 ] [Total] []
+[ 21-Oct-2022 15:02:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:02:43 ] [Total] []
+[ 21-Oct-2022 15:07:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 15:07:40 ] [Total] []
+[ 21-Oct-2022 15:08:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 15:08:17 ] [Total] []
+[ 21-Oct-2022 15:08:18 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 15:08:18 ] [Total] []
+[ 21-Oct-2022 15:08:38 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 15:08:38 ] [Total] []
+[ 21-Oct-2022 15:10:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 15:10:53 ] [Total] []
+[ 21-Oct-2022 15:10:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:10:54 ] [Total] []
+[ 21-Oct-2022 15:11:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:11:12 ] [Total] []
+[ 21-Oct-2022 15:11:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 21-Oct-2022 15:11:13 ] [Total] []
+[ 21-Oct-2022 15:11:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 21-Oct-2022 15:11:32 ] [Total] []
+[ 21-Oct-2022 15:11:34 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:11:34 ] [Total] []
+[ 21-Oct-2022 15:11:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:11:53 ] [Total] []
+[ 21-Oct-2022 15:11:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:11:55 ] [Total] []
+[ 21-Oct-2022 15:11:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 15:11:57 ] [Total] []
+[ 21-Oct-2022 15:11:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 15:11:58 ] [Total] []
+[ 21-Oct-2022 15:15:47 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:15:47 ] [Total] []
+[ 21-Oct-2022 15:15:52 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:15:52 ] [Total] []
+[ 21-Oct-2022 15:15:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 15:15:58 ] [Total] []
+[ 21-Oct-2022 15:16:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 15:16:01 ] [Total] []
+[ 21-Oct-2022 15:16:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 15:16:04 ] [Total] []
+[ 21-Oct-2022 15:16:08 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:16:09 ] [Total] []
+[ 21-Oct-2022 15:16:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:16:11 ] [Total] []
+[ 21-Oct-2022 15:16:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:16:36 ] [Total] []
+[ 21-Oct-2022 15:16:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:16:50 ] [Total] []
+[ 21-Oct-2022 15:23:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:23:20 ] [Total] []
+[ 21-Oct-2022 15:24:47 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:24:47 ] [Total] []
+[ 21-Oct-2022 15:27:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:27:30 ] [Total] []
+[ 21-Oct-2022 15:38:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:38:21 ] [Total] []
+[ 21-Oct-2022 15:38:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:38:57 ] [Total] []
+[ 21-Oct-2022 15:39:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:39:42 ] [Total] []
+[ 21-Oct-2022 15:40:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:40:08 ] [Total] []
+[ 21-Oct-2022 15:43:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:43:05 ] [Total] []
+[ 21-Oct-2022 15:43:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:43:15 ] [Total] []
+[ 21-Oct-2022 15:43:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:43:24 ] [Total] []
+[ 21-Oct-2022 15:43:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:43:28 ] [Total] []
+[ 21-Oct-2022 15:44:11 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:44:11 ] [Total] []
+[ 21-Oct-2022 15:44:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:44:19 ] [Total] []
+[ 21-Oct-2022 15:49:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:49:31 ] [Total] []
+[ 21-Oct-2022 15:49:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:49:55 ] [Total] []
+[ 21-Oct-2022 15:50:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:50:33 ] [Total] []
+[ 21-Oct-2022 15:57:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:57:05 ] [Total] []
+[ 21-Oct-2022 16:00:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 16:00:20 ] [Total] []
+[ 21-Oct-2022 16:01:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 16:01:14 ] [Total] []
+[ 21-Oct-2022 16:01:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 16:01:28 ] [Total] []
+[ 21-Oct-2022 16:01:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:01:33 ] [Total] []
+[ 21-Oct-2022 16:06:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:06:03 ] [Total] []
+[ 21-Oct-2022 16:07:08 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:07:09 ] [Total] []
+[ 21-Oct-2022 16:15:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:15:43 ] [Total] []
+[ 21-Oct-2022 16:16:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:16:07 ] [Total] []
+[ 21-Oct-2022 16:16:32 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:16:32 ] [Total] []
+[ 21-Oct-2022 16:16:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:16:49 ] [Total] []
+[ 21-Oct-2022 16:17:08 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:17:08 ] [Total] []
+[ 21-Oct-2022 16:17:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:17:31 ] [Total] []
+[ 21-Oct-2022 16:18:23 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:18:23 ] [Total] []
+[ 21-Oct-2022 16:18:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:18:42 ] [Total] []
+[ 21-Oct-2022 16:36:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:36:09 ] [Total] []
+[ 21-Oct-2022 16:36:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 16:36:25 ] [Total] []
+[ 21-Oct-2022 16:36:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 16:36:28 ] [Total] []
+[ 21-Oct-2022 16:38:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:38:31 ] [Total] []
+[ 21-Oct-2022 16:38:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:38:55 ] [Total] []
+[ 21-Oct-2022 16:40:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:40:29 ] [Total] []
+[ 21-Oct-2022 16:44:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:44:28 ] [Total] []
+[ 21-Oct-2022 16:45:34 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:45:34 ] [Total] []
+[ 21-Oct-2022 16:56:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:56:31 ] [Total] []
+[ 21-Oct-2022 16:57:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:57:36 ] [Total] []
+[ 21-Oct-2022 16:58:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:58:14 ] [Total] []
+[ 21-Oct-2022 16:59:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 16:59:08 ] [Total] []
+[ 21-Oct-2022 17:00:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:00:13 ] [Total] []
+[ 21-Oct-2022 17:00:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:00:25 ] [Total] []
+[ 21-Oct-2022 17:01:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:01:12 ] [Total] []
+[ 21-Oct-2022 17:01:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:01:40 ] [Total] []
+[ 21-Oct-2022 17:01:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:01:45 ] [Total] []
+[ 21-Oct-2022 17:01:56 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:01:56 ] [Total] []
+[ 21-Oct-2022 17:02:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:02:05 ] [Total] []
+[ 21-Oct-2022 17:02:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:02:36 ] [Total] []
+[ 21-Oct-2022 17:02:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:02:43 ] [Total] []
+[ 21-Oct-2022 17:02:51 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:02:51 ] [Total] []
+[ 21-Oct-2022 17:03:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:03:45 ] [Total] []
+[ 21-Oct-2022 17:04:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:04:14 ] [Total] []
+[ 21-Oct-2022 17:04:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:04:55 ] [Total] []
+[ 21-Oct-2022 17:04:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:04:58 ] [Total] []
+[ 21-Oct-2022 17:05:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:05:00 ] [Total] []
+[ 21-Oct-2022 17:05:22 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:05:22 ] [Total] []
+[ 21-Oct-2022 17:05:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:05:46 ] [Total] []
+[ 21-Oct-2022 17:05:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:05:55 ] [Total] []
+[ 21-Oct-2022 17:10:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:10:29 ] [Total] []
+[ 21-Oct-2022 17:13:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:13:05 ] [Total] []
+[ 21-Oct-2022 17:13:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:13:09 ] [Total] []
+[ 21-Oct-2022 17:13:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:13:15 ] [Total] []
+[ 21-Oct-2022 17:18:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:18:00 ] [Total] []
+[ 21-Oct-2022 17:18:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:18:39 ] [Total] []
+[ 21-Oct-2022 17:21:30 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:21:30 ] [Total] []
+[ 21-Oct-2022 17:21:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 17:21:33 ] [Total] []
+[ 21-Oct-2022 17:21:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:21:44 ] [Total] []
+[ 21-Oct-2022 17:22:26 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 17:22:26 ] [Total] []
+[ 21-Oct-2022 17:22:38 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 21-Oct-2022 17:22:38 ] [Total] []
+[ 21-Oct-2022 17:22:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:22:43 ] [Total] []
+[ 21-Oct-2022 17:23:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:23:19 ] [Total] []
+[ 21-Oct-2022 17:24:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:24:00 ] [Total] []
+[ 21-Oct-2022 17:25:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:25:40 ] [Total] []
+[ 21-Oct-2022 17:26:47 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:26:47 ] [Total] []
+[ 21-Oct-2022 17:34:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:34:36 ] [Total] []
+[ 21-Oct-2022 17:34:53 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:34:53 ] [Total] []
+[ 21-Oct-2022 17:35:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:35:10 ] [Total] []
+[ 21-Oct-2022 17:35:23 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:35:24 ] [Total] []
+[ 21-Oct-2022 17:36:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:36:04 ] [Total] []
+[ 21-Oct-2022 17:36:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:36:49 ] [Total] []
+[ 21-Oct-2022 17:38:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:38:12 ] [Total] []
+[ 21-Oct-2022 17:39:06 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:39:06 ] [Total] []
+[ 21-Oct-2022 17:39:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:39:26 ] [Total] []
+[ 21-Oct-2022 17:39:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:39:39 ] [Total] []
+[ 21-Oct-2022 17:40:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:40:02 ] [Total] []
+[ 21-Oct-2022 17:40:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:40:12 ] [Total] []
+[ 21-Oct-2022 17:40:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:40:36 ] [Total] []
+[ 21-Oct-2022 17:40:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:40:49 ] [Total] []
+[ 21-Oct-2022 17:41:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:41:14 ] [Total] []
+[ 21-Oct-2022 17:41:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:41:57 ] [Total] []
+[ 21-Oct-2022 17:42:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:42:33 ] [Total] []
+[ 21-Oct-2022 17:42:51 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:42:51 ] [Total] []
+[ 21-Oct-2022 17:43:12 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:43:12 ] [Total] []
+[ 21-Oct-2022 17:43:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:43:46 ] [Total] []
+[ 21-Oct-2022 17:44:14 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:44:14 ] [Total] []
+[ 21-Oct-2022 17:44:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:44:33 ] [Total] []
+[ 21-Oct-2022 17:45:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:45:34 ] [Total] []
+[ 21-Oct-2022 17:48:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:48:05 ] [Total] []
+[ 21-Oct-2022 17:48:27 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:48:27 ] [Total] []
+[ 21-Oct-2022 17:49:16 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:49:16 ] [Total] []
+[ 21-Oct-2022 17:49:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:49:49 ] [Total] []
+[ 21-Oct-2022 17:50:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:50:13 ] [Total] []
+[ 21-Oct-2022 17:50:41 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:50:41 ] [Total] []
+[ 21-Oct-2022 17:50:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:50:48 ] [Total] []
+[ 21-Oct-2022 17:50:52 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 17:50:52 ] [Total] []
+[ 21-Oct-2022 17:51:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 17:51:17 ] [Total] []
+[ 21-Oct-2022 17:51:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 17:51:21 ] [Total] []
+[ 21-Oct-2022 17:51:22 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:51:22 ] [Total] []
+[ 21-Oct-2022 17:51:50 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:51:50 ] [Total] []
+[ 21-Oct-2022 17:52:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:52:01 ] [Total] []
+[ 21-Oct-2022 17:52:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:52:33 ] [Total] []
+[ 21-Oct-2022 17:55:52 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:55:52 ] [Total] []
+[ 21-Oct-2022 17:57:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:57:10 ] [Total] []
+[ 21-Oct-2022 17:57:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 17:57:28 ] [Total] []
+[ 21-Oct-2022 18:00:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:00:46 ] [Total] []
+[ 21-Oct-2022 18:01:31 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:01:31 ] [Total] []
+[ 21-Oct-2022 18:09:23 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:09:23 ] [Total] []
+[ 21-Oct-2022 18:11:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:11:39 ] [Total] []
+[ 21-Oct-2022 18:12:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:12:08 ] [Total] []
+[ 21-Oct-2022 18:13:03 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:13:03 ] [Total] []
+[ 21-Oct-2022 18:13:36 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:13:36 ] [Total] []
+[ 21-Oct-2022 18:13:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:13:55 ] [Total] []
+[ 21-Oct-2022 18:15:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:15:13 ] [Total] []
+[ 21-Oct-2022 18:15:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:15:28 ] [Total] []
+[ 21-Oct-2022 18:15:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:15:40 ] [Total] []
+[ 21-Oct-2022 18:15:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:15:58 ] [Total] []
+[ 21-Oct-2022 18:16:13 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:16:13 ] [Total] []
+[ 21-Oct-2022 18:16:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:16:29 ] [Total] []
+[ 21-Oct-2022 18:16:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:16:39 ] [Total] []
+[ 21-Oct-2022 18:17:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:17:59 ] [Total] []
+[ 21-Oct-2022 18:23:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:23:17 ] [Total] []
+[ 21-Oct-2022 18:23:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:23:29 ] [Total] []
+[ 21-Oct-2022 18:24:01 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:24:01 ] [Total] []
+[ 21-Oct-2022 18:43:00 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:43:00 ] [Total] []
+[ 21-Oct-2022 18:43:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:43:33 ] [Total] []
+[ 21-Oct-2022 18:44:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:44:07 ] [Total] []
+[ 21-Oct-2022 18:44:38 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:44:39 ] [Total] []
+[ 21-Oct-2022 18:44:57 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:44:57 ] [Total] []
+[ 21-Oct-2022 18:45:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:45:10 ] [Total] []
+[ 21-Oct-2022 18:45:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:45:21 ] [Total] []
+[ 21-Oct-2022 18:46:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:46:15 ] [Total] []
+[ 21-Oct-2022 18:46:32 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:46:32 ] [Total] []
+[ 21-Oct-2022 18:58:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:58:50 ] [Total] []
+[ 21-Oct-2022 18:59:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 18:59:28 ] [Total] []
+[ 21-Oct-2022 19:09:10 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:09:10 ] [Total] []
+[ 21-Oct-2022 19:09:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:09:40 ] [Total] []
+[ 21-Oct-2022 19:09:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:09:54 ] [Total] []
+[ 21-Oct-2022 19:10:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:10:09 ] [Total] []
+[ 21-Oct-2022 19:10:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 19:10:24 ] [Total] []
+[ 21-Oct-2022 19:12:17 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:12:18 ] [Total] []
+[ 21-Oct-2022 19:12:59 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:12:59 ] [Total] []
+[ 21-Oct-2022 19:13:22 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:13:22 ] [Total] []
+[ 21-Oct-2022 19:14:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:14:19 ] [Total] []
+[ 21-Oct-2022 19:14:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 19:14:22 ] [Total] []
+[ 21-Oct-2022 19:14:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:14:45 ] [Total] []
+[ 21-Oct-2022 19:15:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:15:43 ] [Total] []
+[ 21-Oct-2022 19:16:24 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:16:24 ] [Total] []
+[ 21-Oct-2022 19:16:46 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:16:46 ] [Total] []
+[ 21-Oct-2022 19:17:43 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:17:44 ] [Total] []
+[ 21-Oct-2022 19:18:04 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:18:04 ] [Total] []
+[ 21-Oct-2022 19:19:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:19:28 ] [Total] []
+[ 21-Oct-2022 19:19:52 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:19:52 ] [Total] []
+[ 21-Oct-2022 19:20:16 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:20:16 ] [Total] []
+[ 21-Oct-2022 19:20:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:20:40 ] [Total] []
+[ 21-Oct-2022 19:24:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:24:43 ] [Total] []
+[ 21-Oct-2022 19:25:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:25:22 ] [Total] []
+[ 21-Oct-2022 19:25:40 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:25:40 ] [Total] []
+[ 21-Oct-2022 19:26:21 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:26:21 ] [Total] []
+[ 21-Oct-2022 19:31:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:31:07 ] [Total] []
+[ 21-Oct-2022 19:33:44 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:33:44 ] [Total] []
+[ 21-Oct-2022 19:34:29 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:34:30 ] [Total] []
+[ 21-Oct-2022 19:37:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:37:49 ] [Total] []
+[ 21-Oct-2022 19:38:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:38:07 ] [Total] []
+[ 21-Oct-2022 19:38:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:38:29 ] [Total] []
+[ 21-Oct-2022 19:43:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:43:49 ] [Total] []
+[ 21-Oct-2022 19:44:28 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:44:28 ] [Total] []
+[ 21-Oct-2022 19:44:48 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:44:49 ] [Total] []
+[ 21-Oct-2022 19:48:45 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:48:45 ] [Total] []
+[ 21-Oct-2022 19:50:05 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:50:05 ] [Total] []
+[ 21-Oct-2022 19:52:18 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:52:18 ] [Total] []
+[ 21-Oct-2022 19:52:54 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/promotion"}
+[ 21-Oct-2022 19:52:54 ] [Total] []
+[ 21-Oct-2022 19:53:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 19:53:20 ] [Total] []
+[ 21-Oct-2022 19:55:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/teacher"}
+[ 21-Oct-2022 19:55:25 ] [Total] []
+[ 21-Oct-2022 19:55:25 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 19:55:25 ] [Total] []
+[ 21-Oct-2022 19:55:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 19:55:35 ] [Total] []
+[ 21-Oct-2022 19:57:26 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/"}
+[ 21-Oct-2022 19:57:27 ] [Total] []
+[ 21-Oct-2022 19:58:08 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/academic-year"}
+[ 21-Oct-2022 19:58:08 ] [Total] []
+[ 21-Oct-2022 19:58:11 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 19:58:11 ] [Total] []
+[ 21-Oct-2022 19:58:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 19:58:15 ] [Total] []
+[ 21-Oct-2022 15:23:58 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:23:59 ] [Total] []
+[ 21-Oct-2022 15:23:19 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/student"}
+[ 21-Oct-2022 15:23:19 ] [Total] []
+[ 21-Oct-2022 15:26:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:26:15 ] [Total] []
+[ 21-Oct-2022 15:26:18 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:26:18 ] [Total] []
+[ 21-Oct-2022 15:26:20 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:26:21 ] [Total] []
+[ 21-Oct-2022 15:27:32 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:27:32 ] [Total] []
+[ 21-Oct-2022 15:28:15 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:28:15 ] [Total] []
+[ 21-Oct-2022 15:28:35 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:28:35 ] [Total] []
+[ 21-Oct-2022 15:29:47 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:29:47 ] [Total] []
+[ 21-Oct-2022 15:31:33 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:31:33 ] [Total] []
+[ 21-Oct-2022 15:32:09 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:32:09 ] [Total] []
+[ 21-Oct-2022 15:33:39 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:33:39 ] [Total] []
+[ 21-Oct-2022 15:33:49 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/admin"}
+[ 21-Oct-2022 15:33:49 ] [Total] []
+[ 21-Oct-2022 15:33:55 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:33:55 ] [Total] []
+[ 21-Oct-2022 15:36:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:36:42 ] [Total] []
+[ 21-Oct-2022 15:37:07 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:37:07 ] [Total] []
+[ 21-Oct-2022 15:37:42 ] [ ressource ] {"ip":"127.0.0.1","ressource":"\/course"}
+[ 21-Oct-2022 15:37:42 ] [Total] []

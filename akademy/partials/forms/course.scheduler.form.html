@@ -1,0 +1,65 @@
+<template id="formScheduler">
+    <%
+        var data = utils.use('workDays');
+    %>
+    <div class="super super-l12 person-form" id="scheduler-form">
+        <div class="super super-l12">
+            <div class="super super-l12 field">
+                <label>${ui.course.seance.day.choice}</label>
+                <kinput type="select" class="super super-l12 input begin" required name="cr_day">
+                    <%
+                        for(var i in data.workDays){
+                    %>
+                        <option value="<%= i %>"><%= data.workDays[i] %></option>
+                    <% } %>
+                </kinput>
+            </div>
+        </div>
+        <div class="super super-l12 wrapper super-flex-end">
+            <div class="super super-l6 field">
+                <label>${ui.course.promotion}</label>
+                <kinput type="select" class="super super-l12 input classroom" required name="cr_clsroom">
+                    <%
+                        for(var i in promotions){
+                        %>
+                        <option value="<%= promotions[i].id %>"><%= promotions[i].name %></option>
+                        <%
+                        }
+                    %>
+                </kinput>
+            </div>
+            <div class="super super-l6 field">
+                <label>${ui.course.room}</label>
+                <kinput type="select" class="super super-l12 input room" required name="cr_room">
+                    <%
+                        var rooms = utils.use('room').room;
+                        for(var i in rooms){
+                    %>
+                    <option value="<%= rooms[i].id %>"><%= rooms[i].name %></option>
+                    <%
+                        }
+                    %>
+                </kinput>
+            </div>
+        </div>
+        <label>${ui.course.dispensation.choice}</label>
+        <div class="super super-l12 hint-box alert-box">
+            <div class="super super-l12 wrapper super-flex-center">
+                <icon class="ion-information rounded"></icon>
+                <div class="super super-l10 text">
+                    ${ui.course.hour.interval.explanation}
+                </div>
+            </div>
+        </div>
+        <div class="super super-l12 wrapper super-flex-end">
+            <div class="super super-l6 field">
+                <label>${ui.course.begin.hour}</label>
+                <kinput class="super super-l12 input begin" required name="cr_beg_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
+            </div>
+            <div class="super super-l6 field">
+                <label>${ui.course.end.hour}</label>
+                <kinput class="super super-l12 input end" required name="cr_end_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
+            </div>
+        </div>
+    </div>
+</template>

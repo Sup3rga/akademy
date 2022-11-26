@@ -1,0 +1,235 @@
+<div class="ui-element ui-size-fluid ui-absolute ui-all-close teacher aio">
+    <div class="ui-container ui-unwrap ui-size-fluid list-presentation_d card-manager list-zone">
+        <div class="ui-column ui-unwrap ui-column ui-size-fluid header <%= currentYear != null ? 'extended' : '' %>">
+            <h1 class="ui-element ui-size-fluid ui-horizontal-left">
+                <icon class="las la-chalkboard-teacher"></icon>
+                ${ui.teacher.view.title}
+            </h1>
+            <% if(currentYear != null){ %>
+            <div class="ui-container ui-unwrap ui-size-fluid ui-sm-size-11 ui-md-size-10 ui-lg-size-8 criterias actions">
+                <button class="ui-element" alternate="sort" direction="up">
+                    <icon class="las la-sort-alpha-up"></icon>
+                </button>
+                <button class="ui-element" alternate="sort" direction="down">
+                    <icon class="las la-sort-alpha-down"></icon>
+                </button>
+                <button class="ui-element" alternate="autofold" target=".teacher-view" self>
+                    <icon class="las la-compress-arrows-alt"></icon>
+                </button>
+                <button class="ui-container ui-unwrap ui-size-3 ui-relative ui-vertical-center input-icon">
+                    <icon class="las la-calendar"></icon>
+                    <kinput type="select" multiple class="ui-element ui-size-fluid academic-year">
+                        <% for(var i in academic){
+                        %>
+                        <option placeholder="Année académique" value="<%= academic[i].id %>" class="<%= academic[i].id == currentYear ? 'selected' : ''%>"><%= academic[i].academie %></option>
+                        <%
+                        }
+                        %>
+                    </kinput>
+                    <icon class="las la-sort-down"></icon>
+                </button>
+                <button class="ui-md-element ui-sm-hide ui-hide">
+                    <icon class="las la-print"></icon>
+                </button>
+                <button class="ui-md-element ui-sm-hide ui-hide layer-form-on add-teacher"
+                        data-layer-title="${ui.teacher.form.title.creation}"
+                        data-layer-target="#teacher-form"
+                        data-layer-name="teacher"
+                        layerform-src
+                        data-layer-size="6,9,11,12"
+                >
+                    <icon class="las la-plus"></icon>
+                </button>
+                <button class="ui-lg-element ui-md-hide ui-hide">
+                    <icon class="las la-file-import"></icon>
+                </button>
+                <button class="ui-lg-element ui-md-hide ui-hide">
+                    <icon class="las la-file-export"></icon>
+                </button>
+                <div class="ui-md-element ui-lg-hide button-bubble">
+                    <button class="ui-element">
+                        <icon class="las la-ellipsis-h"></icon>
+                    </button>
+                    <div class="ui-container ui-horizontal-center bubble-box ui-hide">
+                        <button class="ui-md-hide ui-sm-element">
+                            <icon class="las la-print"></icon>
+                        </button>
+                        <button class="ui-md-hide ui-sm-element layer-form-on add-teacher"
+                                data-layer-title="${ui.teacher.form.title.creation}"
+                                data-layer-target="#teacher-form"
+                                data-layer-name="teacher"
+                                layerform-src
+                                data-layer-size="6,9,11,12"
+                        >
+                            <icon class="las la-plus"></icon>
+                        </button>
+                        <button class="ui-element">
+                            <icon class="las la-file-import"></icon>
+                        </button>
+                        <button class="ui-element">
+                            <icon class="las la-file-export"></icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <div class="ui-element ui-size-fluid body">
+            <div class="ui-element ui-size-fluid ui-fluid-height scroll-view wrap teacher-view">
+            <% var k = 0;
+                for(var i in teacher){
+                k++;
+            %>
+                <item class="ui-hide ui-element ui-size-fluid id-item list-item teacher-item" data-year="<%= teacher[i].since %>" data-id="<%= teacher[i].id %>" data-filter="<%= teacher[i].prenom+' '+teacher[i].nom+' '+teacher[i].code %>">
+                    <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid summary">
+                        <avatar style="background-image: url(<%= teacher[i].photo != null ? './assets/avatars/'+teacher[i].photo : '' %>)">
+                            <%= teacher[i].photo != null ? '' : teacher[i].prenom[0].toUpperCase(); %>
+                        </avatar>
+                        <div class="ui-element ui-size-7 data">
+                            <span class="ui-element ui-size-fluid name">
+                                <%= teacher[i].prenom+", "+teacher[i].nom.toUpperCase() %>
+                            </span>
+                            <span class="ui-container ui-unwrap ui-vertical-center ui-size-fluid suite super-flex-center">
+                                <span class="ui-element el"><%= teacher[i].age %> ans</span>
+                                <span class="ui-element el"><%= teacher[i].sexe == "M" ? "Homme" : "Femme" %></span>
+                            </span>
+                        </div>
+                        <div class="ui-element ui-size-3 action see">
+                            <button class="light"><icon class="ion-eye"></icon> <span>Plus de détails</span></button>
+                        </div>
+                    </div>
+                    <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid metadata">
+                        <div class="ui-container ui-unwrap ui-column ui-all-center ui-size-fluid avatar-box">
+                            <avatar class="ui-element" style="background-image: url(<%= teacher[i].photo != null ? './assets/avatars/'+teacher[i].photo : '' %>)">
+                                <%= teacher[i].photo != null ? '' : teacher[i].prenom[0].toUpperCase(); %>
+                            </avatar>
+                            <div class="ui-element ui-size-fluid code">
+                                <%= teacher[i].code %>
+                            </div>
+                        </div>
+                        <div class="ui-container ui-unwrap ui-column ui-size-10">
+                            <div class="ui-container ui-unwrap ui-size-fluid teacher-information">
+                                <div class="ui-element ui-size-9 personals">
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">Statut matrimonial</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].status_matrimonial %></div>
+                                        </div>
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">Niveau d'étude</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].niveau_etude %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">E-mail</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].email %></div>
+                                        </div>
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">Téléphone</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].telephone %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">Lieu de naissance</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].lieu_naissance %></div>
+                                        </div>
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">Date naissance</div>
+                                            <div class="ui-element ui-size-6 content"><%= utils.localDate(teacher[i].date_naissance) %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-fluid row">
+                                            <div class="ui-element ui-size-3 label">Adresse</div>
+                                            <div class=ui-element ui-size-9 Icontent"><%= teacher[i].adresse %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">NIF</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].nif %></div>
+                                        </div>
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-6 label">NINU</div>
+                                            <div class="ui-element ui-size-6 content"><%= teacher[i].ninu %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-3 label">Poste</div>
+                                            <div class="ui-element ui-size-9 content"><%= teacher[i].poste == null ? "Aucun" : teacher[i].poste.notation+(teacher[i].poste.filiere == null ? "" : " de "+teacher[i].poste.filiere ) %></div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-container ui-unwrap ui-size-fluid wrapper">
+                                        <div class="ui-container ui-unwrap ui-size-6 row">
+                                            <div class="ui-element ui-size-3 label">Salaire</div>
+                                            <div class="ui-element ui-size-9 content"><%= teacher[i].salaire+" GDES" %></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui-container ui-unwrap ui-vertical-center ui-size-fluid actions">
+                                <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center ui-horizontal-right action">
+                                    <% if(allowModule(370) && !teacher[i].hasAccount){ %>
+                                    <button class="light account-linking" data-index="<%= i %>"><icon class="las la-user-cog"></icon> Lier à un compte</button>
+                                    <% } %>
+                                    <% if(allowModule(240)){ %>
+                                    <button class="light edit layer-form-on" data-id="<%= teacher[i].id %>"
+                                        data-layer-title="${ui.student.form.title.edition.school}"
+                                        data-layer-target="#teacher-form"
+                                        data-layer-name="teacheredit"
+                                        data-id="<%= teacher[i].id %>"
+                                        layerform-src
+                                        data-layer-size="6,9,11,12"
+                                        ><icon class="ion-edit"></icon> Modifier les informations</button>
+                                    <% } %>
+                                    <% if(allowModule(250)){ %>
+                                    <button class="light delete" data-id="<%= teacher[i].id %>"><icon class="ion-trash-b"></icon> Supprimer</button>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </item>
+            <% } %>
+                <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center empty-info <%= k ? 'ui-hide' : '' %>">
+                    <%= currentYear == null ? "Aucune année académique n'est en cours..." : "Aucun Professeur..." %>
+                </div>
+                <div class="ui-hide ui-element ui-size-fluid" id="linkingForm">
+                    <div class="ui-element ui-size-fluid field">
+                        <label>Pseudo</label>
+                        <input type="text" class="input ui-element ui-size-fluid" name="th_pseudo">
+                    </div>
+                    <div class="ui-element ui-size-fluid field">
+                        <label>passcode</label>
+                        <span class="combined ui-container ui-size-fluid ui-unwrap ui-vertical-center">
+                            <input class="input ui-element ui-size-fluid" type="password" name="th_passcode">
+                            <icon class="password-toggler ion-eye" alternate="ion-eye,ion-eye-disabled"></icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% if(currentYear != null){ %>
+        <div class="ui-element float-action">
+            <% if(allowModule(270)){ %>
+            <button class="las la-print ui-hide print-teacher"></button>
+            <% } %>
+            <% if(allowModule(230)){ %>
+            <button class="ion-plus-round layer-form-on add-teacher"
+                    data-layer-title="${ui.teacher.form.title.creation}"
+                    data-layer-target="#teacher-form"
+                    data-layer-name="teacher"
+                    layerform-src
+                    data-layer-size="6,9,11,12"
+            ></button>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+    <% if(allowModule(230) && currentYear != null){ %>
+        @("../../partials/forms/teacher.form")
+    <% } %>
+</div>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Akademy</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css">
+</head>
+<body class="ui-element ui-fluid-vheight">
+    <header class="ui-container ui-unwrap ui-size-fluid ui-vertical-center colorless">
+        <div class="ui-element ui-size-10 ui-md-size-5 ui-vertical-center banner-sector">
+
+        </div>
+        <div class="ui-hide ui-md-container ui-horizontal-right ui-size-7 link-sector">
+            <a href="#" class="active">
+                <icon class="ion-ios-arrow-back"></icon>
+                Revenir en arrière
+            </a>
+        </div>
+    </header>
+    <div class="ui-container ui-absolute ui-scroll-y ui-unwrap ui-size-fluid ui-all-close" id="logger">
+        <div class="ui-element ui-fluid-height ui-md-size-8 ui-sm-size-2 ui-size-1 ui-relative expo">
+            <div class="ui-hide ui-md-element ui-absolute ui-all-close image"></div>
+        </div>
+        <div class="ui-element ui-md-size-4 ui-sm-size-8 ui-size-10 modal-box">
+            <div class="ui-container ui-size-fluid ui-horizontal-center">
+                <span class="ui-container ui-size-fluid company-logo">
+                </span>
+                <span class="ui-element ui-horizontal-center def">
+                    Système de gestion académique de CHCL
+                </span>
+            </div>
+            <div class="ui-container ui-size-fluid field">
+                <input class="input ui-element ui-size-fluid" name="username">
+                <label>Pseudo</label>
+            </div>
+            <div class="ui-container ui-size-fluid field">
+                <span class="combined ui-container ui-size-fluid ui-vertical-center ui-unwrap">
+                    <input class="input ui-element ui-size-fluid" type="password" name="passcode">
+                    <icon class="password-toggler ion-eye" alternate="ion-eye,ion-eye-disabled"></icon>
+                </span>
+                <label>Passcode</label>
+            </div>
+            <div class="ui-container ui-size-fluid action super-flex-center">
+                <button class="ui-container ui-size-4" id="login" type="submit">Connexion</button>
+                <div class="ui-container ui-size-6 ui-all-center remember">
+                    <input type="checkbox" name="stay"> je reste connecté
+                </div>
+            </div>
+            <div class="ui-hide ui-size-fluid alert-box">
+                <div class="ui-container ui-size-fluid wrapper ui-vertical-center">
+                    <icon class="ion-alert"></icon>
+                    <div class="ui-container ui-size-10 text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-element ui-md-hide ui-fluid-height ui-sm-size-2 ui-size-1 ui-relative expo right">
+        </div>
+    </div>
+    <script src="js/zepto.js"></script>
+    <script src="js/localforage.min.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/kinput.js"></script>
+    <script src="js/komponent.js"></script>
+    <script>
+        localforage.getItem("akademy-data", function(e,v){
+            if(v != null){
+                v = JSON.parse(v);
+                if('token' in v && Modules.data && Modules.data.token) {
+                    window.location = Modules.data.token;
+                }
+            }
+        });
+        $('header a').on('click',function(e){
+            e.preventDefault();
+            window.history.back();
+        })
+    </script>
+</body>
+</html>

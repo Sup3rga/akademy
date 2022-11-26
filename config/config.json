@@ -1,0 +1,28 @@
+{
+  "establishment": "CHCL",
+  "establishment_name": "Campus Henri Christophe de Limonade",
+  "appName": "Akademy",
+  "timezone": "America/Port-au-Prince",
+  "university": false,
+  "hasKinder": false,
+  "version": "1.0.5",
+  "session": 3,
+  "credentials": {
+    "host": "localhost",
+    "database": "akademy",
+    "username": "root",
+    "password": "",
+    "remote_password": ""
+  },
+  "definition": {
+      "workDays": [1,2,3,4,5]
+  },
+  "importationHead": {
+    "student": [
+      "code", "nom", "prenom","sexe","adresse","telephone","email","filiere",
+      "niveau", "nif","ninu","personne reference", "telephone personne reference",
+      "memo","lieu naissance","date naissance"
+    ]
+  },
+  "exportationHead": {}
+}

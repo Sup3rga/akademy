@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/line-awesome-1.3.0/css/line-awesome.css">
+    <link rel="stylesheet" href="./css/super.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/scheduleui.css">
+    <style>
+        .calendar{
+            display: inline-block;
+            width: 70vw;
+            height: 600px;
+            margin: 1em;
+            background-color: rgb(230,230,230);
+            border-radius: .8em;
+            position: relative;
+            /*overflow: hidden;*/
+        }
+        video{
+            background-color: #ccc;
+        }
+        button{
+            display: inline-block;
+            width: 100px;
+            padding: .5em;
+            margin: .3em;
+        }
+    </style>
+</head>
+<body>
+    <main class="super super-l12 super-flex super-flex-column super-scrollable-y super-all-absolute akademy template">
+<!--        <div id="calendar" class="calendar">-->
+<!--        </div>-->
+        <video crossorigin="anonymous" width="400" height="400"></video>
+        <button id="begin">Commencer</button>
+    </main>
+    <script src="./js/zepto.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/AkaDatetime.js"></script>
+    <script src="./js/scheduleUI.js"></script>
+    <script>
+        function promisify(fn){
+            return function(){
+                var args = [];
+                for(var i in arguments.length){
+                    args.push(arguments[i]);
+                }
+                return new Promise(function(resolve,reject){
+                    fn.apply(navigator, [args, resolve, reject]);
+                });
+            }
+        }
+        var streamVideo = {
+            object: null,
+            datas: [],
+            source : new MediaSource(),
+            buffer: null,
+            reader: new FileReader(),
+            index: 0,
+            next: true,
+            played: false,
+            init: function(){
+                var $this = this;
+                $this.object.muted = true;
+                this.play();
+            },
+            getSource: function(codec){
+                var $this = this;
+                return new Promise(function(resolve){
+                    function get(){
+                        if($this.buffer){
+                            return $this.buffer;
+                        }
+                        $this.buffer = $this.source.addSourceBuffer(codec);
+                        $this.buffer.mode = "segments";
+                        return $this.buffer;
+                    }
+                    if($this.buffer){
+                        resolve($this.buffer);
+                        return;
+                    }
+                    if($this.source.readyState === 'open'){
+                        resolve(get());
+                    }
+                    else{
+                        $this.source.addEventListener('sourceopen',function(){
+                            resolve(get());
+                        });
+                    }
+                });
+            },
+            append: function(blob){
+                this.datas.push(blob);
+                var $this = this;
+                console.log('[APPEND]', MediaSource.isTypeSupported(blob.type));
+                blob.arrayBuffer().then(function(e){
+                    $this.getSource(blob.type).then(function(src){
+                        src.appendBuffer(e);
+                        if($this.object.paused){
+                            $this.object.play();
+                        }
+                        src.onupdateend = function(){
+                            console.log('[end]');
+                            if($this.source.readyState === 'open') {
+                                $this.source.endOfStream();
+                            }
+                        }
+                    });
+                });
+            },
+            play: function(){
+                this.object.src = URL.createObjectURL(this.source);
+            }
+        }
+        function loopCall(callback,time,fromStart){
+            var k = 0,
+                fromStart = fromStart | false,
+                time = time | 0;
+            function t(){
+                callback();
+                // if(k > 5)
+                //     return;
+                if(time){
+                    setTimeout(function(){
+                        requestAnimationFrame(t);
+                    }, time);
+                }
+                else{
+                    requestAnimationFrame(t);
+                }
+                k++;
+            }
+            if(fromStart){
+                setTimeout(function(){
+                    requestAnimationFrame(t);
+                }, time);
+                return;
+            }
+            requestAnimationFrame(t);
+        }
+        function record(stream){
+            var recorder = new MediaRecorder(stream);
+                streamVideo.object = $('video')[0];
+                streamVideo.init();
+            recorder.start();
+            var k = 0;
+            loopCall(function(){
+                recorder.stop();
+                recorder.start();
+            },1000, true);
+            recorder.ondataavailable = function(e){
+                // console.log('[E]',e);
+                streamVideo.append(e.data);
+            }
+        }
+        $(function(){
+            $('#begin').on('click', function(){
+                console.log('[click]')
+                navigator.mediaDevices.getUserMedia({
+                    video: true,
+                    audio: true
+                }).then(function(stream){
+                    // console.log('[stream]',stream);
+                    record(stream);
+                })
+            });
+            // var c = new Calendar();
+            // c.setMonthNames(['Janvye','Fevriye','Mas','Avril','Me','Jyen','Jiyè','Out', 'Septanm', 'Oktòb','Novanm','Desanm'])
+            // .setWeekNames(['Le','Ma','Me','Je','Va','Sa','Di'])
+            // .addMarkedEvent('2022-03-4', 'Foire gastronomique')
+            // .addMarkedEvent('2022-9-5', 'Ouverture des classes')
+            // .addMarkedEvent('2022-9-12', 'Te Deum')
+            // .addMarkedEvent('2022-9-23', 'Ouverture du championnat')
+            // .addMarkedEvent('2022-9-23', 'Remise des mérites')
+            // .addMarkedEvent('2022-9-23', 'Réunion des parents')
+            // // .allow('selection', true)
+            // .setLimitDom('#calendar').create().
+            // on('select', function(e){
+            //     console.log('[Ok]',e);
+            // });
+            // new ScheduleUI('#calendar')
+            // .setDaysList(['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'])
+            // .setDaysBounds(0,4)
+            // .create({
+            //     0: [
+            //         {
+            //             begin: '08:00',
+            //             end: '10:00',
+            //             data: ["Math", "8h00 - 10h00", "Jean-Alix"]
+            //         },
+            //         {
+            //             begin: '10:00',
+            //             end: '12:00',
+            //             data: ["Analise", "10h00 - 12h00", "Jean-Alix"]
+            //         }
+            //     ]
+            // });
+        });
+    </script>
+</body>
+</html>

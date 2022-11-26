@@ -1,0 +1,24 @@
+{
+  "University": {
+    "/" : {"value": 0, "content": "", "icon": "las la-home", "text": "ui.sidemenu.dashboard"},
+    "/academic-year" : {"value" : 1, "content" : "", "icon": "las la-calendar-alt", "text": "ui.sidemenu.academic"},
+    "/student" : {"value" : 2, "content" : "", "icon" : "las la-user-graduate", "text" : "ui.sidemenu.student"},
+    "/course" : {"value" : 3, "content" : "", "icon": "las la-pencil-ruler", "text": "ui.sidemenu.course"},
+    "/notes" : {"value" : 7, "content" : "", "icon": "las la-sticky-note", "text": "ui.sidemenu.notes"},
+    "/teacher" : {"value" : 4, "content" : "","icon": "las la-chalkboard-teacher", "text": "ui.sidemenu.teacher"},
+    "/admin" : {"value" : 5, "content" : "", "icon" : "las la-university", "text": "ui.sidemenu.admin"},
+    "/users" : {"value": 6, "content" : "", "icon": "las la-users-cog", "text": "ui.sidemenu.user"}
+  },
+  "School": {
+    "/" : {"value": 0, "content": "", "icon": "las la-home", "text": "ui.sidemenu.dashboard"},
+    "/academic-year" : {"value" : 1, "content" : "", "icon": "las la-calendar-alt", "text": "ui.sidemenu.academic"},
+    "/student" : {"value" : 2, "content" : "", "icon" : "las la-user-graduate", "text" : "ui.sidemenu.pupil"},
+    "/course" : {"value" : 3, "content" : "", "icon": "las la-pencil-ruler", "text": "ui.sidemenu.course"},
+    "/notes" : {"value" : 7, "content" : "", "icon": "las la-sticky-note", "text": "ui.sidemenu.notes"},
+    "/teacher" : {"value" : 4, "content" : "","icon": "las la-chalkboard-teacher", "text": "ui.sidemenu.teacher"},
+    "/admin" : {"value" : 5, "content" : "", "icon" : "las la-university", "text": "ui.sidemenu.admin"},
+    "/library" : {"value" : 8, "content" : "","icon": "las la-swatchbook", "text": "ui.sidemenu.library"},
+    "/econo" : {"value" : 9, "content" : "","icon": "las la-donate", "text": "ui.sidemenu.econo"},
+    "/users" : {"value": 6, "content" : "", "icon": "las la-users-cog", "text": "ui.sidemenu.user"}
+  }
+}

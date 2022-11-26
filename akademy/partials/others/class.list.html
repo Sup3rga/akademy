@@ -1,0 +1,69 @@
+<template id="classlist">
+    <div class="ui-container ui-unwrap ui-column ui-size-fluid presentation-view classlist-view">
+        <div class="ui-element ui-size-fluid ui-flex ui-vertical-center head">
+            <icon class="las la-arrow-left back-to-prev"></icon>
+            <icon class="las sector-action layer-form-on la-edit"
+                  data-id="<%= faculty.id %>"
+                  data-layer-title="${ui.admin.academiclevel.edit}"
+                  data-layer-name="academicleveledit"
+                  id="editAcademicLevel"></icon>
+            <icon class="las sector-action la-trash" data-id="<%= faculty.id %>"></icon>
+            <text class="ui-element ui-size-6"><%= faculty.nom %></text>
+        </div>
+        <div class="ui-element ui-size-fluid ui-flex list-wrapper">
+            <div class="ui-element ui-size-fluid list-view ui-scroll-y">
+                <%
+                    var empty = true;
+                    for(var i in faculty.grades){
+                %>
+                <row class="row ui-element ui-size-fluid ui-flex ui-vertical-center">
+                    <icon class="las la-check checked"></icon>
+                    <text class="ui-element">
+                        <label class="ui-element ui-size-fluid name">
+                            <%= faculty.grades[i].notation %>
+                        </label>
+                        <label class="ui-element sub">
+                            Aucune salle affectée
+                        </label>
+                        <label class="ui-element sub stats">
+                            <%= faculty.grades[i].stats.ttl_student %> élèves
+                        </label>
+                    </text>
+                    <div class="ui-element ui-size-fluid ui-flex ui-vertical-center actions ui-horizontal-right">
+                        <icon class="act layer-form-on las la-edit"
+                              data-layer-title="${ui.admin.academiclevel.edit.class.title}"
+                              data-layer-name="classedit"
+                              data-id="<%= faculty.grades[i].id %>"
+                              data-src="<%= faculty.id %>"
+                        ></icon>
+                        <icon class="act las la-trash" data-id="<%= faculty.grades[i].id %>" data-src="<%= faculty.id %>"></icon>
+                    </div>
+                </row>
+                <%
+                    empty = false;
+                    }
+                    if(empty){
+                %>
+                <div class="ui-element ui-size-fluid ui-flex ui-vertical-center empty-info">
+                    <div class="ui-horizontal-center">
+                        <icon class="ui-element ui-size-fluid las la-list-ul" style="font-size: 3em"></icon>
+                        <br><br>
+                        <text>
+                            ${ui.admin.class.list.empty}
+                        </text>
+                    </div>
+                </div>
+                <%  } %>
+            </div>
+            <div class="ui-element float-action">
+                <button class="ui-element layer-form-on"
+                        data-layer-title="${ui.admin.academiclevel.add.class.title}"
+                        data-layer-name="class"
+                        id="addClass"
+                        data-level="<%= faculty.id %>">
+                    <i class="ion-plus-round"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
