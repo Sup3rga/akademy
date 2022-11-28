@@ -19,6 +19,7 @@
             <div class="ui-container ui-vertical-center ui-unwrap ui-size-fluid company">
                 <div class="company-logo ui-element"></div>
                 <span class="name">${company.name}</span>
+                <icon class="las la-bars navicon ui-element"></icon>
             </div>
             <div class="ui-element ui-scroll-y ui-size-fluid links">
                 ${sideMenu}
@@ -26,19 +27,16 @@
         </sidemenu>
         <view class="ui-container minimal ui-unwrap ui-column ui-no-scroll">
             <appbar class="ui-container ui-unwrap ui-size-fluid ui-vertical-center">
-                <div class="ui-container ui-size-5 search-zone">
-                    <div class="ui-container ui-size-10 field static">
+                <div class="ui-container ui-size-6 search-zone">
+                    <div class="ui-container ui-size-fluid ui-md-size-10 field static">
                         <div class="combined ui-container ui-size-fluid ui-vertical-center ui-unwrap">
                             <input type="search" class="input ui-container ui-size-10 search-bar" placeholder="${ui.component.search.text}">
                             <icon class="ion-ios-search-strong"></icon>
                         </div>
                     </div>
                 </div><!--
-             --><div class="ui-container ui-unwrap ui-spaced ui-size-7 ui-vertical-center">
-                    <div class="action ui-container ui-size-6" style="opacity: 0">
-                        <button><icon class="ion-plus"></icon> ${ui.academic.new.year}</button>
-                    </div><!--
-                 --><div class="ui-container ui-unwrap ui-size-5 ui-vertical-center user-zone">
+             --><div class="ui-container ui-unwrap ui-spaced ui-size-6 ui-vertical-center">
+                    <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center user-zone">
                         <avatar class="ui-element">
                         </avatar>
                         <div class="ui-element ui-size-8 user-info">

@@ -1,0 +1,18 @@
+<template id="student-folder">
+    <div class="ui-container ui-size-fluid student-folder">
+        <div class="ui-container ui-size-fluid ui-vertical-center main-panel">
+            <avatar class="ui-element" style="background-image: url(<%= student.photo != null ? './assets/avatars/'+student.photo : '' %>)">
+                <%= student.photo != null ? '' : student.prenom[0].toUpperCase(); %>
+            </avatar>
+            <div class="ui-container ui-size-8 data">
+                <div class="ui-container ui-size-fluid name">
+                    <%= student.prenom + " " + student.nom.toUpperCase() %>
+                </div>
+                <div class="ui-container ui-size-fluid gender ui-vertical-center">
+                    <icon class="las la-transgender"></icon>
+                    <%= student.sexe == 'M' ? "${ui.component.label.boy}" : "${ui.component.label.girl}" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

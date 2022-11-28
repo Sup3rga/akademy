@@ -430,27 +430,31 @@ view {
   width: 100%;
 }
 /* line 75, ../sass/web.scss */
+view appbar {
+  padding-left: 50px;
+}
+/* line 78, ../sass/web.scss */
 view.minimal {
   --menu-width: 80px;
   width: 100%;
 }
 
-/* line 82, ../sass/web.scss */
+/* line 85, ../sass/web.scss */
 appbar {
   height: 60px;
   overflow: hidden;
 }
-/* line 85, ../sass/web.scss */
+/* line 88, ../sass/web.scss */
 appbar .field {
   height: 35px;
   background-color: #ebf1f3 !important;
 }
-/* line 89, ../sass/web.scss */
+/* line 92, ../sass/web.scss */
 appbar .action {
   height: 40px;
   padding: 0;
 }
-/* line 92, ../sass/web.scss */
+/* line 95, ../sass/web.scss */
 appbar .action button {
   height: inherit;
   -moz-border-radius: 7em;
@@ -459,17 +463,17 @@ appbar .action button {
   padding: .4em .4em;
   background: #7ea1ab;
 }
-/* line 99, ../sass/web.scss */
+/* line 102, ../sass/web.scss */
 appbar .search-zone {
   padding-left: 1em;
 }
-/* line 102, ../sass/web.scss */
+/* line 105, ../sass/web.scss */
 appbar .user-zone {
   height: 100%;
   padding: 0 1em 0 .4em;
   margin-left: 1em;
 }
-/* line 109, ../sass/web.scss */
+/* line 112, ../sass/web.scss */
 appbar .user-zone button {
   border: 0;
   border-radius: 5em;
@@ -478,14 +482,16 @@ appbar .user-zone button {
   color: #5aa7bd;
   cursor: pointer;
 }
-/* line 116, ../sass/web.scss */
+/* line 119, ../sass/web.scss */
 appbar .user-zone button:hover {
   background-color: rgba(240, 240, 240, 0.7);
 }
 
-/* line 123, ../sass/web.scss */
+/* line 126, ../sass/web.scss */
 sidemenu {
-  padding: 0 4.5em 0.8em 1em;
+  --menu-width: 100%;
+  height: 100vh;
+  padding: 0 0.3em 0.8em 1em;
   width: var(--menu-width);
   position: absolute;
   z-index: 4;
@@ -499,16 +505,20 @@ sidemenu {
   background-image: linear-gradient(346deg, #072021, rgba(0, 0, 0, 0));
   overflow: hidden;
   overflow-y: auto;
-  transition-property: width, padding, clip-path;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-property: transform;
   transition-duration: .2s;
 }
-/* line 138, ../sass/web.scss */
+/* line 145, ../sass/web.scss */
 sidemenu .links {
   padding-top: 1em;
   width: inherit;
   padding-right: 8.8em;
 }
-/* line 143, ../sass/web.scss */
+/* line 150, ../sass/web.scss */
 sidemenu .company {
   color: white;
   font-size: 1.4em;
@@ -516,14 +526,25 @@ sidemenu .company {
   height: 60px;
   padding: .8em 0;
 }
-/* line 150, ../sass/web.scss */
+/* line 157, ../sass/web.scss */
 sidemenu .company .name {
   font-family: Poppins-Bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 157, ../sass/web.scss */
+/* line 163, ../sass/web.scss */
+sidemenu .company .navicon {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-size: 1.3em;
+  width: 70px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+}
+/* line 174, ../sass/web.scss */
 sidemenu .company-logo {
   height: 45px;
   width: 45px;
@@ -535,7 +556,7 @@ sidemenu .company-logo {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 166, ../sass/web.scss */
+/* line 183, ../sass/web.scss */
 sidemenu item, sidemenu .item {
   -moz-border-radius: 2em;
   -webkit-border-radius: 2em;
@@ -547,13 +568,13 @@ sidemenu item, sidemenu .item {
   transition-property: background-color, width, height;
   transition-duration: .4s;
 }
-/* line 174, ../sass/web.scss */
+/* line 191, ../sass/web.scss */
 sidemenu item icon, sidemenu .item icon {
   padding: .3em 1em;
   font-size: 1.3em;
   color: #eee;
 }
-/* line 179, ../sass/web.scss */
+/* line 196, ../sass/web.scss */
 sidemenu item .text, sidemenu .item .text {
   font-family: Poppins;
   color: #eee;
@@ -561,67 +582,36 @@ sidemenu item .text, sidemenu .item .text {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 186, ../sass/web.scss */
+/* line 203, ../sass/web.scss */
 sidemenu item:hover, sidemenu .item:hover {
   background-color: rgba(200, 200, 200, 0.1);
 }
-/* line 188, ../sass/web.scss */
+/* line 205, ../sass/web.scss */
 sidemenu item:hover icon, sidemenu item:hover .text, sidemenu .item:hover icon, sidemenu .item:hover .text {
   color: #fff;
 }
-/* line 192, ../sass/web.scss */
+/* line 209, ../sass/web.scss */
 sidemenu item.active, sidemenu .item.active {
   background-color: white;
 }
-/* line 194, ../sass/web.scss */
+/* line 211, ../sass/web.scss */
 sidemenu item.active icon, sidemenu .item.active icon {
   color: #0e4357;
 }
-/* line 197, ../sass/web.scss */
+/* line 214, ../sass/web.scss */
 sidemenu item.active .text, sidemenu .item.active .text {
   font-family: Poppins-SemiBold;
   color: #0e4357;
 }
-/* line 203, ../sass/web.scss */
+/* line 220, ../sass/web.scss */
 sidemenu.minimal {
-  --menu-width: 80px;
-  width: var(--menu-width);
-  padding: 0 4.5em 0.8em 0.4em;
-}
-/* line 209, ../sass/web.scss */
-sidemenu.minimal .company .company-logo {
-  margin: 0 .2em;
-}
-/* line 212, ../sass/web.scss */
-sidemenu.minimal .company .name {
-  width: 0%;
-  overflow: hidden;
-}
-/* line 217, ../sass/web.scss */
-sidemenu.minimal .links {
-  width: inherit;
-  padding: .4em 0;
-}
-/* line 221, ../sass/web.scss */
-sidemenu.minimal item, sidemenu.minimal .item {
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  width: 43px;
-  height: 43px;
-  margin-left: .4em;
-}
-/* line 226, ../sass/web.scss */
-sidemenu.minimal item icon, sidemenu.minimal .item icon {
-  padding: .2em;
-}
-/* line 229, ../sass/web.scss */
-sidemenu.minimal item .text, sidemenu.minimal .item .text {
-  width: 0;
-  opacity: 0;
+  -moz-transform: translate3d(calc(-100% + 75px), 0, 0);
+  -ms-transform: translate3d(calc(-100% + 75px), 0, 0);
+  -webkit-transform: translate3d(calc(-100% + 75px), 0, 0);
+  transform: translate3d(calc(-100% + 75px), 0, 0);
 }
 
-/* line 237, ../sass/web.scss */
+/* line 225, ../sass/web.scss */
 panel {
   background-color: rgba(250, 250, 250, 0.8);
   -moz-border-radius: 1em;
@@ -632,61 +622,61 @@ panel {
   overflow: unset;
 }
 
-/* line 245, ../sass/web.scss */
+/* line 233, ../sass/web.scss */
 .akademy {
   overflow: hidden;
   background-color: rgba(250, 250, 250, 0.8);
 }
-/* line 249, ../sass/web.scss */
+/* line 237, ../sass/web.scss */
 .akademy.template .company {
   background-color: #eee;
   color: #ccc;
 }
-/* line 253, ../sass/web.scss */
+/* line 241, ../sass/web.scss */
 .akademy.template .company-logo {
   background-color: #ddd;
   background-image: unset;
 }
-/* line 257, ../sass/web.scss */
+/* line 245, ../sass/web.scss */
 .akademy.template sidemenu {
   background-color: #eee;
   background-image: unset;
   overflow-y: hidden;
 }
-/* line 261, ../sass/web.scss */
+/* line 249, ../sass/web.scss */
 .akademy.template sidemenu item {
   background-color: rgba(200, 200, 200, 0.2);
   white-space: normal;
   overflow: hidden;
 }
-/* line 265, ../sass/web.scss */
+/* line 253, ../sass/web.scss */
 .akademy.template sidemenu item icon, .akademy.template sidemenu item .text {
   color: rgba(200, 200, 200, 0);
 }
-/* line 270, ../sass/web.scss */
+/* line 258, ../sass/web.scss */
 .akademy.template .field {
   background-color: rgba(200, 200, 200, 0.2) !important;
 }
-/* line 272, ../sass/web.scss */
+/* line 260, ../sass/web.scss */
 .akademy.template .field .input::placeholder {
   color: #ddd;
 }
-/* line 275, ../sass/web.scss */
+/* line 263, ../sass/web.scss */
 .akademy.template .field icon {
   color: rgba(200, 200, 200, 0.2);
 }
-/* line 279, ../sass/web.scss */
+/* line 267, ../sass/web.scss */
 .akademy.template avatar {
   background-color: rgba(200, 200, 200, 0.2);
   color: rgba(200, 200, 200, 0);
 }
-/* line 284, ../sass/web.scss */
+/* line 272, ../sass/web.scss */
 .akademy.template .user-info .greeting {
   background-color: rgba(200, 200, 200, 0.2);
   color: rgba(200, 200, 200, 0);
   border-radius: .5em;
 }
-/* line 289, ../sass/web.scss */
+/* line 277, ../sass/web.scss */
 .akademy.template .user-info .name {
   background-color: rgba(200, 200, 200, 0.2);
   color: rgba(200, 200, 200, 0);
@@ -694,16 +684,16 @@ panel {
   height: 16px;
   top: -.2em;
 }
-/* line 296, ../sass/web.scss */
+/* line 284, ../sass/web.scss */
 .akademy.template .user-info button {
   color: #ddd !important;
 }
 
-/* line 303, ../sass/web.scss */
+/* line 291, ../sass/web.scss */
 .dashboard {
   padding: .4em .8em;
 }
-/* line 305, ../sass/web.scss */
+/* line 293, ../sass/web.scss */
 .dashboard .welcome {
   height: 290px;
   background-color: #fff;
@@ -711,12 +701,12 @@ panel {
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
 }
-/* line 309, ../sass/web.scss */
+/* line 297, ../sass/web.scss */
 .dashboard .welcome .text {
   padding: .4em .8em;
   font-family: Poppins;
 }
-/* line 312, ../sass/web.scss */
+/* line 300, ../sass/web.scss */
 .dashboard .welcome .text .greetings {
   font-family: Poppins-SemiBold;
   font-size: 1.6em;
@@ -724,14 +714,14 @@ panel {
   align-items: center;
   justify-content: flex-end;
 }
-/* line 319, ../sass/web.scss */
+/* line 307, ../sass/web.scss */
 .dashboard .welcome .text .explain {
   font-family: Lexend;
   font-size: .9em;
   color: #777;
   padding: .8em .5em .5em .5em;
 }
-/* line 325, ../sass/web.scss */
+/* line 313, ../sass/web.scss */
 .dashboard .welcome .text .light {
   background-color: #87a1ab;
   padding: 0 .8em;
@@ -743,7 +733,7 @@ panel {
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
 }
-/* line 335, ../sass/web.scss */
+/* line 323, ../sass/web.scss */
 .dashboard .welcome .welcome-img {
   background-image: url("../assets/login.jpg");
   background-repeat: no-repeat;
@@ -751,12 +741,12 @@ panel {
   background-position: center;
   height: inherit;
 }
-/* line 343, ../sass/web.scss */
+/* line 331, ../sass/web.scss */
 .dashboard .canvas-wrapper {
   padding: .4em;
 }
 
-/* line 348, ../sass/web.scss */
+/* line 336, ../sass/web.scss */
 .user-panel {
   padding: 1em;
   background-color: white;
@@ -771,29 +761,29 @@ panel {
   -webkit-box-shadow: 0 2px 4px 0 #ccc;
   box-shadow: 0 2px 4px 0 #ccc;
 }
-/* line 357, ../sass/web.scss */
+/* line 345, ../sass/web.scss */
 .user-panel avatar {
   width: 70px;
   height: 70px;
   font-size: 1.6em;
   line-height: 70px;
 }
-/* line 365, ../sass/web.scss */
+/* line 353, ../sass/web.scss */
 .user-panel .user-info .greeting {
   font-size: .8em;
 }
-/* line 368, ../sass/web.scss */
+/* line 356, ../sass/web.scss */
 .user-panel .user-info .name {
   font-size: 1em;
   top: 0;
 }
-/* line 373, ../sass/web.scss */
+/* line 361, ../sass/web.scss */
 .user-panel .action {
   padding: .5em;
   font-family: Poppins;
   color: #777;
 }
-/* line 377, ../sass/web.scss */
+/* line 365, ../sass/web.scss */
 .user-panel .action icon {
   width: 43px;
   height: 43px;
@@ -806,34 +796,34 @@ panel {
   background-color: #eee;
   margin: 0 .4em;
 }
-/* line 386, ../sass/web.scss */
+/* line 374, ../sass/web.scss */
 .user-panel .action icon:hover {
   cursor: pointer;
   background-color: #ddd;
 }
 
-/* line 396, ../sass/web.scss */
+/* line 384, ../sass/web.scss */
 .aio .list-presentation {
   height: 100%;
 }
-/* line 399, ../sass/web.scss */
+/* line 387, ../sass/web.scss */
 .aio .list {
   flex-direction: column;
   position: relative;
   height: 100%;
 }
-/* line 403, ../sass/web.scss */
+/* line 391, ../sass/web.scss */
 .aio .list .header {
   height: 70px;
   font-family: Poppins-SemiBold;
   font-size: 1.8em;
 }
-/* line 407, ../sass/web.scss */
+/* line 395, ../sass/web.scss */
 .aio .list .header icon {
   font-size: 1.3em;
   padding: 0 .5em;
 }
-/* line 412, ../sass/web.scss */
+/* line 400, ../sass/web.scss */
 .aio .list .body {
   padding: .5em;
   height: 100%;
@@ -843,7 +833,7 @@ panel {
   align-items: center;
   flex-direction: column;
 }
-/* line 420, ../sass/web.scss */
+/* line 408, ../sass/web.scss */
 .aio .list .body item {
   padding: .5em;
   font-family: Lexend;
@@ -851,20 +841,20 @@ panel {
   transition-duration: .2s;
   transition-property: padding, font-size, color;
 }
-/* line 426, ../sass/web.scss */
+/* line 414, ../sass/web.scss */
 .aio .list .body item:hover {
   color: #214467;
   cursor: pointer;
   padding-left: 1em;
 }
-/* line 431, ../sass/web.scss */
+/* line 419, ../sass/web.scss */
 .aio .list .body item.active {
   color: #0e4357;
   font-size: 1.8em;
   padding-left: 1em;
   font-family: Lexend-SemiBold;
 }
-/* line 437, ../sass/web.scss */
+/* line 425, ../sass/web.scss */
 .aio .list .body item.less {
   font-family: Poppins;
   font-size: .7em;
@@ -876,90 +866,90 @@ panel {
   padding: .3em .5em;
   color: #777;
 }
-/* line 449, ../sass/web.scss */
+/* line 437, ../sass/web.scss */
 .aio .presentation {
   padding: 1em .5em .5em .4em;
 }
-/* line 451, ../sass/web.scss */
+/* line 439, ../sass/web.scss */
 .aio .presentation .diagramme {
   height: 50%;
 }
-/* line 455, ../sass/web.scss */
+/* line 443, ../sass/web.scss */
 .aio .presentation .state-box label {
   font-family: Lexend;
   font-size: .9em;
   padding: .4em;
 }
-/* line 460, ../sass/web.scss */
+/* line 448, ../sass/web.scss */
 .aio .presentation .state-box .combined {
   height: 30px;
 }
-/* line 462, ../sass/web.scss */
+/* line 450, ../sass/web.scss */
 .aio .presentation .state-box .combined button {
   height: 30px;
   line-height: 0;
   font-size: .9em;
 }
-/* line 466, ../sass/web.scss */
+/* line 454, ../sass/web.scss */
 .aio .presentation .state-box .combined button:first-child {
   -moz-border-radius: 0.5em 0 0 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em 0 0 0.5em;
 }
-/* line 469, ../sass/web.scss */
+/* line 457, ../sass/web.scss */
 .aio .presentation .state-box .combined button:last-child {
   border-right: 1px solid #cde;
   -moz-border-radius: 0 0.5em 0.5em 0;
   -webkit-border-radius: 0;
   border-radius: 0 0.5em 0.5em 0;
 }
-/* line 477, ../sass/web.scss */
+/* line 465, ../sass/web.scss */
 .aio .form-add {
   height: 100%;
 }
-/* line 479, ../sass/web.scss */
+/* line 467, ../sass/web.scss */
 .aio .form-add h1 {
   padding: .5em;
   font-family: Lexend-SemiBold;
   font-size: 1.4em;
 }
-/* line 484, ../sass/web.scss */
+/* line 472, ../sass/web.scss */
 .aio .form-add .anneeAcademique {
   font-family: Lexend;
   font-size: 1em;
 }
-/* line 488, ../sass/web.scss */
+/* line 476, ../sass/web.scss */
 .aio .form-add label {
   font-family: Poppins;
   font-size: .8em;
 }
-/* line 491, ../sass/web.scss */
+/* line 479, ../sass/web.scss */
 .aio .form-add label.linked {
   position: relative;
   top: 1.8em;
 }
-/* line 496, ../sass/web.scss */
+/* line 484, ../sass/web.scss */
 .aio .form-add #Aka-yearForm {
   padding: .5em 1em;
 }
-/* line 500, ../sass/web.scss */
+/* line 488, ../sass/web.scss */
 .aio .form-add .group .field:first-child {
   margin-right: .4em;
 }
-/* line 503, ../sass/web.scss */
+/* line 491, ../sass/web.scss */
 .aio .form-add .group .field:last-child {
   margin-left: .4em;
 }
 
-/* line 511, ../sass/web.scss */
+/* line 499, ../sass/web.scss */
 .academic .session {
   padding: .4em;
 }
-/* line 513, ../sass/web.scss */
+/* line 501, ../sass/web.scss */
 .academic .session .session-wrapper {
   padding: .4em;
 }
-/* line 516, ../sass/web.scss */
+/* line 504, ../sass/web.scss */
 .academic .session .session-box {
   height: 20vmin;
   border-radius: .6em;
@@ -967,7 +957,7 @@ panel {
   background-color: rgba(200, 200, 200, 0.3);
   cursor: pointer;
 }
-/* line 523, ../sass/web.scss */
+/* line 511, ../sass/web.scss */
 .academic .session .session-box icon {
   display: flex;
   height: 40%;
@@ -976,57 +966,57 @@ panel {
   align-items: center;
   justify-content: center;
 }
-/* line 531, ../sass/web.scss */
+/* line 519, ../sass/web.scss */
 .academic .session .session-box label {
   font-family: Lexend;
 }
-/* line 533, ../sass/web.scss */
+/* line 521, ../sass/web.scss */
 .academic .session .session-box label.interval {
   font-size: .7em;
   font-family: Roboto;
   text-align: center;
 }
-/* line 539, ../sass/web.scss */
+/* line 527, ../sass/web.scss */
 .academic .session .session-box:hover {
   background-color: #366d74;
   box-shadow: 0 0 4px 0 #555;
   color: #fff;
 }
-/* line 544, ../sass/web.scss */
+/* line 532, ../sass/web.scss */
 .academic .session .session-box.adder {
   background-color: rgba(200, 200, 200, 0.3);
   color: black;
 }
-/* line 547, ../sass/web.scss */
+/* line 535, ../sass/web.scss */
 .academic .session .session-box.adder icon {
   height: 70%;
 }
-/* line 550, ../sass/web.scss */
+/* line 538, ../sass/web.scss */
 .academic .session .session-box.adder label {
   text-align: center;
 }
-/* line 554, ../sass/web.scss */
+/* line 542, ../sass/web.scss */
 .academic .session .session-box.current {
   box-shadow: 0 0 2px 1px #0e4357;
 }
-/* line 556, ../sass/web.scss */
+/* line 544, ../sass/web.scss */
 .academic .session .session-box.current icon {
   color: #0e4357;
 }
-/* line 559, ../sass/web.scss */
+/* line 547, ../sass/web.scss */
 .academic .session .session-box.current:hover icon {
   color: #fff;
 }
-/* line 566, ../sass/web.scss */
+/* line 554, ../sass/web.scss */
 .academic .session-view .list-view {
   height: inherit;
 }
-/* line 569, ../sass/web.scss */
+/* line 557, ../sass/web.scss */
 .academic .session-view .calendar-zone {
   padding: 0;
   background-color: var(--activeTextColor);
 }
-/* line 573, ../sass/web.scss */
+/* line 561, ../sass/web.scss */
 .academic .session-view .period-wrapper {
   padding: .4em;
   cursor: pointer;
@@ -1039,13 +1029,13 @@ panel {
   margin: .2em 0;
   overflow: hidden;
 }
-/* line 585, ../sass/web.scss */
+/* line 573, ../sass/web.scss */
 .academic .session-view .period-wrapper .summary-row icon {
   font-size: 1.4em;
   padding: .4em;
   margin-right: .2em;
 }
-/* line 589, ../sass/web.scss */
+/* line 577, ../sass/web.scss */
 .academic .session-view .period-wrapper .summary-row icon.down-button {
   display: inline-flex;
   align-items: center;
@@ -1059,58 +1049,58 @@ panel {
   transition-duration: .2s;
   transform: rotate(0);
 }
-/* line 603, ../sass/web.scss */
+/* line 591, ../sass/web.scss */
 .academic .session-view .period-wrapper .summary-row text {
   font-family: Lexend;
   padding: .3em;
 }
-/* line 606, ../sass/web.scss */
+/* line 594, ../sass/web.scss */
 .academic .session-view .period-wrapper .summary-row text.min {
   font-size: .9em;
   font-family: Roboto;
   color: #333;
 }
-/* line 613, ../sass/web.scss */
+/* line 601, ../sass/web.scss */
 .academic .session-view .period-wrapper .suite-row {
   padding: .4em;
 }
-/* line 615, ../sass/web.scss */
+/* line 603, ../sass/web.scss */
 .academic .session-view .period-wrapper .suite-row row {
   padding: .4em;
 }
-/* line 620, ../sass/web.scss */
+/* line 608, ../sass/web.scss */
 .academic .session-view .period-wrapper:hover .summary-row {
   background-color: #f0f0f0;
 }
-/* line 624, ../sass/web.scss */
+/* line 612, ../sass/web.scss */
 .academic .session-view .period-wrapper.open {
   height: auto;
   overflow: unset;
 }
-/* line 627, ../sass/web.scss */
+/* line 615, ../sass/web.scss */
 .academic .session-view .period-wrapper.open .summary-row icon.down-button {
   transform: rotate(180deg);
 }
-/* line 630, ../sass/web.scss */
+/* line 618, ../sass/web.scss */
 .academic .session-view .period-wrapper.open:hover .summary-row {
   background-color: unset;
 }
-/* line 636, ../sass/web.scss */
+/* line 624, ../sass/web.scss */
 .academic .arrow-data {
   overflow: hidden;
 }
 
-/* line 642, ../sass/web.scss */
+/* line 630, ../sass/web.scss */
 .session-view .stats {
   font-size: .9em;
   padding: .3em;
 }
-/* line 645, ../sass/web.scss */
+/* line 633, ../sass/web.scss */
 .session-view .stats item {
   padding: .2em;
   text-align: center;
 }
-/* line 648, ../sass/web.scss */
+/* line 636, ../sass/web.scss */
 .session-view .stats item icon {
   display: inline-block;
   font-size: 3em;
@@ -1120,29 +1110,29 @@ panel {
   height: 7vmax;
   line-height: 7vmax;
 }
-/* line 657, ../sass/web.scss */
+/* line 645, ../sass/web.scss */
 .session-view .stats item label {
   font-family: Lexend;
   font-size: 1.2em;
   display: block;
 }
-/* line 661, ../sass/web.scss */
+/* line 649, ../sass/web.scss */
 .session-view .stats item label.number {
   font-family: Lexend-Bold;
   font-size: 1.8em;
 }
-/* line 668, ../sass/web.scss */
+/* line 656, ../sass/web.scss */
 .session-view .intervals {
   font-size: .9em;
   padding: .4em .8em;
 }
-/* line 671, ../sass/web.scss */
+/* line 659, ../sass/web.scss */
 .session-view .intervals .row {
   padding: .3em;
   font-size: 1.1em;
   font-family: Poppins;
 }
-/* line 675, ../sass/web.scss */
+/* line 663, ../sass/web.scss */
 .session-view .intervals .row icon {
   font-size: 1.2em;
   width: 34px;
@@ -1153,15 +1143,15 @@ panel {
   border-radius: 50%;
   background-color: #cec;
 }
-/* line 689, ../sass/web.scss */
+/* line 677, ../sass/web.scss */
 .session-view wrapper .calendar-zone {
   height: 100%;
 }
-/* line 693, ../sass/web.scss */
+/* line 681, ../sass/web.scss */
 .session-view .calendar-events {
   height: 400px;
 }
-/* line 697, ../sass/web.scss */
+/* line 685, ../sass/web.scss */
 .session-view .calendar-view .onglet {
   padding: .2em .8em;
   cursor: pointer;
@@ -1169,59 +1159,59 @@ panel {
   border: 0;
   background-color: rgba(200, 230, 250, 0.2);
 }
-/* line 703, ../sass/web.scss */
+/* line 691, ../sass/web.scss */
 .session-view .calendar-view .onglet:first-child {
   border-radius: .4em 0 0 .4em;
 }
-/* line 706, ../sass/web.scss */
+/* line 694, ../sass/web.scss */
 .session-view .calendar-view .onglet:last-child {
   border-radius: 0 .4em .4em 0;
 }
-/* line 709, ../sass/web.scss */
+/* line 697, ../sass/web.scss */
 .session-view .calendar-view .onglet.active {
   background-color: #0e4357;
   color: white;
 }
 
-/* line 719, ../sass/web.scss */
+/* line 707, ../sass/web.scss */
 .administration .adminer {
   height: 100%;
   position: relative;
 }
-/* line 723, ../sass/web.scss */
+/* line 711, ../sass/web.scss */
 .administration .list {
   height: 100%;
 }
-/* line 725, ../sass/web.scss */
+/* line 713, ../sass/web.scss */
 .administration .list .label {
   font-family: Lexend;
   font-size: 1.2em;
   padding: .8em .5em;
 }
-/* line 730, ../sass/web.scss */
+/* line 718, ../sass/web.scss */
 .administration .list .body {
   padding: .5em;
   overflow-y: auto !important;
 }
-/* line 737, ../sass/web.scss */
+/* line 725, ../sass/web.scss */
 .administration .list .adder {
   padding: .4em;
   height: 60px;
 }
-/* line 740, ../sass/web.scss */
+/* line 728, ../sass/web.scss */
 .administration .list .adder .field {
   height: 50px;
 }
-/* line 742, ../sass/web.scss */
+/* line 730, ../sass/web.scss */
 .administration .list .adder .field .combined {
   padding-right: 0;
 }
-/* line 745, ../sass/web.scss */
+/* line 733, ../sass/web.scss */
 .administration .list .adder .field .redo:hover {
   cursor: pointer;
   color: #213b45;
 }
-/* line 749, ../sass/web.scss */
+/* line 737, ../sass/web.scss */
 .administration .list .adder .field #addFac {
   background-color: unset;
   font-size: 1.3em;
@@ -1236,15 +1226,15 @@ panel {
   border: 0;
   display: inline-block;
 }
-/* line 764, ../sass/web.scss */
+/* line 752, ../sass/web.scss */
 .administration .presentation-view {
   height: 100%;
 }
-/* line 766, ../sass/web.scss */
+/* line 754, ../sass/web.scss */
 .administration .presentation-view .head {
   padding: .4em;
 }
-/* line 768, ../sass/web.scss */
+/* line 756, ../sass/web.scss */
 .administration .presentation-view .head icon {
   font-size: 1.3em;
   padding: .4em;
@@ -1253,29 +1243,29 @@ panel {
   cursor: pointer;
   border-radius: .4em;
 }
-/* line 776, ../sass/web.scss */
+/* line 764, ../sass/web.scss */
 .administration .presentation-view .head .head-text {
   padding: .4em 0;
 }
-/* line 779, ../sass/web.scss */
+/* line 767, ../sass/web.scss */
 .administration .presentation-view .head text {
   font-family: Lexend;
   margin-left: .5em;
   font-size: 1.2em;
 }
-/* line 785, ../sass/web.scss */
+/* line 773, ../sass/web.scss */
 .administration .presentation-view .list-wrapper {
   height: inherit;
   padding: .4em 0;
 }
-/* line 788, ../sass/web.scss */
+/* line 776, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view {
   background-color: rgba(240, 240, 240, 0.3);
   border-radius: .5em;
   height: 90%;
   padding: .5em .8em;
 }
-/* line 793, ../sass/web.scss */
+/* line 781, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row {
   overflow: hidden;
   background-color: #fff;
@@ -1284,7 +1274,7 @@ panel {
   box-shadow: 0 1px 2px 0 #ccc;
   position: relative;
 }
-/* line 800, ../sass/web.scss */
+/* line 788, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row icon {
   width: 25px;
   height: 25px;
@@ -1298,13 +1288,13 @@ panel {
   background-color: #fff;
   transition-duration: .2s;
 }
-/* line 812, ../sass/web.scss */
+/* line 800, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row icon.checked {
   background-color: #0e4357;
   color: #fff;
   font-size: 1.2em;
 }
-/* line 818, ../sass/web.scss */
+/* line 806, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row text {
   padding: .6em;
   position: relative;
@@ -1315,24 +1305,24 @@ panel {
   transition-duration: .3s;
   background-color: #fff;
 }
-/* line 827, ../sass/web.scss */
+/* line 815, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row text .name {
   font-family: Roboto;
   font-size: 1.1em;
   padding: .3em 0;
 }
-/* line 832, ../sass/web.scss */
+/* line 820, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row text .sub {
   font-family: Roboto;
   font-size: .9em;
   color: #777;
   padding: .1em .2em;
 }
-/* line 837, ../sass/web.scss */
+/* line 825, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row text .sub.stats {
   border-left: 1px solid #333;
 }
-/* line 842, ../sass/web.scss */
+/* line 830, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row .actions {
   position: absolute;
   z-index: 1;
@@ -1343,7 +1333,7 @@ panel {
   background-color: #0e4357;
   padding: .4em;
 }
-/* line 851, ../sass/web.scss */
+/* line 839, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row .actions icon {
   background-color: rgba(200, 200, 200, 0.1);
   padding: .8em;
@@ -1352,23 +1342,23 @@ panel {
   border: 0;
   cursor: pointer;
 }
-/* line 858, ../sass/web.scss */
+/* line 846, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row .actions icon:hover {
   background-color: rgba(200, 200, 200, 0.4);
 }
-/* line 864, ../sass/web.scss */
+/* line 852, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row:hover text {
   width: 70%;
 }
-/* line 869, ../sass/web.scss */
+/* line 857, ../sass/web.scss */
 .administration .presentation-view .list-wrapper .list-view .row.selected:hover text {
   width: 100%;
 }
-/* line 876, ../sass/web.scss */
+/* line 864, ../sass/web.scss */
 .administration .presentation-view .actions {
   padding: .1em .4em;
 }
-/* line 878, ../sass/web.scss */
+/* line 866, ../sass/web.scss */
 .administration .presentation-view .actions button {
   border: 0;
   font-size: .9em;
@@ -1379,24 +1369,24 @@ panel {
   cursor: pointer;
   margin: .2em;
 }
-/* line 887, ../sass/web.scss */
+/* line 875, ../sass/web.scss */
 .administration .presentation-view .actions button icon {
   font-size: 1.2em;
   background-color: transparent;
 }
 
-/* line 898, ../sass/web.scss */
+/* line 886, ../sass/web.scss */
 .room .list .room-box:hover .text {
   height: 70%;
   background-color: transparent;
   color: #0e4357;
 }
-/* line 903, ../sass/web.scss */
+/* line 891, ../sass/web.scss */
 .room .list .room-box:hover .actions {
   height: 30%;
 }
 
-/* line 910, ../sass/web.scss */
+/* line 898, ../sass/web.scss */
 .promo .list .head {
   font-family: Poppins;
   font-size: 1.8em;
@@ -1404,7 +1394,7 @@ panel {
   position: relative;
   color: #0e4357;
 }
-/* line 916, ../sass/web.scss */
+/* line 904, ../sass/web.scss */
 .promo .list .head:after {
   content: " ";
   position: absolute;
@@ -1416,55 +1406,55 @@ panel {
   border-radius: 3em 1em 1em 3em;
   background-color: #0e4357;
 }
-/* line 930, ../sass/web.scss */
+/* line 918, ../sass/web.scss */
 .promo .list .promo-box:hover .text {
   height: 70%;
   background-color: transparent;
   color: #0e4357;
 }
-/* line 935, ../sass/web.scss */
+/* line 923, ../sass/web.scss */
 .promo .list .promo-box:hover .actions {
   height: 30%;
 }
 
-/* line 942, ../sass/web.scss */
+/* line 930, ../sass/web.scss */
 .student-list .row {
   padding: .2em 0;
 }
-/* line 944, ../sass/web.scss */
+/* line 932, ../sass/web.scss */
 .student-list .row.check-all {
   border-bottom: 1px solid #ddd;
   margin-bottom: .4em;
 }
-/* line 945, ../sass/web.scss */
+/* line 933, ../sass/web.scss */
 .student-list .row.check-all text {
   font-family: Poppins;
   font-size: 1.1em;
 }
-/* line 953, ../sass/web.scss */
+/* line 941, ../sass/web.scss */
 .student-list .student-row {
   height: 70px;
 }
 
-/* line 958, ../sass/web.scss */
+/* line 946, ../sass/web.scss */
 .transfer-grid {
   height: 60vh;
 }
-/* line 960, ../sass/web.scss */
+/* line 948, ../sass/web.scss */
 .transfer-grid .duo-body {
   background-color: #ddd;
 }
-/* line 962, ../sass/web.scss */
+/* line 950, ../sass/web.scss */
 .transfer-grid .duo-body .scroll-view {
   background-color: white;
   border-radius: .3em;
   padding: .4em;
 }
-/* line 968, ../sass/web.scss */
+/* line 956, ../sass/web.scss */
 .transfer-grid .transfer-destination {
   margin-left: .4em;
 }
-/* line 971, ../sass/web.scss */
+/* line 959, ../sass/web.scss */
 .transfer-grid .float-action {
   top: calc(50%);
   left: calc(50%);
@@ -1473,7 +1463,7 @@ panel {
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
 }
-/* line 975, ../sass/web.scss */
+/* line 963, ../sass/web.scss */
 .transfer-grid .float-action button {
   width: 43px;
   height: 43px;
@@ -1483,15 +1473,15 @@ panel {
   box-shadow: 0 0 3px 0 #05121c;
 }
 
-/* line 986, ../sass/web.scss */
+/* line 974, ../sass/web.scss */
 .work .list {
   padding: 3em .5em;
 }
-/* line 988, ../sass/web.scss */
+/* line 976, ../sass/web.scss */
 .work .list.hours {
   padding: 2em .5em;
 }
-/* line 991, ../sass/web.scss */
+/* line 979, ../sass/web.scss */
 .work .list button {
   padding: .8em .4em;
   font-family: Lexend-Medium;
@@ -1499,44 +1489,44 @@ panel {
   border: 0;
   box-shadow: 0 0 1px 0 #0e4357;
 }
-/* line 997, ../sass/web.scss */
+/* line 985, ../sass/web.scss */
 .work .list button:first-child {
   border-radius: .4em 0 0 .4em;
 }
-/* line 1000, ../sass/web.scss */
+/* line 988, ../sass/web.scss */
 .work .list button:last-child {
   border-radius: 0 .4em .4em 0;
 }
-/* line 1003, ../sass/web.scss */
+/* line 991, ../sass/web.scss */
 .work .list button.active {
   background-color: #0e4357;
   color: white;
 }
-/* line 1009, ../sass/web.scss */
+/* line 997, ../sass/web.scss */
 .work .actions {
   padding: .6em 0;
   text-align: right;
 }
-/* line 1012, ../sass/web.scss */
+/* line 1000, ../sass/web.scss */
 .work .actions button.inactive {
   opacity: .2;
 }
 
-/* line 1020, ../sass/web.scss */
+/* line 1008, ../sass/web.scss */
 .teacher .sort, .student .sort, .course .sort, .notes .sort, .users .sort {
   padding: .4em;
 }
-/* line 1022, ../sass/web.scss */
+/* line 1010, ../sass/web.scss */
 .teacher .sort label, .student .sort label, .course .sort label, .notes .sort label, .users .sort label {
   font-family: Rubik;
   font-size: 1.3em;
   padding: .3em .5em;
 }
-/* line 1028, ../sass/web.scss */
+/* line 1016, ../sass/web.scss */
 .teacher .sort .action button, .student .sort .action button, .course .sort .action button, .notes .sort .action button, .users .sort .action button {
   padding: .4em 1em;
 }
-/* line 1032, ../sass/web.scss */
+/* line 1020, ../sass/web.scss */
 .teacher .sort .field, .student .sort .field, .course .sort .field, .notes .sort .field, .users .sort .field {
   -moz-border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
@@ -1544,71 +1534,71 @@ panel {
   height: 30px;
   margin: 0 .2em;
 }
-/* line 1038, ../sass/web.scss */
+/* line 1026, ../sass/web.scss */
 .teacher .identification, .student .identification, .course .identification, .notes .identification, .users .identification {
   padding: .4em;
 }
-/* line 1040, ../sass/web.scss */
+/* line 1028, ../sass/web.scss */
 .teacher .identification span, .student .identification span, .course .identification span, .notes .identification span, .users .identification span {
   font-family: Poppins-SemiBold;
   color: #444;
   font-size: 1.2em;
 }
-/* line 1044, ../sass/web.scss */
+/* line 1032, ../sass/web.scss */
 .teacher .identification span.code, .student .identification span.code, .course .identification span.code, .notes .identification span.code, .users .identification span.code {
   font-family: Poppins;
   color: #000;
   font-size: 1em;
   padding: 0 .4em;
 }
-/* line 1053, ../sass/web.scss */
+/* line 1041, ../sass/web.scss */
 .teacher .infos .name, .student .infos .name, .course .infos .name, .notes .infos .name, .users .infos .name {
   font-family: Lexend-SemiBold;
   font-size: 1.6em;
   margin-bottom: .2em;
 }
-/* line 1058, ../sass/web.scss */
+/* line 1046, ../sass/web.scss */
 .teacher .infos .row, .student .infos .row, .course .infos .row, .notes .infos .row, .users .infos .row {
   padding: .2em;
 }
-/* line 1060, ../sass/web.scss */
+/* line 1048, ../sass/web.scss */
 .teacher .infos .row .head, .student .infos .row .head, .course .infos .row .head, .notes .infos .row .head, .users .infos .row .head {
   font-size: .9em;
   font-family: Poppins-SemiBold;
   padding: .3em 0;
 }
-/* line 1065, ../sass/web.scss */
+/* line 1053, ../sass/web.scss */
 .teacher .infos .row .data, .student .infos .row .data, .course .infos .row .data, .notes .infos .row .data, .users .infos .row .data {
   font-family: Poppins;
   font-size: 1em;
   padding: .2em 0;
   line-height: 1.2em;
 }
-/* line 1071, ../sass/web.scss */
+/* line 1059, ../sass/web.scss */
 .teacher .infos .row .sub-row, .student .infos .row .sub-row, .course .infos .row .sub-row, .notes .infos .row .sub-row, .users .infos .row .sub-row {
   font-family: Lexend;
   font-size: 1em;
 }
-/* line 1076, ../sass/web.scss */
+/* line 1064, ../sass/web.scss */
 .teacher .infos label, .student .infos label, .course .infos label, .notes .infos label, .users .infos label {
   font-family: Poppins;
   font-size: .9em;
 }
 
-/* line 1083, ../sass/web.scss */
+/* line 1071, ../sass/web.scss */
 .person-form {
   padding: 0 .5em;
 }
-/* line 1085, ../sass/web.scss */
+/* line 1073, ../sass/web.scss */
 .person-form label {
   font-family: OpenSans;
 }
-/* line 1087, ../sass/web.scss */
+/* line 1075, ../sass/web.scss */
 .person-form label.linked {
   color: #000;
   padding: .6em .3em;
 }
-/* line 1092, ../sass/web.scss */
+/* line 1080, ../sass/web.scss */
 .person-form .field {
   background-color: rgba(240, 240, 240, 0.6);
   box-shadow: 0 0 1px 0 #444;
@@ -1616,37 +1606,37 @@ panel {
   border-radius: .4em;
   margin: .2em;
 }
-/* line 1098, ../sass/web.scss */
+/* line 1086, ../sass/web.scss */
 .person-form .field label {
   color: #444;
 }
-/* line 1101, ../sass/web.scss */
+/* line 1089, ../sass/web.scss */
 .person-form .field .combined {
   width: 100%;
 }
-/* line 1105, ../sass/web.scss */
+/* line 1093, ../sass/web.scss */
 .person-form .field.animated label {
   color: #0e4357;
   font-weight: bold;
 }
-/* line 1110, ../sass/web.scss */
+/* line 1098, ../sass/web.scss */
 .person-form .field.invalid {
   background-color: #faf0f0;
 }
-/* line 1112, ../sass/web.scss */
+/* line 1100, ../sass/web.scss */
 .person-form .field.invalid label {
   color: #7a3a3a;
 }
-/* line 1117, ../sass/web.scss */
+/* line 1105, ../sass/web.scss */
 .person-form .field-wrapper {
   padding: .3em;
 }
-/* line 1120, ../sass/web.scss */
+/* line 1108, ../sass/web.scss */
 .person-form .avatar-box {
   padding: .8em .4em;
   position: relative;
 }
-/* line 1123, ../sass/web.scss */
+/* line 1111, ../sass/web.scss */
 .person-form .avatar-box avatar {
   width: 120px;
   height: 120px;
@@ -1656,7 +1646,7 @@ panel {
   font-size: 2.6em;
   border: 2px solid #0e4357;
 }
-/* line 1131, ../sass/web.scss */
+/* line 1119, ../sass/web.scss */
 .person-form .avatar-box avatar .background {
   width: inherit;
   height: inherit;
@@ -1668,7 +1658,7 @@ panel {
   top: 0;
   left: 0;
 }
-/* line 1143, ../sass/web.scss */
+/* line 1131, ../sass/web.scss */
 .person-form .avatar-box .avatar-chooser {
   width: 52px;
   height: 52px;
@@ -1689,30 +1679,30 @@ panel {
   transform: translateY(-50%);
 }
 
-/* line 1164, ../sass/web.scss */
+/* line 1152, ../sass/web.scss */
 .id-item .courses {
   max-height: 180px;
 }
-/* line 1166, ../sass/web.scss */
+/* line 1154, ../sass/web.scss */
 .id-item .courses h3 {
   font-family: Poppins;
   padding: .4em .2em;
 }
-/* line 1170, ../sass/web.scss */
+/* line 1158, ../sass/web.scss */
 .id-item .courses .row {
   padding: .1em;
   margin: .2em 0;
 }
-/* line 1173, ../sass/web.scss */
+/* line 1161, ../sass/web.scss */
 .id-item .courses .row .label {
   font-family: Poppins-SemiBold;
   padding: .2em 0;
 }
-/* line 1177, ../sass/web.scss */
+/* line 1165, ../sass/web.scss */
 .id-item .courses .row .content {
   padding: .1em;
 }
-/* line 1179, ../sass/web.scss */
+/* line 1167, ../sass/web.scss */
 .id-item .courses .row .content .item {
   font-family: Poppins;
   font-size: .8em;
@@ -1724,32 +1714,63 @@ panel {
   border-radius: 0.4em;
 }
 
-/* line 1193, ../sass/web.scss */
+/* line 1181, ../sass/web.scss */
 .teacher item.open {
   height: 380px;
 }
 
-/* line 1200, ../sass/web.scss */
+/* line 1188, ../sass/web.scss */
 .student-item .metadata {
   height: 250px;
 }
-/* line 1203, ../sass/web.scss */
+/* line 1191, ../sass/web.scss */
 .student-item.open {
   height: 300px;
 }
 
-/* line 1208, ../sass/web.scss */
+/* line 1196, ../sass/web.scss */
 .student .criterias {
   z-index: 3;
 }
-/* line 1210, ../sass/web.scss */
+/* line 1198, ../sass/web.scss */
 .student .criterias .student-name {
   font-family: Poppins;
   font-size: 1.2em;
   padding: 0 .4em;
 }
 
-/* line 1219, ../sass/web.scss */
+/* line 1206, ../sass/web.scss */
+.student-folder .main-panel {
+  padding: .4em;
+  background-color: #eee;
+  height: 40vh;
+}
+/* line 1210, ../sass/web.scss */
+.student-folder .main-panel avatar {
+  --avatar-size: 30vmin;
+}
+/* line 1213, ../sass/web.scss */
+.student-folder .main-panel .data {
+  padding: .3em;
+}
+/* line 1215, ../sass/web.scss */
+.student-folder .main-panel .data .name {
+  font-family: Poppins-Medium;
+  font-size: 1.4em;
+  padding: .4em 0;
+}
+/* line 1220, ../sass/web.scss */
+.student-folder .main-panel .data .gender {
+  font-family: Poppins;
+}
+/* line 1221, ../sass/web.scss */
+.student-folder .main-panel .data .gender icon {
+  font-size: 1.1em;
+  padding: .4em;
+  margin: .2em;
+}
+
+/* line 1234, ../sass/web.scss */
 #userForm .avatar-box avatar {
   width: 121px;
   height: 121px;
@@ -1757,7 +1778,7 @@ panel {
   font-size: 3em;
   color: #999;
 }
-/* line 1226, ../sass/web.scss */
+/* line 1241, ../sass/web.scss */
 #userForm .avatar-box .avatar-chooser {
   width: 43px;
   height: 43px;
@@ -1766,19 +1787,19 @@ panel {
   top: calc(121px - 40px);
   left: calc(121px - 43px);
 }
-/* line 1235, ../sass/web.scss */
+/* line 1250, ../sass/web.scss */
 #userForm .privilegies {
   padding: .5em 0;
 }
-/* line 1237, ../sass/web.scss */
+/* line 1252, ../sass/web.scss */
 #userForm .privilegies label {
   padding: .4em 0;
 }
-/* line 1242, ../sass/web.scss */
+/* line 1257, ../sass/web.scss */
 #userForm .module-box .sub-modules {
   padding: 0 0 0 2em;
 }
-/* line 1245, ../sass/web.scss */
+/* line 1260, ../sass/web.scss */
 #userForm .module-box .modules {
   padding: .4em;
   margin: .2em 0;
@@ -1795,20 +1816,20 @@ panel {
   transition-property: background-color;
   transition-duration: .2s;
 }
-/* line 1256, ../sass/web.scss */
+/* line 1271, ../sass/web.scss */
 #userForm .module-box .modules .input {
   width: 50px;
 }
-/* line 1259, ../sass/web.scss */
+/* line 1274, ../sass/web.scss */
 #userForm .module-box .modules label, #userForm .module-box .modules .input {
   cursor: pointer;
 }
-/* line 1263, ../sass/web.scss */
+/* line 1278, ../sass/web.scss */
 #userForm .module-box .modules.head label {
   padding: 0;
   font-family: Poppins-SemiBold;
 }
-/* line 1268, ../sass/web.scss */
+/* line 1283, ../sass/web.scss */
 #userForm .module-box .modules .more {
   width: 30px;
   height: 30px;
@@ -1819,44 +1840,44 @@ panel {
   -webkit-border-radius: 100%;
   border-radius: 100%;
 }
-/* line 1276, ../sass/web.scss */
+/* line 1291, ../sass/web.scss */
 #userForm .module-box .modules.selected {
   background-color: #3d6d6d;
   color: white;
 }
-/* line 1279, ../sass/web.scss */
+/* line 1294, ../sass/web.scss */
 #userForm .module-box .modules.selected .more {
   color: #3d6d6d;
 }
 
-/* line 1289, ../sass/web.scss */
+/* line 1304, ../sass/web.scss */
 .course h2 {
   font-size: 1em;
   padding: .2em .4em;
 }
-/* line 1293, ../sass/web.scss */
+/* line 1308, ../sass/web.scss */
 .course label.free {
   padding: .4em 0;
   font-size: 1.3em;
   font-family: Poppins-SemiBold;
 }
-/* line 1299, ../sass/web.scss */
+/* line 1314, ../sass/web.scss */
 .course .course-schedule .days, .course .course-schedule .course_type {
   font-size: .8em;
 }
-/* line 1301, ../sass/web.scss */
+/* line 1316, ../sass/web.scss */
 .course .course-schedule .days button:first-child, .course .course-schedule .course_type button:first-child {
   -moz-border-radius: 0.5em 0 0 0.5em;
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em 0 0 0.5em;
 }
-/* line 1304, ../sass/web.scss */
+/* line 1319, ../sass/web.scss */
 .course .course-schedule .days button:last-child, .course .course-schedule .course_type button:last-child {
   -moz-border-radius: 0 0.5em 0.5em 0;
   -webkit-border-radius: 0;
   border-radius: 0 0.5em 0.5em 0;
 }
-/* line 1308, ../sass/web.scss */
+/* line 1323, ../sass/web.scss */
 .course .course-schedule p {
   padding: .4em;
   font-size: .8em;
@@ -1864,12 +1885,12 @@ panel {
   font-family: Merriweather-Light;
   line-height: 1.5em;
 }
-/* line 1316, ../sass/web.scss */
+/* line 1331, ../sass/web.scss */
 .course .scheduled-courses {
   padding: .4em;
   border-bottom: 1px solid #ccc;
 }
-/* line 1319, ../sass/web.scss */
+/* line 1334, ../sass/web.scss */
 .course .scheduled-courses item {
   padding: .5em .4em;
   background-color: #fff;
@@ -1878,50 +1899,50 @@ panel {
   box-shadow: 0 0 1px 0 #ddd;
   font-family: Poppins;
 }
-/* line 1324, ../sass/web.scss */
+/* line 1339, ../sass/web.scss */
 .course .scheduled-courses item span {
   font-family: Lexend;
   font-size: .7em;
   font-style: italic;
   color: #777;
 }
-/* line 1330, ../sass/web.scss */
+/* line 1345, ../sass/web.scss */
 .course .scheduled-courses item icon {
   cursor: pointer;
   padding: .4em 0;
 }
-/* line 1336, ../sass/web.scss */
+/* line 1351, ../sass/web.scss */
 .course #schedule {
   -moz-border-radius: 0.8em;
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
 }
-/* line 1339, ../sass/web.scss */
+/* line 1354, ../sass/web.scss */
 .course .header {
   height: 100px !important;
   padding: .2em .5em !important;
   font-size: 1em !important;
 }
-/* line 1344, ../sass/web.scss */
+/* line 1359, ../sass/web.scss */
 .course .body {
   overflow: hidden !important;
   padding: 0 !important;
 }
-/* line 1348, ../sass/web.scss */
+/* line 1363, ../sass/web.scss */
 .course .wrapper.table-host {
   height: auto !important;
   min-height: 25px;
 }
-/* line 1352, ../sass/web.scss */
+/* line 1367, ../sass/web.scss */
 .course .hint-box {
   padding: 0;
   font-size: .9em;
 }
-/* line 1355, ../sass/web.scss */
+/* line 1370, ../sass/web.scss */
 .course .hint-box icon.rounded {
   background-color: rgba(27, 70, 62, 0.25);
 }
-/* line 1360, ../sass/web.scss */
+/* line 1375, ../sass/web.scss */
 .course .bloc .fac {
   font-family: Rubik;
   max-width: 100%;
@@ -1934,21 +1955,21 @@ panel {
   background-color: #5b848e;
   color: white;
 }
-/* line 1369, ../sass/web.scss */
+/* line 1384, ../sass/web.scss */
 .course .bloc .fac.none {
   padding: 0;
   display: none !important;
 }
-/* line 1375, ../sass/web.scss */
+/* line 1390, ../sass/web.scss */
 .course .table {
   padding: .4em;
 }
-/* line 1377, ../sass/web.scss */
+/* line 1392, ../sass/web.scss */
 .course .table .range {
   padding: .2em 0;
   font-size: .9em;
 }
-/* line 1380, ../sass/web.scss */
+/* line 1395, ../sass/web.scss */
 .course .table .range .day {
   background-color: #546e78;
   color: white;
@@ -1960,7 +1981,7 @@ panel {
   -webkit-border-radius: 0.4em;
   border-radius: 0.4em;
 }
-/* line 1389, ../sass/web.scss */
+/* line 1404, ../sass/web.scss */
 .course .table .range .hour {
   padding: .4em;
   font-family: Lexend;
@@ -1971,26 +1992,26 @@ panel {
   border-radius: 0 0.4em 0.4em 0;
   margin: 0 .2em;
 }
-/* line 1396, ../sass/web.scss */
+/* line 1411, ../sass/web.scss */
 .course .table .range .hour.cm {
   border-left: 4px solid #266b4b;
 }
-/* line 1399, ../sass/web.scss */
+/* line 1414, ../sass/web.scss */
 .course .table .range .hour.tp {
   border-left: 4px solid #a48611;
 }
-/* line 1405, ../sass/web.scss */
+/* line 1420, ../sass/web.scss */
 .course .legend {
   padding: 1em 0 .5em 0;
 }
-/* line 1407, ../sass/web.scss */
+/* line 1422, ../sass/web.scss */
 .course .legend .hint {
   padding: .2em;
   margin: 0 .5em;
   font-family: Lexend;
   font-size: .8em;
 }
-/* line 1412, ../sass/web.scss */
+/* line 1427, ../sass/web.scss */
 .course .legend .hint .square {
   display: inline-block;
   width: 14px;
@@ -1998,28 +2019,28 @@ panel {
   margin-right: .5em;
   background-color: #3b4444;
 }
-/* line 1418, ../sass/web.scss */
+/* line 1433, ../sass/web.scss */
 .course .legend .hint .square.cm {
   background-color: #266b4b;
 }
-/* line 1421, ../sass/web.scss */
+/* line 1436, ../sass/web.scss */
 .course .legend .hint .square.tp {
   background-color: #a48611;
 }
-/* line 1428, ../sass/web.scss */
+/* line 1443, ../sass/web.scss */
 .course .action .state {
   font-size: .8em;
 }
 
-/* line 1434, ../sass/web.scss */
+/* line 1449, ../sass/web.scss */
 .schedular .sort-zone, .schedular .visual, .schedular .schedular-box {
   height: 100%;
 }
-/* line 1437, ../sass/web.scss */
+/* line 1452, ../sass/web.scss */
 .schedular .sort-zone {
   padding: 1em 2em 2em .5em;
 }
-/* line 1439, ../sass/web.scss */
+/* line 1454, ../sass/web.scss */
 .schedular .sort-zone .field {
   margin: .4em 0;
   height: 40px;
@@ -2027,14 +2048,14 @@ panel {
   -webkit-border-radius: 0.8em;
   border-radius: 0.8em;
 }
-/* line 1445, ../sass/web.scss */
+/* line 1460, ../sass/web.scss */
 .schedular .sort-zone .action button {
   -moz-border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
   border-radius: 0.4em;
   padding: .6em 1em;
 }
-/* line 1451, ../sass/web.scss */
+/* line 1466, ../sass/web.scss */
 .schedular .visual {
   overflow: hidden;
   -moz-border-radius: 0.5em;
@@ -2042,26 +2063,26 @@ panel {
   border-radius: 0.5em;
 }
 
-/* line 1456, ../sass/web.scss */
+/* line 1471, ../sass/web.scss */
 .schedular-box {
   height: 100%;
 }
-/* line 1458, ../sass/web.scss */
+/* line 1473, ../sass/web.scss */
 .schedular-box .header {
   background-color: #3e8685;
   color: white;
 }
-/* line 1461, ../sass/web.scss */
+/* line 1476, ../sass/web.scss */
 .schedular-box .header .facname {
   font-size: 1.4em;
   font-family: Poppins-SemiBold;
   padding: .3em 0;
 }
-/* line 1466, ../sass/web.scss */
+/* line 1481, ../sass/web.scss */
 .schedular-box .header .schema {
   padding: .2em;
 }
-/* line 1468, ../sass/web.scss */
+/* line 1483, ../sass/web.scss */
 .schedular-box .header .schema .arrow {
   padding: 0 .4em;
   background-color: #cde;
@@ -2070,11 +2091,11 @@ panel {
   height: 30px;
   padding-left: 30px;
 }
-/* line 1475, ../sass/web.scss */
+/* line 1490, ../sass/web.scss */
 .schedular-box .header .schema .arrow:first-child {
   padding-left: .4em;
 }
-/* line 1478, ../sass/web.scss */
+/* line 1493, ../sass/web.scss */
 .schedular-box .header .schema .arrow span {
   height: 30px;
   display: block;
@@ -2086,7 +2107,7 @@ panel {
   z-index: 3;
   color: #333;
 }
-/* line 1489, ../sass/web.scss */
+/* line 1504, ../sass/web.scss */
 .schedular-box .header .schema .arrow::after {
   position: absolute;
   height: 21px;
@@ -2105,35 +2126,35 @@ panel {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 1505, ../sass/web.scss */
+/* line 1520, ../sass/web.scss */
 .schedular-box .grid {
   height: 100%;
   background-color: #eee;
   overflow: hidden;
   overflow-y: auto;
 }
-/* line 1510, ../sass/web.scss */
+/* line 1525, ../sass/web.scss */
 .schedular-box .grid .dayColumn {
   position: relative;
   height: 100%;
 }
-/* line 1513, ../sass/web.scss */
+/* line 1528, ../sass/web.scss */
 .schedular-box .grid .dayColumn:first-child .head {
   -moz-border-radius: 0 0 0 0.8em;
   -webkit-border-radius: 0;
   border-radius: 0 0 0 0.8em;
 }
-/* line 1517, ../sass/web.scss */
+/* line 1532, ../sass/web.scss */
 .schedular-box .grid .dayColumn:last-child .head {
   -moz-border-radius: 0 0 0.8em 0;
   -webkit-border-radius: 0;
   border-radius: 0 0 0.8em 0;
 }
-/* line 1520, ../sass/web.scss */
+/* line 1535, ../sass/web.scss */
 .schedular-box .grid .dayColumn:last-child .course-range {
   border-right: 1px solid #cbd7d5;
 }
-/* line 1524, ../sass/web.scss */
+/* line 1539, ../sass/web.scss */
 .schedular-box .grid .dayColumn .head {
   height: 30px;
   font-family: Lexend-SemiBold;
@@ -2143,14 +2164,14 @@ panel {
   background-color: #93c5c7;
   text-align: center;
 }
-/* line 1533, ../sass/web.scss */
+/* line 1548, ../sass/web.scss */
 .schedular-box .grid .dayColumn .course-range {
   height: 100%;
   position: relative;
   padding: .2em;
   border-left: 1px solid #cbd7d5;
 }
-/* line 1538, ../sass/web.scss */
+/* line 1553, ../sass/web.scss */
 .schedular-box .grid .dayColumn .course-range .row {
   -moz-border-radius: 0.2em;
   -webkit-border-radius: 0.2em;
@@ -2162,13 +2183,13 @@ panel {
   position: absolute;
   text-align: center;
 }
-/* line 1548, ../sass/web.scss */
+/* line 1563, ../sass/web.scss */
 .schedular-box .grid .dayColumn .course-range .row span:first-child {
   font-family: Poppins-SemiBold;
   font-size: .9em;
 }
 
-/* line 1558, ../sass/web.scss */
+/* line 1573, ../sass/web.scss */
 .scheduled-courses {
   padding: .4em;
   border-radius: .4em;
@@ -2176,83 +2197,83 @@ panel {
   min-height: 60px;
 }
 
-/* line 1565, ../sass/web.scss */
+/* line 1580, ../sass/web.scss */
 .course-item .metadata {
   height: 150px;
 }
-/* line 1568, ../sass/web.scss */
+/* line 1583, ../sass/web.scss */
 .course-item.open {
   height: 200px;
 }
 
-/* line 1572, ../sass/web.scss */
+/* line 1587, ../sass/web.scss */
 #course-details {
   padding: .4em;
 }
-/* line 1574, ../sass/web.scss */
+/* line 1589, ../sass/web.scss */
 #course-details .course-info {
   padding: .4em;
 }
-/* line 1578, ../sass/web.scss */
+/* line 1593, ../sass/web.scss */
 #course-details .course-info .data {
   padding: .4em 0;
   font-family: Lexend;
 }
-/* line 1582, ../sass/web.scss */
+/* line 1597, ../sass/web.scss */
 #course-details .course-info .name {
   font-family: Poppins-Bold;
   font-size: 1.3em;
 }
-/* line 1586, ../sass/web.scss */
+/* line 1601, ../sass/web.scss */
 #course-details .course-info .code {
   font-family: Poppins-Light;
 }
-/* line 1589, ../sass/web.scss */
+/* line 1604, ../sass/web.scss */
 #course-details .course-info .teacher-details {
   padding: .8em 0;
 }
-/* line 1591, ../sass/web.scss */
+/* line 1606, ../sass/web.scss */
 #course-details .course-info .teacher-details label {
   padding: 0 .4em;
   font-family: Poppins;
 }
-/* line 1595, ../sass/web.scss */
+/* line 1610, ../sass/web.scss */
 #course-details .course-info .teacher-details .teacher-box {
   padding: 0 .4em;
 }
-/* line 1597, ../sass/web.scss */
+/* line 1612, ../sass/web.scss */
 #course-details .course-info .teacher-details .teacher-box avatar {
   height: 70px;
   width: 70px;
   border: 2px solid #0e4357;
 }
-/* line 1602, ../sass/web.scss */
+/* line 1617, ../sass/web.scss */
 #course-details .course-info .teacher-details .teacher-box .metadata {
   font-family: Poppins-Light;
   font-size: .9em;
   padding: 0 .4em;
 }
-/* line 1606, ../sass/web.scss */
+/* line 1621, ../sass/web.scss */
 #course-details .course-info .teacher-details .teacher-box .metadata .name {
   font-size: 1em;
   padding: .3em 0;
 }
-/* line 1614, ../sass/web.scss */
+/* line 1629, ../sass/web.scss */
 #course-details .best-student {
   padding: .4em;
 }
-/* line 1617, ../sass/web.scss */
+/* line 1632, ../sass/web.scss */
 #course-details .best-student row.empty {
   height: 40px;
   border-radius: .8em;
   background-color: #efefef;
   margin: .3em 0;
 }
-/* line 1625, ../sass/web.scss */
+/* line 1640, ../sass/web.scss */
 #course-details .schedulers {
   height: 60vh;
 }
-/* line 1627, ../sass/web.scss */
+/* line 1642, ../sass/web.scss */
 #course-details .schedulers .schedule-row {
   padding: .8em .4em;
   width: auto;
@@ -2261,48 +2282,48 @@ panel {
   border-radius: .4em;
   font-family: Lexend;
 }
-/* line 1634, ../sass/web.scss */
+/* line 1649, ../sass/web.scss */
 #course-details .schedulers .schedule-row .hour, #course-details .schedulers .schedule-row .day {
   font-family: Lexend-Medium;
   display: flex;
   align-items: center;
   padding-right: .3em;
 }
-/* line 1639, ../sass/web.scss */
+/* line 1654, ../sass/web.scss */
 #course-details .schedulers .schedule-row .hour icon, #course-details .schedulers .schedule-row .day icon {
   font-size: 1.3em;
   padding: .1em .5em .1em .1em;
 }
-/* line 1644, ../sass/web.scss */
+/* line 1659, ../sass/web.scss */
 #course-details .schedulers .schedule-row .hour {
   font-size: .8em;
 }
-/* line 1646, ../sass/web.scss */
+/* line 1661, ../sass/web.scss */
 #course-details .schedulers .schedule-row .hour icon {
   font-size: 1.6em;
 }
-/* line 1650, ../sass/web.scss */
+/* line 1665, ../sass/web.scss */
 #course-details .schedulers .schedule-row .ref {
   padding-left: 1.8em;
   font-family: Lexend-Light;
   font-size: .8em;
 }
-/* line 1655, ../sass/web.scss */
+/* line 1670, ../sass/web.scss */
 #course-details .schedulers .schedule-row:hover {
   box-shadow: 0 0 2px 0 #ccc;
 }
-/* line 1658, ../sass/web.scss */
+/* line 1673, ../sass/web.scss */
 #course-details .schedulers .schedule-row.button {
   padding: .4em;
   box-shadow: 0 1px 3px 0 #777;
   border-radius: .2em;
   cursor: pointer;
 }
-/* line 1663, ../sass/web.scss */
+/* line 1678, ../sass/web.scss */
 #course-details .schedulers .schedule-row.button:hover {
   background-color: #e0e0e0;
 }
-/* line 1668, ../sass/web.scss */
+/* line 1683, ../sass/web.scss */
 #course-details .schedulers .schedule-element-box button {
   padding: .4em;
   border: 0;
@@ -2313,35 +2334,35 @@ panel {
   cursor: pointer;
   box-shadow: 0 1px 2px 0 #ccc;
 }
-/* line 1677, ../sass/web.scss */
+/* line 1692, ../sass/web.scss */
 #course-details .schedulers .schedule-element-box button.delete {
   background-color: #fdd;
   color: #c77;
 }
-/* line 1681, ../sass/web.scss */
+/* line 1696, ../sass/web.scss */
 #course-details .schedulers .schedule-element-box button:hover {
   box-shadow: 0 1px 2px 0 #999;
 }
-/* line 1685, ../sass/web.scss */
+/* line 1700, ../sass/web.scss */
 #course-details .schedulers .duo-body {
   background-color: #f7f7f7;
 }
 
-/* line 1694, ../sass/web.scss */
+/* line 1709, ../sass/web.scss */
 .notes .visual, .notes .visual .view-list {
   height: 100%;
 }
-/* line 1697, ../sass/web.scss */
+/* line 1712, ../sass/web.scss */
 .notes .visual .header {
   height: 40px;
   padding: 0 .3em;
   font-size: 1.3em;
 }
-/* line 1701, ../sass/web.scss */
+/* line 1716, ../sass/web.scss */
 .notes .visual .header .name {
   font-family: Poppins;
 }
-/* line 1704, ../sass/web.scss */
+/* line 1719, ../sass/web.scss */
 .notes .visual .header .legend {
   padding: .2em .4em;
   margin-right: .4em;
@@ -2353,13 +2374,13 @@ panel {
   border-radius: 0.4em;
   color: white;
 }
-/* line 1713, ../sass/web.scss */
+/* line 1728, ../sass/web.scss */
 .notes .visual .header .maximum {
   font-family: Lexend;
   font-size: .9em;
   padding-right: .5em;
 }
-/* line 1718, ../sass/web.scss */
+/* line 1733, ../sass/web.scss */
 .notes .visual .header .hint {
   font-family: Poppins-Light;
   font-size: .6em;
@@ -2367,58 +2388,58 @@ panel {
   padding: 0 .3em 0 .5em;
   border-left: 1px solid #eee;
 }
-/* line 1726, ../sass/web.scss */
+/* line 1741, ../sass/web.scss */
 .notes .visual .list {
   height: 100%;
 }
-/* line 1728, ../sass/web.scss */
+/* line 1743, ../sass/web.scss */
 .notes .visual .list .row {
   height: 49px;
   padding: 0 .2em;
   border-bottom: 1px solid #ddd;
 }
-/* line 1732, ../sass/web.scss */
+/* line 1747, ../sass/web.scss */
 .notes .visual .list .row .name {
   font-family: Poppins-SemiBold;
   font-size: 1em;
 }
-/* line 1736, ../sass/web.scss */
+/* line 1751, ../sass/web.scss */
 .notes .visual .list .row .code {
   font-family: Poppins;
   font-size: .8em;
 }
-/* line 1740, ../sass/web.scss */
+/* line 1755, ../sass/web.scss */
 .notes .visual .list .row .field {
   height: 40px;
 }
-/* line 1745, ../sass/web.scss */
+/* line 1760, ../sass/web.scss */
 .notes .visual .action {
   height: 60px;
   padding: 0 .5em;
 }
-/* line 1748, ../sass/web.scss */
+/* line 1763, ../sass/web.scss */
 .notes .visual .action button {
   -moz-border-radius: 0.4em;
   -webkit-border-radius: 0.4em;
   border-radius: 0.4em;
 }
 
-/* line 1755, ../sass/web.scss */
+/* line 1770, ../sass/web.scss */
 .results {
   padding: .3em;
 }
 
-/* line 1762, ../sass/web.scss */
+/* line 1777, ../sass/web.scss */
 table {
   font-family: 'Merriweather-Light';
   display: block;
 }
-/* line 1765, ../sass/web.scss */
+/* line 1780, ../sass/web.scss */
 table tbody {
   width: 100%;
   display: block;
 }
-/* line 1769, ../sass/web.scss */
+/* line 1784, ../sass/web.scss */
 table tr {
   display: flex;
   align-items: center;
@@ -2426,7 +2447,7 @@ table tr {
   height: auto;
   border-bottom: 1px solid #ddd;
 }
-/* line 1775, ../sass/web.scss */
+/* line 1790, ../sass/web.scss */
 table tr td, table tr th {
   height: inherit;
   display: inline-flex;
@@ -2434,20 +2455,20 @@ table tr td, table tr th {
   justify-content: center;
   width: 100%;
 }
-/* line 1781, ../sass/web.scss */
+/* line 1796, ../sass/web.scss */
 table tr td.name, table tr th.name {
   justify-content: flex-start;
   font-family: Poppins;
   font-size: .8em;
 }
-/* line 1787, ../sass/web.scss */
+/* line 1802, ../sass/web.scss */
 table tr th {
   font-family: Poppins-SemiBold !important;
   font-weight: normal;
   font-size: .75em !important;
   padding: 0;
 }
-/* line 1793, ../sass/web.scss */
+/* line 1808, ../sass/web.scss */
 table tr:first-child {
   padding: .3em;
   background-color: #0e4357;
@@ -2455,68 +2476,68 @@ table tr:first-child {
   font-family: Roboto;
   border-bottom: 0;
 }
-/* line 1800, ../sass/web.scss */
+/* line 1815, ../sass/web.scss */
 table tr td {
   font-size: .9em;
   vertical-align: top;
   height: inherit;
   font-family: Lexend;
 }
-/* line 1805, ../sass/web.scss */
+/* line 1820, ../sass/web.scss */
 table tr td.good {
   color: #475d32;
   height: 35px;
   background-color: #e6f7d3;
 }
-/* line 1810, ../sass/web.scss */
+/* line 1825, ../sass/web.scss */
 table tr td.bad {
   color: #5d3232;
   height: 35px;
   background-color: #f7d3d3;
 }
-/* line 1815, ../sass/web.scss */
+/* line 1830, ../sass/web.scss */
 table tr td.bareme {
   background-color: #eee;
 }
-/* line 1817, ../sass/web.scss */
+/* line 1832, ../sass/web.scss */
 table tr td.bareme td {
   font-family: Poppins-Bold;
   font-size: .8em;
 }
 
-/* line 1827, ../sass/web.scss */
+/* line 1842, ../sass/web.scss */
 .list-printing .metadatas {
   height: auto;
   overflow: unset;
 }
-/* line 1832, ../sass/web.scss */
+/* line 1847, ../sass/web.scss */
 .list-printing .metadata {
   height: auto !important;
 }
 
-/* line 1839, ../sass/web.scss */
+/* line 1854, ../sass/web.scss */
 .users .header {
   height: 100px !important;
   padding: .2em .5em !important;
   font-size: 1em !important;
 }
-/* line 1844, ../sass/web.scss */
+/* line 1859, ../sass/web.scss */
 .users .list {
   padding: 1em .4em;
 }
 
-/* line 1850, ../sass/web.scss */
+/* line 1865, ../sass/web.scss */
 .account .avatar-zone {
   width: 200px;
 }
-/* line 1855, ../sass/web.scss */
+/* line 1870, ../sass/web.scss */
 .account .avatar-zone .avatar-box avatar {
   height: 140px;
   font-size: 3em;
   width: 140px;
   line-height: 140px;
 }
-/* line 1862, ../sass/web.scss */
+/* line 1877, ../sass/web.scss */
 .account .avatar-zone .avatar-box .avatar-chooser {
   width: 43px;
   height: 43px;
@@ -2524,36 +2545,36 @@ table tr td.bareme td {
   top: calc(140px - 43px);
   left: calc(140px - 43px);
 }
-/* line 1871, ../sass/web.scss */
+/* line 1886, ../sass/web.scss */
 .account .personnal {
   padding: .5em;
 }
-/* line 1873, ../sass/web.scss */
+/* line 1888, ../sass/web.scss */
 .account .personnal label {
   font-family: Lexend;
   font-size: 1em;
   padding: .4em 0;
 }
-/* line 1877, ../sass/web.scss */
+/* line 1892, ../sass/web.scss */
 .account .personnal label.name {
   font-size: 2.1em;
   font-family: Poppins-SemiBold;
 }
-/* line 1881, ../sass/web.scss */
+/* line 1896, ../sass/web.scss */
 .account .personnal label.pseudo {
   color: #999;
 }
-/* line 1885, ../sass/web.scss */
+/* line 1900, ../sass/web.scss */
 .account .personnal .hint {
   margin-bottom: 1.4em;
 }
-/* line 1887, ../sass/web.scss */
+/* line 1902, ../sass/web.scss */
 .account .personnal .hint span {
   color: #888;
   font-family: OpenSans-Semibold;
   padding: .3em .5em .3em 2em;
 }
-/* line 1893, ../sass/web.scss */
+/* line 1908, ../sass/web.scss */
 .account .personnal .percent {
   height: 4px;
   -moz-border-radius: 0.4em;
@@ -2561,7 +2582,7 @@ table tr td.bareme td {
   border-radius: 0.4em;
   background-color: #ccc;
 }
-/* line 1897, ../sass/web.scss */
+/* line 1912, ../sass/web.scss */
 .account .personnal .percent .line {
   background-color: #0e4357;
   -moz-border-radius: 0.4em;
@@ -2571,18 +2592,62 @@ table tr td.bareme td {
 }
 
 @media (min-width: 768px) {
-  /* line 1907, ../sass/web.scss */
+  /* line 1922, ../sass/web.scss */
   sidemenu {
     position: relative;
+    --menu-width: 380px;
+    transition-property: width, padding, clip-path;
+  }
+  /* line 1926, ../sass/web.scss */
+  sidemenu .company .navicon {
+    display: none;
+  }
+  /* line 1929, ../sass/web.scss */
+  sidemenu.minimal {
+    --menu-width: 80px;
+    width: var(--menu-width);
+    padding: 0 4.5em 0.8em 0.4em;
+  }
+  /* line 1935, ../sass/web.scss */
+  sidemenu.minimal .company .company-logo {
+    margin: 0 .2em;
+  }
+  /* line 1938, ../sass/web.scss */
+  sidemenu.minimal .company .name {
+    width: 0%;
+    overflow: hidden;
+  }
+  /* line 1943, ../sass/web.scss */
+  sidemenu.minimal .links {
+    width: inherit;
+    padding: .4em 0;
+  }
+  /* line 1947, ../sass/web.scss */
+  sidemenu.minimal item, sidemenu.minimal .item {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    width: 43px;
+    height: 43px;
+    margin-left: .4em;
+  }
+  /* line 1952, ../sass/web.scss */
+  sidemenu.minimal item icon, sidemenu.minimal .item icon {
+    padding: .2em;
+  }
+  /* line 1955, ../sass/web.scss */
+  sidemenu.minimal item .text, sidemenu.minimal .item .text {
+    width: 0;
+    opacity: 0;
   }
 
-  /* line 1910, ../sass/web.scss */
+  /* line 1962, ../sass/web.scss */
   view {
     flex-direction: column;
     height: 100%;
     width: calc(100% - var(--menu-width));
   }
-  /* line 1914, ../sass/web.scss */
+  /* line 1966, ../sass/web.scss */
   view.minimal {
     --menu-width: 80px;
     width: calc(100% - var(--menu-width));

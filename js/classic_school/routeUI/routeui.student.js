@@ -44,6 +44,8 @@ RouteUI.url
     Modules.setSearchVisible(false);
     var student = ruidata.getStudent(url.args.id);
     $('.student .criterias .student-name').html(student.prenom+" "+student.nom);
+    console.log('[Student]',student);
+    RouteUI.utils.updateView('.folder',{student: student},'.folder #student-folder');
     RouteUI.utils.student.cm.head.switchTo(1);
     RouteUI.utils.student.cm.view.switchTo(1);
     end();

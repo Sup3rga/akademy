@@ -66,8 +66,7 @@ var AkaGlobalEvents = function(){
                     }
                 });
         })
-        .on('click', 'sidemenu .company-logo', function(){
-            menuDraw.apply(menuDraw.getDesign(768)[0]);
+        .on('click', 'sidemenu .company-logo, sidemenu .navicon', function(){
             $('sidemenu,view').toggleClass('minimal');
         })
         .on('click', '.form-popup-caller', function(){

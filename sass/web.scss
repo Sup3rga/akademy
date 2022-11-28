@@ -72,6 +72,9 @@ view{
   flex-direction: column;
   height: 100%;
   width: 100%;
+  appbar{
+    padding-left: 50px;
+  }
   &.minimal{
     --menu-width: 80px;
     width: 100%;
@@ -121,6 +124,9 @@ appbar{
 }
 
 sidemenu{
+  --menu-width: 100%;
+  height: 100vh;
+  $menu_padding:  0 .3em .8em 1em;
   padding: $menu_padding;
   width: var(--menu-width);
   position: absolute;
@@ -131,9 +137,10 @@ sidemenu{
   @include background-image(linear-gradient(346deg, #072021, transparent));
   overflow: hidden;
   overflow-y: auto;
+  @include transform(translate3d(0,0,0));
   //clip-path: path("M0 0L260 0Q240 100 260 210Q280 390 250 500Q220 600 300 700L0 1000");
           //polygon(0 0, 75% 0, 100% 160px, 85% 60%, 100% 100%, 0 100%);
-  transition-property: width, padding, clip-path;
+  transition-property: transform;
   transition-duration: .2s;
   .links{
     padding-top: 1em;
@@ -152,6 +159,16 @@ sidemenu{
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+    }
+    .navicon{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      font-size: 1.3em;
+      width: 70px;
+      height: 70px;
+      line-height: 60px;
+      text-align: center;
     }
   }
   .company-logo{
@@ -201,36 +218,7 @@ sidemenu{
     }
   }
   &.minimal{
-    --menu-width: 80px;
-    width: var(--menu-width);
-    padding: $min_menu_padding;
-    //clip-path: path("M 0 0 L70 0Q50 100 70 300Q80 400 60 500 Q40 600 120 800L0 1000");
-    .company {
-      .company-logo{
-        margin: 0 .2em;
-      }
-      .name{
-        width: 0%;
-        overflow: hidden;
-      }
-    }
-    .links{
-      width: inherit;
-      padding: .4em 0;
-    }
-    item,.item{
-      @include border-radius(100%);
-      width: 43px;
-      height: 43px;
-      margin-left: .4em;
-      icon{
-        padding: .2em;
-      }
-      .text{
-        width: 0;
-        opacity: 0;
-      }
-    }
+    @include transform(translate3d(calc(-100% + 75px),0,0));
   }
 }
 
@@ -1214,6 +1202,33 @@ panel{
   }
 }
 
+.student-folder{
+  .main-panel{
+    padding: .4em;
+    background-color: #eee;
+    height: 40vh;
+    avatar{
+      --avatar-size: 30vmin;
+    }
+    .data{
+      padding: .3em;
+      .name{
+        font-family: Poppins-Medium;
+        font-size: 1.4em;
+        padding: .4em 0;
+      }
+      .gender{
+        icon{
+          font-size: 1.1em;
+          padding: .4em;
+          margin: .2em;
+        }
+        font-family: Poppins;
+      }
+    }
+  }
+}
+
 #userForm{
   .avatar-box{
     avatar {
@@ -1906,6 +1921,43 @@ table{
 @media (min-width: 768px) {
   sidemenu{
     position: relative;
+    --menu-width: 380px;
+    transition-property: width, padding, clip-path;
+    .company .navicon{
+      display: none;
+    }
+    &.minimal{
+      --menu-width: 80px;
+      width: var(--menu-width);
+      padding: $min_menu_padding;
+      //clip-path: path("M 0 0 L70 0Q50 100 70 300Q80 400 60 500 Q40 600 120 800L0 1000");
+      .company {
+        .company-logo{
+          margin: 0 .2em;
+        }
+        .name{
+          width: 0%;
+          overflow: hidden;
+        }
+      }
+      .links{
+        width: inherit;
+        padding: .4em 0;
+      }
+      item,.item{
+        @include border-radius(100%);
+        width: 43px;
+        height: 43px;
+        margin-left: .4em;
+        icon{
+          padding: .2em;
+        }
+        .text{
+          width: 0;
+          opacity: 0;
+        }
+      }
+    }
   }
   view{
     flex-direction: column;
