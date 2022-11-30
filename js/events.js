@@ -215,7 +215,15 @@ var AkaGlobalEvents = function(){
             console.log('[Click]')
             $(this).find('.bubble-box').toggleClass('ui-hide');
         })
+        .on('click', 'view', function (){
+            if(window.innerWidth < 768){
+                $('sidemenu,view').addClass('minimal');
+            }
+        })
     $('.field .input').trigger('change');
+    $(window).on('hashchange', function(){
+       $('view').trigger('click');
+    });
     AkaKomponents();
 }
 $(AkaGlobalEvents);

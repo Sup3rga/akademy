@@ -24,7 +24,8 @@ RouteUI.utils.data.updater.student = RouteUI.utils.data.updater.defaultCaller('g
 RouteUI.utils.student = {
     cm: {
         view: null,
-        head: null
+        head: null,
+        folder: null
     }
 };
 
@@ -33,6 +34,8 @@ RouteUI.url
     this.load(url.path).then(function(){
         RouteUI.url.setState(url.path);
         if(!url.args.id) {
+            $('.student .header h1 text').html(RouteUI.str("student.list.title"));
+            $('.student .header h1 icon').attr('class', 'las la-user-graduate');
             RouteUI.utils.student.cm.view.switchTo(0);
             RouteUI.utils.student.cm.head.switchTo(0);
             Modules.setSearchVisible(true);
@@ -43,11 +46,15 @@ RouteUI.url
 .enter('/student/id:[0-9]+', function(end,url){
     Modules.setSearchVisible(false);
     var student = ruidata.getStudent(url.args.id);
+    $('.student .header h1 text').html(RouteUI.str("student.folder.title"));
+    $('.student .header h1 icon').attr('class', 'las la-folder-open');
     $('.student .criterias .student-name').html(student.prenom+" "+student.nom);
-    console.log('[Student]',student);
+    // console.log('[Student]',student);
     RouteUI.utils.updateView('.folder',{student: student},'.folder #student-folder');
+    RouteUI.utils.student.cm.folder = new Card('.student-data card-manager');
     RouteUI.utils.student.cm.head.switchTo(1);
     RouteUI.utils.student.cm.view.switchTo(1);
+    RouteUI.utils.student.cm.folder.switchTo(0);
     end();
 },true)
 
@@ -124,7 +131,7 @@ RouteUI["/student"] = function(){
                 $_(student.getForm().find('.academic-section')[0]).setOptions(RouteUI.utils.view.createOptions(sections, ['id','nom']));
             });
         })
-        .on('click', '.student-item .edit', function(){
+        .on('click', '.student .folder .main-panel .edit', function(){
             var student = ruidata.getStudent($(this).attr('data-id'));
             rutils.waitLayer('editstudent', function(layer){
                 var address = {
@@ -161,8 +168,7 @@ RouteUI["/student"] = function(){
                     });
             });
         })
-        .on('click', '.student-item .delete', function(){
-
+        .on('click', '.student .folder .main-panel .delete', function(){
             DialogBox.setWith('las la-trash', RouteUI.str("student.deletion.alert.school"), 'yesno')
                 .show()
                 .onClose(function(e,proceed){

@@ -54,7 +54,6 @@ var PenDraw = function(){
                     el.height = height;
                     ctx.clearRect(0,0, width, height);
                 }
-                console.log('[Design]',design);
                 if(design){
                     return this.apply(design,isCanvas ? undefined : ctx, width, height);
                 }

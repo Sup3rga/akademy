@@ -8,6 +8,7 @@ abstract class _Student_ extends Civil implements _StudentState {
     protected $personne_ref, $telephone_ref, $etat;
     protected $_niveau = 0, $_annee_academique = 0, $id = 0;
     protected ?Grade $niveau;
+    protected array $promotionTraces = [];
     public static $list = [];
 
     public function getNiveauData(){
@@ -299,6 +300,27 @@ abstract class _Student_ extends Civil implements _StudentState {
         $this->id = $data["id"];
         $this->niveau = Grade::getById((int) $this->_niveau);
         $this->_annee_academique = $this->niveau->getFiliereData()->getAcademicYearId();
+        $this->fetchPromotionTraces();
+        return $this;
+    }
+
+    private function fetchPromotionTraces(){
+        $db = Storage::Connect()->prepare("
+                                select distinct s.niveau, s.annee_academique, s.salle
+                                from promotion p, salle_classe s, annee_academique a
+                                where 
+                                    p.etudiant=:p1 and 
+                                    s.id = p.salle_classe and
+                                    a.id = s.annee_academique
+                                order by a.academie");
+        $db->execute(['p1'=>$this->id]);
+        while($data = $db->fetch()){
+            $this->promotionTraces[$data["annee_academique"]] = [
+                "grade"=>$data["niveau"],
+                "room"=>$data["salle"]
+            ];
+        }
+        $db->closeCursor();
         return $this;
     }
 
@@ -500,7 +522,8 @@ abstract class _Student_ extends Civil implements _StudentState {
             "etat" => $this->etat,
             "annee_academique" => $this->_annee_academique,
             "id" => $this->id,
-            "niveau" => $this->_niveau
+            "niveau" => $this->_niveau,
+            "promotion_covered"=>$this->promotionTraces
         ]);
     }
 

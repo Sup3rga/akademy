@@ -130,7 +130,7 @@ sidemenu{
   padding: $menu_padding;
   width: var(--menu-width);
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   display: flex;
   flex-direction: column;
   background-color: mix(#377,$theme);
@@ -1202,28 +1202,112 @@ panel{
   }
 }
 
-.student-folder{
+.student .folder{
   .main-panel{
     padding: .4em;
-    background-color: #eee;
-    height: 40vh;
+    height: 30vh;
     avatar{
-      --avatar-size: 30vmin;
+      --avatar-size: 20vmin;
+      border: 3px solid $theme;
     }
     .data{
-      padding: .3em;
+      padding: .3em 1em;
       .name{
         font-family: Poppins-Medium;
         font-size: 1.4em;
         padding: .4em 0;
       }
+      icon{
+        font-size: 1.1em;
+        padding: .4em;
+        margin: .2em .4em;
+        background-color: #eee;
+        border-radius: .2em;
+      }
       .gender{
-        icon{
-          font-size: 1.1em;
-          padding: .4em;
-          margin: .2em;
-        }
         font-family: Poppins;
+      }
+      .actions{
+        button{
+          margin: 0 .2em;
+          border: 0;
+          border-radius: .4em;
+          icon{
+            background-color: unset;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+  .student-data{
+    --background: #{rgb(245,245,245)};
+    min-height: 50vh;
+    height: auto;
+    card{
+      background-color: var(--background);
+      border-radius: .5em;
+    }
+    .informations{
+      .label{
+        font-family: Lexend-Medium;
+        color: #466f69;
+        padding: .4em;
+      }
+      .content{
+        padding: .3em;
+        border: 1px solid #ccc;
+        border-radius: .3em;
+      }
+    }
+    .promotion-course{
+      padding: .3em;
+      position: relative;
+      &:after{
+        content: "";
+        display: block;
+        width: 3px;
+        border-radius: 1em;
+        height: 100%;
+        position: absolute;
+        left: 6%;
+        top: 0;
+        background-color: $theme;
+      }
+      .year{
+        background-color: $theme;
+        color: white;
+        padding: .4em;
+        border-radius: .6em;
+        position: relative;
+        z-index: 2;
+        font-family: Lexend-Medium;
+        border: 3px solid var(--background);
+      }
+      .data{
+        padding: 0 .3em;
+      }
+      grid{
+        font-family: Poppins;
+        row{
+          padding: .4em;
+          --radius: .4em .4em;
+          &:last-child {
+            border: 1px solid #ccc;
+            border-top: 0;
+            border-radius: 0 0 var(--radius);
+          }
+          &:first-child{
+            border: 1px solid #ccc;
+            border-bottom: 0;
+            border-radius: var(--radius) 0 0;
+          }
+        }
+        .label{
+          font-family: Poppins-Medium;
+          padding: .3em .8em;
+          color: #789;
+        }
       }
     }
   }

@@ -1000,9 +1000,11 @@ Card = function(sel){
     // }
     function resize(){
         if(autoresize){
-            var height = innerHeight($this.dom.find('.card.active'));
-            $this.dom.find('.card.active').height(height);
-            $this.dom.find('.body').css('height', height);
+            var height = innerHeight($this.dom.find('.card.active,card.active')),
+                tabHeight = 50;
+            $this.dom.find('.card.active,card.active').height(height);
+            $this.dom.height(height + 50);
+            $this.dom.find('.body,cards').css('height', height);
         }
     }
     this.index = this.dom.find('.card.active, cards card.active').length ? this.dom.find('.card.active, cards card.active').attr('data-index') * 1 : 0;

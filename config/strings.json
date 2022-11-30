@@ -259,6 +259,8 @@
   "ui.view.admin.promotion.assign.empty.alert": "Vous devez selectionner au moins un étudiant pour continuer.",
   "ui.view.student.deletion.alert.school": "Le système risque de perdre toute information concernant cet élève. Voulez-vous vraiment continuer ?",
   "ui.view.student.deletion.alert.university": "Le système risque de perdre toute information concernant cet étudiant. Voulez-vous vraiment continuer ?",
+  "ui.view.student.list.title": "${ui.admin.promotion.student.list.title}",
+  "ui.view.student.folder.title": "Dossier de l'élève",
   "ui.view.teacher.deletion.alert": "La supression de ce professeur entrainera des espaces vides dans l'enseignement si ce professeur a des cours en charge. Voulez-vous continuer quand même ?",
   "ui.view.course.schedule.interval.error": "L'heure du début de la séance doit être plus petite que l'heure de la fin !",
   "ui.view.course.grade.promotionless": "Cette classe n'a encore aucune promotion enregistrée ! vous ne pourrez donc-la configurer seulement après lui avoir attribué de promotion.",

@@ -1,5 +1,4 @@
 <template id="student-folder">
-    <div class="ui-container ui-size-fluid student-folder">
         <div class="ui-container ui-size-fluid ui-vertical-center main-panel">
             <avatar class="ui-element" style="background-image: url(<%= student.photo != null ? './assets/avatars/'+student.photo : '' %>)">
                 <%= student.photo != null ? '' : student.prenom[0].toUpperCase(); %>
@@ -8,11 +7,127 @@
                 <div class="ui-container ui-size-fluid name">
                     <%= student.prenom + " " + student.nom.toUpperCase() %>
                 </div>
-                <div class="ui-container ui-size-fluid gender ui-vertical-center">
-                    <icon class="las la-transgender"></icon>
-                    <%= student.sexe == 'M' ? "${ui.component.label.boy}" : "${ui.component.label.girl}" %>
+                <div class="ui-container ui-wrap ui-size-fluid ui-vertical-center">
+                    <div class="ui-container ui-size-7">
+                        <div class="ui-container ui-size-fluid gender ui-vertical-center">
+                            <icon class="las la-transgender"></icon>
+                            <%= student.sexe == 'M' ? "${ui.component.label.boy}" : "${ui.component.label.girl}" %>
+                        </div>
+                        <div class="ui-container ui-size-fluid ui-vertical-center">
+                            <icon class="las la-calendar-day"></icon>
+                            <%= student.age %> ans
+                        </div>
+                        <div class="ui-container ui-size-fluid ui-vertical-center">
+                            <icon class="las la-graduation-cap"></icon>
+                            Étudiant
+                        </div>
+                    </div>
+                    <div class="ui-container ui-size-5 actions">
+                        <button class="edit layer-form-on"
+                                data-layer-title="${ui.student.form.title.edition.school}"
+                                data-layer-target="#studentForm"
+                                data-layer-name="editstudent"
+                                data-id="<%= student.id %>"
+                                layerform-src
+                                data-layer-size="6,9,11,12"
+                        ><icon class="las la-edit"></icon></button>
+                        <button class="delete" data-id="<%= student.id %>"><icon class="las la-trash"></icon></button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="ui-element ui-size-fluid ui-relative student-data">
+            <card-manager class="ui-element ui-size-fluid" autoresize>
+                <tabs class="ui-container ui-size-fluid styled-line">
+                    <tabs-wrapper class="ui-element ui-unwrap ui-size-fluid">
+                        <tab class="ui-element active" data-index="0">
+                            Informations sur l'élève
+                        </tab>
+                        <tab class="ui-element" data-index="1">
+                            Parcours
+                        </tab>
+                    </tabs-wrapper>
+                </tabs>
+                <cards class="ui-element ui-size-fluid ui-scroll-y">
+                    <%
+                        var classe = utils.getClass(student.niveau);
+                    %>
+                    <card class="ui-element active" data-index="0">
+                        <div class="ui-element">
+                            <grid class="ui-element ui-size-fluid informations">
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.academic.section}</cell>
+                                    <cell class="ui-elements content"><%= utils.getSection(classe.filiere).nom %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.class}</cell>
+                                    <cell class="ui-element content"><%= classe.notation %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.birthplace}</cell>
+                                    <cell class="ui-element content"><%= student.lieu_naissance %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.birthdate}</cell>
+                                    <cell class="ui-element content"><%= utils.localDate(student.date_naissance) %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.address}</cell>
+                                    <cell class="ui-element content"><%= student.adresse %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.responsible.person}</cell>
+                                    <cell class="ui-element content"><%= student.personne_ref == null ? "Aucun" : student.personne_ref %></cell>
+                                </row>
+                                <row class="ui-container ui-unwrap ui-size-fluid">
+                                    <cell class="ui-element ui-size-6 ui-md-size-4 label">${ui.component.label.responsible.person.phone}</cell>
+                                    <cell class="ui-element content"><%= student.telephone_ref %></cell>
+                                </row>
+                            </grid>
+                        </div>
+                    </card>
+                    <card class="ui-container" data-index="1">
+                        <div class="ui-container ui-size-fluid promotion-course">
+                            <%
+                                var classe,academic,room;
+                                for(var i in student.promotion_covered){
+                                    academic = utils.getAcademicYear(i);
+                                    classe = utils.getClass(student.promotion_covered[i].grade);
+                                    room = utils.getRoom(student.promotion_covered[i].room);
+                            %>
+                            <div class="ui-container ui-size-fluid row ui-vertical-center">
+                                <div class="ui-container ui-size-4 ui-md-size-2">
+                                    <span class="ui-element year">
+                                        <%= academic.academie %>
+                                    </span>
+                                </div>
+                                <div class="ui-container">
+                                    <grid class="ui-container ui-size-fluid">
+                                        <row class="ui-container ui-size-fluid ui-vertical-center">
+                                            <cell class="ui-element label">
+                                                Niveau
+                                            </cell>
+                                            <cell class="ui-element">
+                                                <%= classe.notation %>
+                                            </cell>
+                                        </row>
+                                        <row class="ui-container ui-size-fluid ui-vertical-center">
+                                            <cell class="ui-element label">
+                                                Salle
+                                            </cell>
+                                            <cell class="ui-element">
+                                                <%= room.name %>
+                                            </cell>
+                                        </row>
+                                    </grid>
+                                </div>
+                            </div>
+                            <%
+                            }
+                            %>
+                        </div>
+                    </card>
+                </cards>
+            </card-manager>
+        </div>
 </template>
