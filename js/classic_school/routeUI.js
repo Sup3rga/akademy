@@ -250,8 +250,9 @@ RouteUI.utils.view.filter = null;
 
 RouteUI.utils.view.filterFallback = null;
 
-RouteUI.utils.view.defaultFilter = function(classZone, attrCriteria){
-    var emptySearch = RouteUI.utils.view.filterFallback;
+RouteUI.utils.view.defaultFilter = function(classZone, attrCriteria, extras){
+    var emptySearch = RouteUI.utils.view.filterFallback,
+        extras = set(extras, {});
     if(!emptySearch){
         emptySearch = $('#empty-search');
         RouteUI.utils.view.filterFallback = emptySearch;
@@ -259,10 +260,13 @@ RouteUI.utils.view.defaultFilter = function(classZone, attrCriteria){
     return function(){
         var criterias = [
                 $_('.'+classZone+' .header .academic-'+attrCriteria).val(),
-                $('appbar .search-bar').val().replace(/ */g, '').toLowerCase(),
-                $('.'+classZone+' .header [alternate="sort"].active').length ? $('.'+classZone+' .header [alternate="sort"].active').attr('direction') : 'default'
+                $('appbar .search-bar').val().replace(/ */g, '').toLowerCase()
             ],
             visible = [];
+        for(var i in extras){
+            criterias.push($_(i).val());
+        }
+        criterias.push($('.'+classZone+' .header [alternate="sort"].active').length ? $('.'+classZone+' .header [alternate="sort"].active').attr('direction') : 'default')
         var parent = $('.'+classZone+'-item').eq(0).parent();
         if(!parent.find('#empty-search').length){
             parent.append(emptySearch);
@@ -273,7 +277,18 @@ RouteUI.utils.view.defaultFilter = function(classZone, attrCriteria){
                     $(this).attr('data-'+attrCriteria),
                     $(this).attr('data-filter').toLowerCase()
                 ],
-                show = criterias[0].indexOf(targets[0]) >= 0 && targets[1].indexOf(criterias[1]) >= 0;
+                show = true;
+            for(var i in extras){
+                targets.push(extras[i](this));
+            }
+            for(var i = 0, j = criterias.length - 1; i < j; i++){
+                if(i != 1) {
+                    show = show && criterias[i].indexOf(targets[i]) >= 0;
+                }
+                else{
+                    show = show && targets[i].indexOf(criterias[i]) >= 0;
+                }
+            }
             $(this).removeClass(show ? 'not-super' : 'super').addClass(!show ? 'not-super' : 'super');
             $(this)[show ? 'removeClass' : 'addClass']('ui-hide');
             if(show){
@@ -284,9 +299,10 @@ RouteUI.utils.view.defaultFilter = function(classZone, attrCriteria){
             emptySearch.removeClass('ui-hide');
             return;
         }
-        if(criterias[2] != 'default'){
+        var filter_c = criterias[criterias.length - 1];
+        if(filter_c != 'default'){
             visible.sort();
-            if(criterias[2] == 'up'){
+            if(filter_c == 'up'){
                 visible.reverse();
             }
             var primeElement = $('.'+classZone+'-item').eq(0),
@@ -1831,7 +1847,11 @@ RouteUI["/course"] = function() {
         .on('invalidation',submit.defaultInvalidation);
     }
 
-    ruiv.filter = ruiv.defaultFilter('course', 'grade');
+    ruiv.filter = ruiv.defaultFilter('course', 'grade', {
+        '.course .header .academic-session': function(current){
+            return $(current).attr('data-session')
+        }
+    });
 
     /**
      * events for auto checking selection list into the criterias section
@@ -1849,6 +1869,12 @@ RouteUI["/course"] = function() {
             })
         });
     });
+    $_('.course-list-tab .academic-grade').on('change', function(){
+        ruiv.filter();
+    })
+    $_('.course-list-tab .academic-session').on('change', function(){
+        ruiv.filter();
+    })
     $_('.course-scheduler-tab .academic-year')
     .on('ready', function(){
         $_('.course-scheduler-tab .academic-section')

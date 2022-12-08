@@ -2,11 +2,11 @@
     <%
         var data = utils.use('workDays');
     %>
-    <div class="super super-l12 person-form" id="scheduler-form">
-        <div class="super super-l12">
-            <div class="super super-l12 field">
+    <div class="ui-container ui-horizontal-left ui-size-fluid person-form" id="scheduler-form">
+        <div class="ui-container ui-size-fluid">
+            <div class="ui-container ui-size-fluid field">
                 <label>${ui.course.seance.day.choice}</label>
-                <kinput type="select" class="super super-l12 input begin" required name="cr_day">
+                <kinput type="select" class="ui-element ui-size-fluid input begin" required name="cr_day">
                     <%
                         for(var i in data.workDays){
                     %>
@@ -15,10 +15,10 @@
                 </kinput>
             </div>
         </div>
-        <div class="super super-l12 wrapper super-flex-end">
-            <div class="super super-l6 field">
+        <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-bottom wrapper">
+            <div class="ui-container ui-size-6 field">
                 <label>${ui.course.promotion}</label>
-                <kinput type="select" class="super super-l12 input classroom" required name="cr_clsroom">
+                <kinput type="select" class="ui-element ui-size-fluid input classroom" required name="cr_clsroom">
                     <%
                         for(var i in promotions){
                         %>
@@ -28,9 +28,9 @@
                     %>
                 </kinput>
             </div>
-            <div class="super super-l6 field">
+            <div class="ui-container ui-size-6 field">
                 <label>${ui.course.room}</label>
-                <kinput type="select" class="super super-l12 input room" required name="cr_room">
+                <kinput type="select" class="ui-container ui-size-fluid input room" required name="cr_room">
                     <%
                         var rooms = utils.use('room').room;
                         for(var i in rooms){
@@ -43,22 +43,22 @@
             </div>
         </div>
         <label>${ui.course.dispensation.choice}</label>
-        <div class="super super-l12 hint-box alert-box">
-            <div class="super super-l12 wrapper super-flex-center">
+        <div class="ui-container ui-size-fluid hint-box alert-box">
+            <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-center wrapper">
                 <icon class="ion-information rounded"></icon>
-                <div class="super super-l10 text">
+                <div class="ui-container ui-size-10 text">
                     ${ui.course.hour.interval.explanation}
                 </div>
             </div>
         </div>
-        <div class="super super-l12 wrapper super-flex-end">
-            <div class="super super-l6 field">
+        <div class="ui-container ui-unwrap ui-size-fluid ui-vertical-bottom wrapper">
+            <div class="ui-container ui-size-6 field">
                 <label>${ui.course.begin.hour}</label>
-                <kinput class="super super-l12 input begin" required name="cr_beg_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
+                <kinput class="ui-element ui-size-fluid input begin" required name="cr_beg_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
             </div>
-            <div class="super super-l6 field">
+            <div class="ui-container ui-size-6 field">
                 <label>${ui.course.end.hour}</label>
-                <kinput class="super super-l12 input end" required name="cr_end_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
+                <kinput class="ui-element ui-size-fluid input end" required name="cr_end_hour" match="^(0[8-9]|1[0-8]):(0[0-9]|[1-5][0-9])$" mask="##:##"></kinput>
             </div>
         </div>
     </div>

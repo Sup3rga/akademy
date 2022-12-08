@@ -271,7 +271,11 @@ RouteUI["/course"] = function() {
         .on('invalidation',submit.defaultInvalidation);
     }
 
-    ruiv.filter = ruiv.defaultFilter('course', 'grade');
+    ruiv.filter = ruiv.defaultFilter('course', 'grade', {
+        '.course .header .academic-session': function(current){
+            return $(current).attr('data-session')
+        }
+    });
 
     /**
      * events for auto checking selection list into the criterias section
@@ -289,6 +293,12 @@ RouteUI["/course"] = function() {
             })
         });
     });
+    $_('.course-list-tab .academic-grade').on('change', function(){
+        ruiv.filter();
+    })
+    $_('.course-list-tab .academic-session').on('change', function(){
+        ruiv.filter();
+    })
     $_('.course-scheduler-tab .academic-year')
     .on('ready', function(){
         $_('.course-scheduler-tab .academic-section')

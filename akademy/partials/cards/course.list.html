@@ -14,7 +14,7 @@
             niveau = utils.getClass(course[j].niveau);
             session = utils.getSession(course[j].session);
         %>
-            <item class="ui-element ui-size-fluid ui-hide id-item list-item course-item" data-grade="<%= course[j].niveau %>" data-filter="<%= course[j].nom+' '+course[j].code %>" data-id="<%= course[j].id %>">
+            <item class="ui-element ui-size-fluid ui-hide id-item list-item course-item" data-grade="<%= course[j].niveau %>" data-filter="<%= course[j].nom+' '+course[j].code %>" data-session="<%= course[j].session %>" data-id="<%= course[j].id %>">
                 <div class="ui-element ui-size-fluid ui-flex ui-vertical-center summary">
                     <div class="ui-element ui-size-8 data">
                             <span class="ui-element ui-size-fluid name">
